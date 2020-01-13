@@ -6,6 +6,6 @@
  
  #### exportToHtml 输出代码
  
- #### Java_Xmind 脑图
+ #### Java XMind 脑图
  
  #### Java笔记 老师的笔记
