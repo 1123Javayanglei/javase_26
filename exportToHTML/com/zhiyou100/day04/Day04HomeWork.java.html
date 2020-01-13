@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Day04HomeWork.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #859900;}
+.s1 { color: #93a1a1;}
+.s2 { color: #657b83; font-style: italic;}
+.s3 { color: #268bd2; font-weight: bold; font-style: italic;}
+.s4 { color: #d33682;}
+.s5 { color: #2aa198;}
+</style>
+</head>
+<body bgcolor="#002b36">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Day04HomeWork.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.zhiyou100.day04;</span>
+
+<span class="s2">/**</span>
+ <span class="s2">* </span><span class="s3">@author </span><span class="s2">yanglei</span>
+ <span class="s2">* day04作业</span>
+ <span class="s2">* 1 打印四个方向的乘法口诀</span>
+ <span class="s2">* 2 判断一个数是不是质数</span>
+ <span class="s2">* 3 使用for循环把 圆周率的题再写一遍</span>
+ <span class="s2">* 4 使用for循环 获取所有的水仙花数</span>
+ <span class="s2">* 5 留下你的宝贵意见</span>
+ <span class="s2">*</span>
+ <span class="s2">*</span>
+ <span class="s2">* 扩展题1： 判断一个正整数是几位数</span>
+ <span class="s2">* 扩展题2：打印输出1到100内所有质数</span>
+ <span class="s2">* 扩展题3：求1到100内所有质数的平均值</span>
+ <span class="s2">*/</span>
+<span class="s0">public class </span><span class="s1">Day04HomeWork {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+
+        <span class="s1">leftTopPrint();</span>
+        <span class="s1">leftBottomPint();</span>
+        <span class="s1">System.out.println();</span>
+        <span class="s1">rightTopPrint();</span>
+        <span class="s1">rightBottomPrint();</span>
+
+        <span class="s1">judgingPrimeNumbers(</span><span class="s4">4</span><span class="s1">);</span>
+
+
+        <span class="s1">piOfZuChongZhi();</span>
+
+        <span class="s1">getAllWaterFlowerNumber();</span>
+
+        <span class="s1">getPositiveIntegerTheDigit(</span><span class="s4">123</span><span class="s1">);</span>
+
+        <span class="s1">getJudgingPrimeNumbersOf1And100();</span>
+
+    <span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">getJudgingPrimeNumbersOf1And100(){</span>
+        <span class="s1">System.out.println(</span><span class="s5">&quot;1到100的所有质数:&quot;</span><span class="s1">);</span>
+        <span class="s0">int </span><span class="s1">numberSum=</span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s0">int </span><span class="s1">numberCnt=</span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = </span><span class="s4">1</span><span class="s1">; j &lt;</span><span class="s4">100 </span><span class="s1">; j++) {</span>
+            <span class="s0">boolean </span><span class="s1">flag=</span><span class="s0">false</span><span class="s1">;</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">2</span><span class="s1">; i &lt;=(j-</span><span class="s4">1</span><span class="s1">) ; i++) {</span>
+                <span class="s0">if </span><span class="s1">(j%i==</span><span class="s4">0</span><span class="s1">){</span>
+                    <span class="s1">flag=</span><span class="s0">true</span><span class="s1">;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(flag||j==</span><span class="s4">1</span><span class="s1">){</span>
+
+            <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">numberCnt++;</span>
+                <span class="s1">numberSum+=j;</span>
+                <span class="s1">System.out.print(j+</span><span class="s5">&quot; &quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+        <span class="s1">System.out.println();</span>
+        <span class="s1">System.out.println(</span><span class="s5">&quot;1到100的所有质数的平均数:&quot;</span><span class="s1">+((numberSum*</span><span class="s4">1.0</span><span class="s1">)/(numberCnt*</span><span class="s4">1.0</span><span class="s1">)));</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">getPositiveIntegerTheDigit(</span><span class="s0">int </span><span class="s1">number){</span>
+        <span class="s0">if </span><span class="s1">(number&gt;</span><span class="s4">0</span><span class="s1">) {</span>
+            <span class="s0">int </span><span class="s1">flag = </span><span class="s4">0</span><span class="s1">;</span>
+            <span class="s0">int </span><span class="s1">sum = number;</span>
+            <span class="s0">while </span><span class="s1">(number != </span><span class="s4">0</span><span class="s1">) {</span>
+                <span class="s1">number /= </span><span class="s4">10</span><span class="s1">;</span>
+                <span class="s1">flag++;</span>
+            <span class="s1">}</span>
+            <span class="s1">System.out.println(</span><span class="s5">&quot; &quot; </span><span class="s1">+ sum + </span><span class="s5">&quot;是&quot; </span><span class="s1">+ flag + </span><span class="s5">&quot;位数&quot;</span><span class="s1">);</span>
+        <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.println(</span><span class="s5">&quot;请输入一个正整数（大于零的数)&quot;</span><span class="s1">);</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">getAllWaterFlowerNumber(){</span>
+        <span class="s1">System.out.println(</span><span class="s5">&quot;水仙花数：&quot;</span><span class="s1">);</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">111</span><span class="s1">; i &lt;=</span><span class="s4">999 </span><span class="s1">; i++) {</span>
+            <span class="s0">int </span><span class="s1">theUnit=i%</span><span class="s4">10</span><span class="s1">;</span>
+            <span class="s0">int </span><span class="s1">theDecade=i/</span><span class="s4">10</span><span class="s1">%</span><span class="s4">10</span><span class="s1">;</span>
+            <span class="s0">int </span><span class="s1">theHundreds=i/</span><span class="s4">100</span><span class="s1">;</span>
+            <span class="s0">boolean </span><span class="s1">flag=((</span><span class="s0">int</span><span class="s1">)(Math.pow(theUnit,</span><span class="s4">3</span><span class="s1">))+(</span><span class="s0">int</span><span class="s1">)(Math.pow(theDecade,</span><span class="s4">3</span><span class="s1">))+(</span><span class="s0">int</span><span class="s1">)(Math.pow(theHundreds,</span><span class="s4">3</span><span class="s1">))==i);</span>
+            <span class="s0">if </span><span class="s1">(flag){</span>
+                <span class="s1">System.out.print(i+</span><span class="s5">&quot; &quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+        <span class="s1">System.out.println();</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">piOfZuChongZhi(){</span>
+        <span class="s2">/* 
+         * 特点： 
+         * 奇数次为正，偶数次为负 
+         * 分子固定为4 
+         * 分母，从1开始每次加2 
+         * 
+         * 结束条件： 
+         * PI&lt;3.1415926 || PI&gt;3.1415927 
+         * 
+         */</span>
+
+        <span class="s0">int </span><span class="s1">cnt;</span>
+        <span class="s0">double </span><span class="s1">pI=</span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s0">double </span><span class="s1">piMin=</span><span class="s4">3.1415926</span><span class="s1">;</span>
+        <span class="s0">double </span><span class="s1">piMax=</span><span class="s4">3.1415927</span><span class="s1">;</span>
+        <span class="s0">double </span><span class="s1">sum=</span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s0">for </span><span class="s1">(cnt=</span><span class="s4">1</span><span class="s1">;pI&lt; piMin|| pI&gt;piMax;cnt++) {</span>
+            <span class="s0">if </span><span class="s1">(cnt%</span><span class="s4">2</span><span class="s1">==</span><span class="s4">0</span><span class="s1">){</span>
+                <span class="s1">sum=-</span><span class="s4">4.0</span><span class="s1">/(</span><span class="s4">2</span><span class="s1">*cnt-</span><span class="s4">1</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">sum=</span><span class="s4">4.0</span><span class="s1">/(</span><span class="s4">2</span><span class="s1">*cnt-</span><span class="s4">1</span><span class="s1">);</span>
+            <span class="s1">}</span>
+            <span class="s1">pI+=sum;</span>
+        <span class="s1">}</span>
+        <span class="s1">System.out.println(</span><span class="s5">&quot;计算了:&quot;</span><span class="s1">+(cnt-</span><span class="s4">1</span><span class="s1">)+</span><span class="s5">&quot;次&quot;</span><span class="s1">);</span>
+
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">judgingPrimeNumbers(</span><span class="s0">int </span><span class="s1">number){</span>
+        <span class="s0">boolean </span><span class="s1">flag=</span><span class="s0">false</span><span class="s1">;</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">2</span><span class="s1">; i &lt;=(number-</span><span class="s4">1</span><span class="s1">) ; i++) {</span>
+            <span class="s0">if </span><span class="s1">(number%i==</span><span class="s4">0</span><span class="s1">){</span>
+                <span class="s1">flag=</span><span class="s0">true</span><span class="s1">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+        <span class="s0">if </span><span class="s1">(flag||number==</span><span class="s4">1</span><span class="s1">){</span>
+            <span class="s1">System.out.println(</span><span class="s5">&quot; &quot;</span><span class="s1">+number+</span><span class="s5">&quot;不是质数&quot;</span><span class="s1">);</span>
+        <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.println(</span><span class="s5">&quot; &quot;</span><span class="s1">+number+</span><span class="s5">&quot;是质数&quot;</span><span class="s1">);</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">rightTopPrint(){</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">1</span><span class="s1">; i &lt;</span><span class="s4">10 </span><span class="s1">; i++) {</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = </span><span class="s4">0</span><span class="s1">; j &lt;i ; j++) {</span>
+                <span class="s1">System.out.print(</span><span class="s5">&quot;\t&quot;</span><span class="s1">+</span><span class="s5">&quot;\t&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = i; j &lt;</span><span class="s4">10 </span><span class="s1">; j++) {</span>
+                <span class="s1">System.out.print(</span><span class="s5">&quot; &quot;</span><span class="s1">+i+</span><span class="s5">&quot;*&quot;</span><span class="s1">+j+</span><span class="s5">&quot;=&quot;</span><span class="s1">+(i*j)+</span><span class="s5">&quot;\t&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+            <span class="s1">System.out.println();</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">leftBottomPint(){</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">1</span><span class="s1">; i &lt;</span><span class="s4">10 </span><span class="s1">; i++) {</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = </span><span class="s4">1</span><span class="s1">; j &lt;=i ; j++) {</span>
+                <span class="s1">System.out.print(</span><span class="s5">&quot; &quot;</span><span class="s1">+i+</span><span class="s5">&quot;*&quot;</span><span class="s1">+j+</span><span class="s5">&quot;=&quot;</span><span class="s1">+(i*j)+</span><span class="s5">&quot;\t&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+            <span class="s1">System.out.println();</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">public  static void </span><span class="s1">leftTopPrint(){</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">1</span><span class="s1">; i &lt;</span><span class="s4">10 </span><span class="s1">; i++) {</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = i; j &lt;</span><span class="s4">10 </span><span class="s1">; j++) {</span>
+                <span class="s1">System.out.print(</span><span class="s5">&quot; &quot;</span><span class="s1">+i+</span><span class="s5">&quot;*&quot;</span><span class="s1">+j+</span><span class="s5">&quot;=&quot;</span><span class="s1">+(i*j)+</span><span class="s5">&quot;\t&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+            <span class="s1">System.out.println();</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">rightBottomPrint(){</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s4">1</span><span class="s1">; i &lt;</span><span class="s4">10 </span><span class="s1">; i++) {</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = </span><span class="s4">1</span><span class="s1">; j &lt;(</span><span class="s4">10</span><span class="s1">-i) ; j++) {</span>
+                <span class="s1">System.out.print(</span><span class="s5">&quot;\t&quot;</span><span class="s1">+</span><span class="s5">&quot;\t&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = i; j &gt;</span><span class="s4">0 </span><span class="s1">; j--) {</span>
+                <span class="s1">System.out.print(</span><span class="s5">&quot; &quot;</span><span class="s1">+i+</span><span class="s5">&quot;*&quot;</span><span class="s1">+j+</span><span class="s5">&quot;=&quot;</span><span class="s1">+(i*j)+</span><span class="s5">&quot;\t&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+            <span class="s1">System.out.println();</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

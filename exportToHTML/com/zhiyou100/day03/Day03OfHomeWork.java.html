@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Day03OfHomeWork.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #859900;}
+.s1 { color: #93a1a1;}
+.s2 { color: #657b83; font-style: italic;}
+.s3 { color: #268bd2; font-weight: bold; font-style: italic;}
+.s4 { color: #2aa198;}
+.s5 { color: #d33682;}
+</style>
+</head>
+<body bgcolor="#002b36">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Day03OfHomeWork.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.zhiyou100.day03;</span>
+
+<span class="s0">import </span><span class="s1">javax.sound.midi.SoundbankResource;</span>
+
+<span class="s2">/**</span>
+ <span class="s2">* </span><span class="s3">@author </span><span class="s2">yanglei</span>
+ <span class="s2">*/</span>
+<span class="s0">public class </span><span class="s1">Day03OfHomeWork {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">genderAndAge(</span><span class="s4">'男'</span><span class="s1">,</span><span class="s5">61</span><span class="s1">);</span>
+        <span class="s1">sumOfOneToThousand();</span>
+        <span class="s1">maxAndMinAndMid(</span><span class="s5">2</span><span class="s1">,</span><span class="s5">2</span><span class="s1">,</span><span class="s5">2</span><span class="s1">);</span>
+        <span class="s1">judgingTheRank(</span><span class="s5">60</span><span class="s1">);</span>
+<span class="s2">//        piOfZuChongZhi();</span>
+    <span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">piOfZuChongZhi(){</span>
+        <span class="s2">/* 
+         * 4/1 - 4/3 
+         */</span>
+        <span class="s0">double </span><span class="s1">i=</span><span class="s5">0</span><span class="s1">;</span>
+        <span class="s0">double </span><span class="s1">sums=</span><span class="s5">4</span><span class="s1">;</span>
+        <span class="s0">while </span><span class="s1">(sums&lt;</span><span class="s5">3.1415926 </span><span class="s1">|| sums&gt;</span><span class="s5">3.1315927</span><span class="s1">){</span>
+            <span class="s1">i+=</span><span class="s5">1</span><span class="s1">;</span>
+            <span class="s1">sums=sums-</span><span class="s5">4</span><span class="s1">/(</span><span class="s5">4</span><span class="s1">*i-</span><span class="s5">1</span><span class="s1">)+</span><span class="s5">4</span><span class="s1">/(</span><span class="s5">4</span><span class="s1">*i+</span><span class="s5">1</span><span class="s1">);</span>
+<span class="s2">//            System.out.println(&quot;当前i=&quot;+i+&quot; PI: &quot;+sums);</span>
+        <span class="s1">}</span>
+        <span class="s1">System.out.println(</span><span class="s4">&quot;最终: &quot;</span><span class="s1">+i);</span>
+
+
+<span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">judgingTheRank(</span><span class="s0">double </span><span class="s1">grade){</span>
+        <span class="s0">if </span><span class="s1">(grade&gt;=</span><span class="s5">0</span><span class="s1">&amp;&amp;grade&lt;=</span><span class="s5">100</span><span class="s1">) {</span>
+            <span class="s0">int </span><span class="s1">newGrade = (</span><span class="s0">int</span><span class="s1">) (grade / </span><span class="s5">10</span><span class="s1">);</span>
+            <span class="s0">switch </span><span class="s1">(newGrade) {</span>
+                <span class="s0">case </span><span class="s5">0</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s5">1</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s5">2</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s5">3</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s5">4</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s5">5</span><span class="s1">:</span>
+                    <span class="s1">System.out.println(</span><span class="s4">&quot;你不及格&quot;</span><span class="s1">);</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s0">case </span><span class="s5">6</span><span class="s1">:</span>
+                    <span class="s1">System.out.println(</span><span class="s4">&quot;你及格了&quot;</span><span class="s1">);</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s0">case </span><span class="s5">7</span><span class="s1">:</span>
+                    <span class="s1">System.out.println(</span><span class="s4">&quot;良好&quot;</span><span class="s1">);</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s0">case </span><span class="s5">8</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s5">9</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s5">10</span><span class="s1">:</span>
+                    <span class="s1">System.out.println(</span><span class="s4">&quot;优秀&quot;</span><span class="s1">);</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s0">default</span><span class="s1">:</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.println(</span><span class="s4">&quot;滚&quot;</span><span class="s1">);</span>
+        <span class="s1">}</span>
+        <span class="s1">}</span>
+
+
+    <span class="s0">public static void </span><span class="s1">maxAndMinAndMid(</span><span class="s0">int </span><span class="s1">a,</span><span class="s0">int </span><span class="s1">b,</span><span class="s0">int </span><span class="s1">c){</span>
+        <span class="s0">if </span><span class="s1">(a!=b&amp;&amp;a!=c&amp;&amp;b!=c) {</span>
+
+            <span class="s0">if </span><span class="s1">(a &gt; b &amp;&amp; a &gt; c) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;max=&quot; </span><span class="s1">+ a);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(b &gt; c &amp;&amp; b &gt; a) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;max=&quot; </span><span class="s1">+ b);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(c &gt; a &amp;&amp; c &gt; b) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;max=&quot; </span><span class="s1">+ c);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(a &gt; b &amp;&amp; a &lt; c || a &gt; c &amp;&amp; a &lt; b) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;mid=&quot; </span><span class="s1">+ a);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(b &gt; a &amp;&amp; b &lt; c || b &gt; c &amp;&amp; b &lt; a) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;mid=&quot; </span><span class="s1">+ b);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(c &gt; a &amp;&amp; c &lt; b || c &lt; a &amp;&amp; c &gt; b) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;mid=&quot; </span><span class="s1">+ c);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(a &lt; b &amp;&amp; a &lt; c) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;min=&quot; </span><span class="s1">+ a);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(b &lt; a &amp;&amp; b &lt; c) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;min&quot; </span><span class="s1">+ b);</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(c &lt; a &amp;&amp; c &lt; b) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;min=&quot; </span><span class="s1">+ c);</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.println(</span><span class="s4">&quot;请输入三个不相等的数字&quot;</span><span class="s1">);</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">public static void </span><span class="s1">sumOfOneToThousand(){</span>
+        <span class="s2">/* 
+         *求1到1000满足条件的所有数的和 
+         * 1.偶数 %2==0 
+         * 2.位数有1 Number%10==1 || Number/10%10==1 || Number/100==1 
+         */</span>
+        <span class="s0">int </span><span class="s1">max=</span><span class="s5">1000</span><span class="s1">;</span>
+        <span class="s0">int </span><span class="s1">sum=</span><span class="s5">0</span><span class="s1">;</span>
+        <span class="s0">int </span><span class="s1">number=</span><span class="s5">0</span><span class="s1">;</span>
+        <span class="s0">while </span><span class="s1">(number&lt;=max){</span>
+            <span class="s0">if </span><span class="s1">(((number%</span><span class="s5">10</span><span class="s1">==</span><span class="s5">1</span><span class="s1">)||(number/</span><span class="s5">10</span><span class="s1">%</span><span class="s5">10</span><span class="s1">==</span><span class="s5">1</span><span class="s1">) || (number/</span><span class="s5">100</span><span class="s1">==</span><span class="s5">1</span><span class="s1">))&amp;&amp;(number%</span><span class="s5">2</span><span class="s1">==</span><span class="s5">0</span><span class="s1">)){</span>
+                <span class="s1">sum+=number;</span>
+            <span class="s1">}</span>
+            <span class="s1">number++;</span>
+        <span class="s1">}</span>
+        <span class="s1">System.out.println(</span><span class="s4">&quot;1到1000满足条件的所有数的和=&quot;</span><span class="s1">+sum);</span>
+
+    <span class="s1">}</span>
+    <span class="s0">public  static void </span><span class="s1">genderAndAge(</span><span class="s0">char </span><span class="s1">gender,</span><span class="s0">int </span><span class="s1">age){</span>
+        <span class="s0">if </span><span class="s1">(gender == </span><span class="s4">'男'</span><span class="s1">){</span>
+            <span class="s0">if </span><span class="s1">(age&lt;=</span><span class="s5">0</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;请您重新投胎&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else if</span><span class="s1">(age&lt;=</span><span class="s5">18</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;小男孩👦&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else if</span><span class="s1">(age&lt;=</span><span class="s5">35</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;帅哥&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else if</span><span class="s1">(age&lt;=</span><span class="s5">60</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;叔叔🧍‍♂️&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;爷爷👴&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span><span class="s0">else if</span><span class="s1">(gender==</span><span class="s4">'女'</span><span class="s1">) {</span>
+            <span class="s0">if </span><span class="s1">(age&lt;=</span><span class="s5">0</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;请您重新投胎&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else if</span><span class="s1">(age&lt;=</span><span class="s5">18</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;小女孩👧&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else if</span><span class="s1">(age&lt;=</span><span class="s5">35</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;美女&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else if</span><span class="s1">(age&lt;=</span><span class="s5">60</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;阿姨🧍‍&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;奶奶👵&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.println(</span><span class="s4">&quot;请重新考虑你的性别&quot;</span><span class="s1">);</span>
+        <span class="s1">}</span>
+
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
