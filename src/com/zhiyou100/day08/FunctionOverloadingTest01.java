@@ -5,11 +5,13 @@ package com.zhiyou100.day08;
  */
 public class FunctionOverloadingTest01 {
     public static void main(String[] args) {
-        Student s1=new Student();
-        System.out.println(s1.add(1,1));
-        System.out.println(s1.add(1,1.2));
+        Student s1 = new Student();
+        System.out.println(s1.add(1, 1));
+        System.out.println(s1.add(1, 1.2));
         System.out.println(s1.add(1));
         System.out.println(1 + 1 + 1);
+        System.out.println("hello");
+        System.out.println("hello");
         System.out.println("hello");
     }
 }
