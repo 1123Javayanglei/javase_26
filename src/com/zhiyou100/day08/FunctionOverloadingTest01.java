@@ -9,7 +9,8 @@ public class FunctionOverloadingTest01 {
         System.out.println(s1.add(1,1));
         System.out.println(s1.add(1,1.2));
         System.out.println(s1.add(1));
-        System.out.println(1+1+1);
+        System.out.println(1 + 1 + 1);
+        System.out.println("hello");
     }
 }
 class Student{
@@ -24,6 +25,7 @@ class Student{
     public int add(int a,int b){
         System.out.println("两个int参数");
         return a+b;
+
     }
     public double add(int a, double b){
         return a+b;
