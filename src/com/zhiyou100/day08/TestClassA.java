@@ -9,7 +9,6 @@ class ClasssA {
     public void method(int value) {
         System.out.println(value);
     }
-
     public void method() {
         System.out.println(value);
     }
@@ -21,5 +20,6 @@ class TestClassA {
         classA.value = 10;
         classA.method();
         classA.method(20);
+        System.out.println("chp5第一题");
     }
 }
