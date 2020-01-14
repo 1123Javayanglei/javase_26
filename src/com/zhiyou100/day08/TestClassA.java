@@ -16,6 +16,7 @@ class ClasssA {
 }
 
 class TestClassA {
+
     public static void main(String[] args) {
         ClasssA classA = new ClasssA();
         classA.value = 10;
