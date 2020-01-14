@@ -1,8 +1,6 @@
 package com.zhiyou100.day08;
 
-class ClassA{
-    int value;
-}
+
 class ChangeRef{
     public static void main(String args[]){
         ClassA ca = new ClassA();
