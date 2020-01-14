@@ -19,7 +19,6 @@ class TestClassA {
         classA.value = 10;
         classA.method();
         classA.method(20);
-        System.out.println("chp5第一题");
-        System.out.println("chp5第一题");
     }
 }
+
