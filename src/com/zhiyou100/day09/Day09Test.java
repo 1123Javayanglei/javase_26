@@ -5,7 +5,7 @@ package com.zhiyou100.day09;
  */
 public class Day09Test {
     public static void main(String[] args) {
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i <= 100; i++) {
             System.out.println("第" + i + "个月兔子有：" + fibonacci(i));
         }
     }
