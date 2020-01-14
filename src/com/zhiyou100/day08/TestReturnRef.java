@@ -19,7 +19,6 @@ public class TestReturnRef {
         ca = getObject();
         System.out.println(ca.value);
     }
-
     /**
      * 如果方法没加static ，方法必须被对象调用
      * 如果加了static，可以在方法中直接调用
