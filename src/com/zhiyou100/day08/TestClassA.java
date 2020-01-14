@@ -13,7 +13,6 @@ class ClasssA {
         System.out.println(value);
     }
 }
-
 class TestClassA {
     public static void main(String[] args) {
         ClasssA classA = new ClasssA();
