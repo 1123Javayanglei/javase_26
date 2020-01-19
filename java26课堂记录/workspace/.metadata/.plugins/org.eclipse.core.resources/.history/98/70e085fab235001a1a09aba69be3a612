@@ -1,0 +1,46 @@
+package com.zhiyou100.day08;
+
+public class Demo1_OOP2 {
+
+	public static void main(String[] args) {
+		//2 在主方法中 根据类创建对象
+		Car c1=new Car();
+		
+		//3 给对象的变量赋值
+		c1.color='红';
+		c1.carID="豫A55555";
+		c1.logo="BMW";
+		c1.money=1000000;
+		c1.speed=90;
+		
+		//4 调用对象的方法
+		c1.run();
+		c1.show();
+		
+		//注意5：一个源文件中可以定义多个类  但只能有一个public修饰的类  并且此类的名字必须和源文件名字一致
+		int sum=c1.add(1, 2);
+		System.out.println("1+2="+sum);//1+2=3
+		
+	}
+}
+//1 定义一个类 描述车这个类型
+class Car{//
+	//定义变量 表示车表面的数据
+	double speed;
+	String logo;
+    String  carID;
+	char color;
+	double money;
+	
+	//定义方法 表示车动态的功能
+	public void run() {
+		System.out.println("车牌是"+carID+"的车在以"+speed+"km/h的速度在跑");
+	}
+	public void show() {
+		System.out.println("这是一辆车：车牌为"+carID+",车标是"+logo+
+				",速度是"+speed+"km/h,价钱是"+money+"元,颜色是"+color+"色");
+	}
+	public int add(int a,int b) {
+		return a+b;
+	}
+}

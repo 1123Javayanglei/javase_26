@@ -1,0 +1,13 @@
+package com.zhiyou100.day06;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		int a=3,b;
+		if(true&&a++<0) {
+			b=1;
+		}
+
+	}
+
+}

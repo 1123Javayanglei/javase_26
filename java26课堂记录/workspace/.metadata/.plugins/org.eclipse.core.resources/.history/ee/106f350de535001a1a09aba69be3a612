@@ -1,0 +1,25 @@
+package com.zhiyou100.day08;
+public class Demo1_OOP6_this {
+
+	public static void main(String[] args) {
+		   Worker w1=new Worker();
+		   w1.test1(1);
+		   System.out.println(w1);//打印对象打印的是对象类型@对象的地址
+		   
+		   
+	}
+} 
+class Worker{
+	int a=10;
+	int b;
+	public void test1(int a) {
+		System.out.println("a="+a);//a=1  当局部变量和成员变量重名时  变量名默认指向的是局部变量
+		//计算机语言的原则：就近原则
+		System.out.println("this.a="+this.a);// 通过this.变量名来指向成员变量
+		this.test2();
+		System.out.println(this.b);//方法中调用成员时  前面默认有this.
+	}
+	public void test2() {
+		System.out.println("a="+a);//a=10
+	}
+}

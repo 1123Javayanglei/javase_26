@@ -1,0 +1,36 @@
+package com.zhiyou100.day07;
+
+public class Demo2_OOP1 {
+
+	public static void main(String[] args) {
+		 int[] arr;
+		 //2 在电脑中根据Person类型创建一个模型(对象)
+		 //对象创建需要在主方法中   必须先起个名字  对象创建通过关键字new 
+		 //格式：对象类型  对象名=new 对象类型();
+		 Person p1=new Person();
+		
+
+	}
+
+}
+// 创建一类：：描述人这个类型
+class Person{
+	//在类中通过变量来表示表面的数据 
+	//表面数据：年龄 性别 名字  身高  职位
+	int age;
+	char sex;
+	String name;//String表示字符串类型
+	double height;
+	String job;
+	//通过方法来表示动态的功能   注意：在oop中方法修饰符不再加static
+	//吃饭  自我介绍  跑步
+	public void eat(String foodName) {
+		System.out.println(name+"正在吃"+foodName);
+	}
+	public void show() {
+		System.out.println("我叫"+name+",今年"+age+"岁,身高"+height+"米,性别"+sex+",职位是"+job);
+	}
+	public void run() {
+		System.out.println(name+"正在跑步!!!");
+	}
+}

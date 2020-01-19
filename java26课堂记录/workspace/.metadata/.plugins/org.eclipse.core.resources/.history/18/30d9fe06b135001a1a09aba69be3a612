@@ -1,0 +1,13 @@
+package com.zhiyou100.day08;
+
+public class Demo1_OOP2 {
+
+	public static void main(String[] args) {
+	}
+}
+//定义一个类 描述车这个类型
+class Car{
+	//定义变量 表示车表面的数据
+	
+	//定义方法 表示车动态的功能
+}

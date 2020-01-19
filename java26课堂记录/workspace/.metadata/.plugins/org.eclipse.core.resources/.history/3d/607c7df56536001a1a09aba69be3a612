@@ -1,0 +1,31 @@
+package com.zhiyou100.day09;
+
+public class ZuoYe1 {
+
+	public static void main(String[] args) {
+	}
+//	1. （重载，实例变量）有以下代码：  实例变量：对象可以调用的变量
+//	class ClassA{
+	//	public void method(int value){
+		//	System.out.println(value);
+	//	}
+	//	public void method(){
+		//	System.out.println(value);
+	//	}
+	//	int value;
+//	}
+//	class TestClassA{
+	//	public static void main(String args[]){
+		//	ClassA classA = new ClassA();
+		//	classA.value = 10;
+		//	classA.method();
+		//	classA.method(20);
+	//	}
+ //	}
+//	请选择正确结果：
+//	A. 编译不通过
+//	B. 输出10 10
+//	C. 输出 10 20
+//	D. 输出0 20
+
+}

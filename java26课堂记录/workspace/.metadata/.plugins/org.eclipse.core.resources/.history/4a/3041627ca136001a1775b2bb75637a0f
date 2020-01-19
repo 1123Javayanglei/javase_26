@@ -1,0 +1,14 @@
+package com.zhiyou100.day09;
+
+public class LianXi1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	//1  ªÒ»°abcd  =  (ab+cd)*(ab+cd);
+	public static void  test1() {
+		
+	}
+
+}

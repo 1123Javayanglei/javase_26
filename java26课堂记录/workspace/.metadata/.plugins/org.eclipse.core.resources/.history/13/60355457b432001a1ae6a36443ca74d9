@@ -1,0 +1,24 @@
+package com.zhiyou100.day06;
+
+public class ErWeiArray1 {
+
+	public static void main(String[] args) {
+		//二维数组
+		int[][] arr=new int[3][4];
+		//int[][] arr ::::定义数组名arr
+		//new int[3][4]:::::创建一个二维数组对象
+		//=            :::::让数组名arr指向此数组对象
+		//3            :::::此二维数组中含有3个一维数组对象
+		//4            :::::每个一维数组中含有4个元素数据
+		
+		System.out.println(arr);//[[I@70dea4e
+		System.out.println(arr.length);//3 二维数组中一维数组的个数
+		System.out.println(arr[0]);//[I@5c647e05   二维数组arr中下标为0的一维数组对象
+		System.out.println(arr[1].length);//4   二维数组arr中下标为1的一维数组对象的元素个数
+		System.out.println(arr[0][1]);//0   二维数组arr中下标为0的一维数组对象中下标为1的元素
+		
+		
+
+	}
+
+}

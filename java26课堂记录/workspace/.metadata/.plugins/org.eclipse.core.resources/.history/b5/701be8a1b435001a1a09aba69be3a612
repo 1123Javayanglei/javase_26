@@ -1,0 +1,21 @@
+package com.zhiyou100.day08;
+
+public class Demo1_OOP3 {
+
+	public static void main(String[] args) {
+	    
+		
+	}
+}
+//在类中直接定义的变量---成员变量
+//在方法中定义的变量----局部变量
+class Demo{
+	int a=10;
+	int b=12;
+	public void test1(int c) {
+		int d=12;
+		for (int i = 0; i <5; i++) {
+			
+		}
+	}
+}

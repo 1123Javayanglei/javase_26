@@ -1,0 +1,17 @@
+package com.zhiyou100.day09;
+
+public class LianXi1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	//1  获取abcd  =  (ab+cd)*(ab+cd);
+	public static void  test1() {
+		//定义变量 跑完所有的四位数
+		for (int n = 1000; n < 10000; n++) {
+			
+		}
+	}
+
+}

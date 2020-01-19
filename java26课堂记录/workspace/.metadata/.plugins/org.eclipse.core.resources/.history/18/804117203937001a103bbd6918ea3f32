@@ -1,0 +1,60 @@
+package com.zhiyou100.day10;
+
+public class LianXi1 {
+
+	public static void hanoi(int n, char A, char B, char C) {
+        if (n == 1) {
+            move(A, C);
+        } else {
+            hanoi(n - 1, A, C, B);// 按ACB数序执行N-1的汉诺塔移动
+            move(A, C);             //  执行最大盘子移动
+            hanoi(n - 1, B, A, C);// 按BAC数序执行N-1的汉诺塔移动
+        }
+    }
+    private static void move(char A, char C) {//执行最大盘子的从A-C的移动
+        System.out.println("move:" + A + "--->" + C);
+    }
+
+    public static void main(String[] args) {
+//         System.out.println("移动汉诺塔的步骤：");
+//         hanoi(2, 'a', 'b', 'c');
+    	getSum2(10);
+    	//Exception in thread "main" java.lang.StackOverflowError
+    }
+    
+    //递归：方法自己调用自己
+    //求1到n的和
+    public static int getSum1(int n) {
+    	int sum=0;
+    	for (int i = 1; i <=n; i++) {
+			sum+=n;
+		}
+    	return sum;
+    	//n+(n-1)+(n-2)+(n-3)+.....+1
+    	//1到n的和=n  +  1到n-1的和
+    }
+    //求1到n的和
+    public static int getSum2(int n) {
+//    	//当n等于1 时sum=1
+    	if(n==1) {
+    		return 1;
+    	}
+    	//1到n的和  等于n加上  n-1到1的和
+    	int sum=n+getSum2(n-1);
+    	return sum;
+    }
+    
+    
+    
+    //螺旋填数的实现
+    /*
+     * 分析完后  通过二维数组可以实现此题
+     * */
+    public static int[][]  tianShu(int m,int n){
+    	//创建一个二维数组
+    	int[][] arr=new int[m][n];//m表示二维数组中一维数组的个数   n表示每个一维数组中的元素个数
+    	//给二维数组 中的所有元素赋值
+    	return null;
+    	
+    }
+}

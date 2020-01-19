@@ -1,0 +1,22 @@
+package com.zhiyou100.day08;
+public class Demo1_OOP6_this {
+
+	public static void main(String[] args) {
+		   Worker w1=new Worker();
+		   w1.test1(1);
+		   w1.
+		   
+	}
+} 
+class Worker{
+	int a=10;
+	public void test1(int a) {
+		System.out.println("a="+a);//a=1  当局部变量和成员变量重名时  变量名默认指向的是局部变量
+		//计算机语言的原则：就近原则
+		System.out.println("this.a="+this.a);// 通过this.成员来指向类的成员
+		this.test2();
+	}
+	public void test2() {
+		System.out.println("a="+a);//a=10
+	}
+}

@@ -1,0 +1,24 @@
+package com.zhiyou100.day09;
+
+public class LianXi1 {
+
+	public static void main(String[] args) {
+		test1();
+
+	}
+	//1  获取abcd  =  (ab+cd)*(ab+cd);
+	public static void  test1() {
+		//定义变量 跑完所有的四位数
+		for (int n = 1000; n < 10000; n++) {
+			 //由abcd获取ab和cd
+			 int ab=n/100;
+			 int cd=n%100;
+			 int sum=(ab+cd)*(ab+cd);
+			 if(sum==n) {
+				 System.out.println("n="+n);
+			 }
+			 
+		}
+	}
+
+}

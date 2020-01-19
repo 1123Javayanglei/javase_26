@@ -1,0 +1,33 @@
+package com.zhiyou100.day08;
+
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
+public class Demo1_OOP3 {
+
+	public static void main(String[] args) {
+	    
+		
+	}
+}
+//在类中直接定义的变量---成员变量
+//在方法中定义的变量----局部变量
+/*成员变量和基本变量的区别：
+ *    1 定义的位置不同 同时作用域也不同
+ *        成员变量在类中定义的
+ *        局部变量在方法中定义(包括方法列表和方法体)
+ *    2 
+ * 
+ * */
+class Demo{
+	int a=10;//成员变量a
+	int b=12;//成员变量b
+	int e;
+	public void test1(int c) {//局部变量c
+		int d=12;//局部变量d
+		int i;
+		System.out.println(e);
+		System.out.println(c);//方法调用时 需要给c赋值
+		//System.out.println(i);//The local variable i may not have been initialized
+		
+	}
+}

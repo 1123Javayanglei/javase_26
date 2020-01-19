@@ -1,0 +1,136 @@
+package com.zhiyou100.day06;
+
+public class ZuoYe1 {
+
+	public static void main(String[] args) {
+//		1 定义一个装10个int元素的数组  获取次大值
+		    //先获取最大值     然后再获取除了最大值以外的最大值
+			int[] arr= {1,6,9,0,9,8,6,7,3,4};//定义数组并起个名字
+			int max=arr[0];//定义变量记录最大值 并初始值arr[0]
+			//循环遍历数组 拿max和当前元素做比较  如果当前元素比max大 就让max记录当前元素的值
+			for (int i = 1; i < arr.length; i++) {
+				max=max<arr[i]?arr[i]:max;
+			}
+			int max2=0;//定义变量记录次大值
+			//max2赋值  赋数组中任意一个非max的元素的值
+			for (int i = 0; i < arr.length; i++) {
+				if(arr[i]!=max) {
+					max2=arr[i];
+					break;
+				}
+			}
+			//拿max2和所有的元素做比较：排除最大值
+			for (int i = 0; i < arr.length; i++) {
+				if(arr[i]!=max&&max2<arr[i]) {
+					max2=arr[i];
+				}
+			}
+			System.out.println("次大值是："+max2);
+		
+		
+//		2 定义一个装10个double元素的数组  把所有的元素保留最多1位数小数
+//		    {1.2234,1.456,1.678}  ---{1.2,1.4,1.6}
+			double[] arrDouble= {1.234,2.345,3.4567,5.5,6,5.789,7.909,9.0876,10.11,12.0};
+			for (int i = 0; i < arrDouble.length; i++) {
+				System.out.print(arrDouble[i]+(i==arrDouble.length-1?"\n":","));
+			}
+			for (int i = 0; i < arrDouble.length; i++) {
+				//获取当前元素小数点后两位以前对应的数字   1.256789--->125 
+				int n=(int)(arrDouble[i]*100);
+				//获取n的个位数和其他位数的值
+				int n1=n%10;
+				int n2=n/10;
+				//判断个位数是否大于等于5  如果成立n2+1
+				n2=(n1>=5?n2+1:n2);
+				arrDouble[i]=n2/10.0;	//13--->1.3 		
+			}
+			for (int i = 0; i < arrDouble.length; i++) {
+				System.out.print(arrDouble[i]+(i==arrDouble.length-1?"\n":","));
+			}
+			
+//		3  定义一个装10个int元素的数组并给元素赋值  更改元素的值：偶数元素-1 奇数元素*2
+			arr= new int[]{1,6,9,0,9,8,6,7,3,4};
+			for (int i = 0; i < arr.length; i++) {
+				System.out.print(arr[i]+(i==arr.length-1?"\n":","));
+			}
+			for (int i = 0; i < arr.length; i++) {
+				arr[i]=(arr[i]%2==0?arr[i]-1:arr[i]*2);
+			}
+			for (int i = 0; i < arr.length; i++) {
+				System.out.print(arr[i]+(i==arr.length-1?"\n":","));
+			}
+		
+		
+//		4  定义一个装10个int元素的数组arr并给元素赋值  再创建一个新的数组来装arr中所有的质数元素
+			arr= new int[]{11,6,19,0,9,8,6,7,3,4};
+			int geShu=0;//获取arr中所有质数元素的个数
+			for (int i = 0; i < arr.length; i++) {
+				//判断当前元素是不是质数
+				boolean d=true;//定义变量作为标签
+				for (int m = 2; m<=Math.sqrt(arr[i]);m++) {//定义变量 让其从2跑到sqrt(n)
+					if(arr[i]%m==0) {d=false;break;}
+				}
+				//通过判断标签的值是否更改 来判断arr[i]是否被除尽 进行判断arr[i]是不是质数
+				if(arr[i]>1&&d==true) {geShu++;}
+			}
+			int[] arrNew=new int[geShu];//创建数组
+			//给arrNew中元素赋值
+			for (int i = 0,j=0; i < arr.length; i++) {//j来记录arrNew的下标
+				//判断当前元素是不是质数
+				boolean d=true;//定义变量作为标签
+				for (int m = 2; m<=Math.sqrt(arr[i]);m++) {//定义变量 让其从2跑到sqrt(n)
+					if(arr[i]%m==0) {d=false;break;}
+				}
+				if(arr[i]>1&&d==true) {
+					arrNew[j]=arr[i];j++;
+				}
+			}
+			for (int i = 0; i < arrNew.length; i++) {
+				System.out.print(arrNew[i]+(i==arrNew.length-1?"\n":","));
+			}
+		
+		
+//		5  定义一个装10个int元素的数组arr并给元素赋值  打印数组如下
+//		       如数组：{1,4,5,6,7,3}
+//		       1   *
+//		       4   ****
+//		       5   *****
+//		       6   ******
+//		       7   *******
+//		       3   ***
+		arr= new int[]{11,6,19,0,9,8,6,7,3,4};
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+"\t");//打印元素的值
+			for (int j = 1; j <=arr[i]; j++) {//使用循环 打印arr[i]个星
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+		/*{1,3,5,6,2}
+		 * 1   3    5    6      2
+		 *               * 
+		 *          *    * 
+		 *          *    * 
+		 *     *    *    *    
+		 *     *    *    *      *      
+		 * *   *    *    *      *          
+		 * 
+		 * */
+		
+		
+		
+//		6   获取1到1000内满足条件的数的平均值： 
+//		        条件 ---必须是质数  并且 位数上含有0
+		
+		
+//		扩展题1： 判断一个数是不是完数
+//		       完数：n的所有因子之和等于n 那么n就是完数
+//		       因子：m可以除尽n m就是n的因子   但n不是n的因子
+//		       如：6的因子是 1  2  3  相加之和=6  所以6是完数
+//		           10的因子是 1 2 5  相加之和=8  所以10不是完数
+
+	}
+
+}

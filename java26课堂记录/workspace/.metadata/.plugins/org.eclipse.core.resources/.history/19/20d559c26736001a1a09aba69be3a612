@@ -1,0 +1,47 @@
+package com.zhiyou100.day09;
+
+public class ZuoYe1 {
+
+	public static void main(String[] args) {
+	}
+//	1. （重载，实例变量）有以下代码：  实例变量：对象可以调用的成员变量
+//	class ClassA{
+	//	public void method(int value){
+		//	System.out.println(value);//此处的value是局部变量
+	//	}
+	//	public void method(){
+		//	System.out.println(value);//此处的value是成员变量
+	//	}
+	//	int value;
+//	}
+//	class TestClassA{   //测试类：有主方法的类称之为测试类
+	//	public static void main(String args[]){
+		//	ClassA classA = new ClassA();//创建一个对象 并起个名字 叫classa
+		//	classA.value = 10;  //给对象的属性赋值
+		//	classA.method();    //通过对象调用方法：无参数的method方法
+		//	classA.method(20);  //通过对象调用方法：有参数的method方法
+	//	}
+ //	}
+//	请选择正确结果：
+//	A. 编译不通过
+//	B. 输出10 10
+//	C. 输出 10 20
+//	D. 输出0 20
+	
+//	2. （方法重载，函数返回值）有以下代码
+//	class ClassA{
+//		void method(){
+//			System.out.println("method()");
+//		}
+//		int method(int i){
+//			System.out.println("method(int)");
+//		}
+//		public static void main(String args[]){
+//			ClassA a = new ClassA();
+//			a.method();
+//			a.method(10);
+//		}
+//	}
+//	该程序是否能编译通过？如果可以，写出该程序运行结果。如果不能，请说明理
+
+}

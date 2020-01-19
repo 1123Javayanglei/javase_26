@@ -1,0 +1,38 @@
+package com.zhiyou100.day06;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		int a=3,b=0;
+		if(true&&a++>0) {
+			b++;
+		}
+		System.out.println("≤‚ ‘&&£∫£∫£∫£∫true&&true::a="+a+",b="+b);//4,1
+		
+		a=3;b=0;
+		if(false&&a++>0) {
+			b++;
+		}
+		System.out.println("≤‚ ‘&£∫£∫£∫£∫false&&true::a="+a+",b="+b);//3,0
+		
+		a=3;b=0;
+		if(true&a++>0) {
+			b++;
+		}
+		System.out.println("≤‚ ‘&£∫£∫£∫£∫true&true::a="+a+",b="+b);//4,1
+		
+		a=3;b=0;
+		if(false&a++>0) {
+			b++;
+		}
+		System.out.println("≤‚ ‘&£∫£∫£∫£∫false&true::a="+a+",b="+b);//4,0
+		
+		a=3;b=0;
+		if(true||a++>0) {
+			b++;
+		}
+		System.out.println("≤‚ ‘&£∫£∫£∫£∫true||true::a="+a+",b="+b);//3,0
+
+	}
+
+}

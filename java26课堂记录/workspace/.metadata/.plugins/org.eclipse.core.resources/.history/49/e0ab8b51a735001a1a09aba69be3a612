@@ -1,0 +1,46 @@
+package com.zhiyou100.day08;
+
+public class Demo1_OOP1 {
+
+	public static void main(String[] args) {
+		 //2 根据类创建对象
+		 Person p1=new Person(); 
+         //3 给对象的变量赋值
+		 //为什么p1这个对象 会有name age 变量呢
+		 //p1这个对象拥有那些数据 取决于Person类中定义了那些变量
+		 //p1这个对象拥有那些功能  取决于Person类中定义了那些方法
+		 p1.name="习近平";
+		 p1.age=65;
+		 p1.job="中华人名共和国主席";
+		 p1.sex='男';
+		 
+		 //注意事项1:一类可以创建多个对象  每个对象都是独立的个体
+		 //       每个对象都拥有一套类中定义的属于本对象的所有变量和方法
+		 Person p2=new Person();//又创建一个Person类型的对象
+		 //注意事项2：对象中的变量有默认初始值
+		 
+		 //4 调用对象的方法
+		 p1.eat("黄焖鸡");
+		 p1.show();
+		 p2.show();
+	}
+}
+//1 创建一个类描述人的类型
+class Person{
+	 //通过变量来表示表面的数据
+	 int age;
+	 char sex;
+	 String name;
+	 String job;
+	 //通过方法来表示动态的功能
+	 // 在面向对象中的方法 不要再加修饰符static
+	 public void eat(String foodName) {
+		 //类中定义的变量 在所有的方法中都可以调用
+		 System.out.println(name+"正在吃"+foodName+"饭");
+	 }
+	 public void show() {
+		 //打印输出语句中的字符串拼凑:字符串和变量的连接
+		 //变量前后必须有+作为连接符    字符串必须写在双引号中
+		 System.out.println("我叫"+name+",今年"+age+"岁,职位是"+job+",性别是"+sex+",1+1=2");
+	 }
+}

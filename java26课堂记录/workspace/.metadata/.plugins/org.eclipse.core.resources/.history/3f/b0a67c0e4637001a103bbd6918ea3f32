@@ -1,0 +1,104 @@
+package com.zhiyou100.day10;
+
+public class LianXi1 {
+
+	public static void hanoi(int n, char A, char B, char C) {
+        if (n == 1) {
+            move(A, C);
+        } else {
+            hanoi(n - 1, A, C, B);// 按ACB数序执行N-1的汉诺塔移动
+            move(A, C);             //  执行最大盘子移动
+            hanoi(n - 1, B, A, C);// 按BAC数序执行N-1的汉诺塔移动
+        }
+    }
+    private static void move(char A, char C) {//执行最大盘子的从A-C的移动
+        System.out.println("move:" + A + "--->" + C);
+    }
+
+
+    //递归：方法自己调用自己
+    //求1到n的和 非递归方式
+    public static int getSum1(int n) {
+    	int sum=0;
+    	for (int i = 1; i <=n; i++) {
+			sum+=n;
+		}
+    	return sum;
+    	//n+(n-1)+(n-2)+(n-3)+.....+1
+    	//1到n的和=n  +  1到n-1的和
+    }
+    //求1到n的和 递归方式
+    public static int getSum2(int n) {
+//    	//当n等于1 时sum=1
+    	if(n==1) {
+    		return 1;
+    	}
+    	//1到n的和  等于n加上  n-1到1的和
+    	return n+getSum2(n-1);
+    }
+    
+    //求n的阶乘：：n!=n*n-1*n-2*.....1
+    public static int getJC1(int n) {
+    	int sum=1;
+    	for (int m = 1; m <=n; m++) {
+			sum*=m;
+		}
+    	return sum;
+    }
+    //递归：n的阶乘=n乘以n-1的阶乘  边界是1 当n==1时 返回值是1
+    public static int getJC2(int n) {
+    	if(n==1) {return 1;}
+    	return n*getJC2(n-1);
+    }
+    
+    
+    
+    
+    //螺旋填数的实现
+    /*
+     * 分析完后  通过二维数组可以实现此题
+     * */
+    public static int[][]  tianShu(int m,int n){
+    	//创建一个二维数组
+    	int[][] arr=new int[m][n];//m表示二维数组中一维数组的个数   n表示每个一维数组中的元素个数
+    	int i=0,start=1;
+    	while(true) {
+    		if((i+1)>arr.length/2||(i+1)>arr[0].length/2) {
+    			break;
+    		}
+    		start=setArr(arr, i, start);
+    		i++;
+    	}
+    	return arr;
+    	
+    	
+    }
+    public static int setArr(int[][] arr,int i,int start) {
+    	
+    	for (int k = i; k <arr[0].length-i; k++) {
+			 arr[i][k]=start++;
+		}
+    	for (int k = i+1; k < arr.length-i; k++) {
+			arr[k][arr[0].length-i-1]=start++;
+		}
+    	for (int k = arr[0].length-i-2; k >=i ; k--) {
+			arr[arr.length-i-1][k]=start++;
+		}
+    	for (int k = arr[0].length-i-2; k >i ; k--) {
+			arr[k][i]=start++;
+		}
+    	return start;
+    }
+    
+    public static void main(String[] args) {
+             int[][] arr=tianShu(4,5);
+             for (int i = 0; i < arr.length; i++) {
+				for (int j = 0; j < arr[i].length; j++) {
+					System.out.print(arr[i][j]+(j==arr[i].length-1?"\n":","));
+				}
+			}
+ }
+ 
+    
+   
+}

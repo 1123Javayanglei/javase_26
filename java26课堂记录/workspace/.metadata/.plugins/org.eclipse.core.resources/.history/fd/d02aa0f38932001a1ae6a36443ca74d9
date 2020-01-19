@@ -1,0 +1,26 @@
+package com.zhiyou100.day06;
+
+public class PaiXu1_ShunXu {
+
+	public static void main(String[] args) {
+		int a=12,b=3;
+		System.out.println("a="+a+",b="+b);
+		
+		
+		
+		//依次拿当前元素和其后面的所有元素做比较
+		int[] arr= {1,5,1,9,0,3};
+		for (int i = 0; i < arr.length-1; i++) {
+			for (int j = i+1; j < arr.length; j++) {
+				  //当前元素是arr[i]    当前元素后面的元素是arr[j]
+				  //把大的排在左边 
+				  if(arr[i]<arr[j]) {
+					   int k=arr[i];
+					   arr[i]=arr[j];
+					   arr[j]=k;
+				  }
+			}
+		}
+	}
+
+}

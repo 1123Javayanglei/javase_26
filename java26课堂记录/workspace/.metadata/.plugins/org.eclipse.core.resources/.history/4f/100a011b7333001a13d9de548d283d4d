@@ -1,0 +1,148 @@
+package com.zhiyou100.day07;
+
+public class Demo1_Method2 {
+
+	public static void main(String[] args) {
+		//测试方法：qiuPJS
+        double pjs=qiuPJS();
+        System.out.println("获取1到100内所有质数的平均值="+pjs);
+
+
+	}
+	//return 有两个作用：1 把返回值返回给调用者  2 结束方法
+//	public static int test() {
+////		for (int i = 1; i <10; i++) {
+////			System.out.println("for循环过程中    i="+i);
+////			if(i==5) {
+////				return 1;
+////			}
+////		}
+//		return 1;
+//		System.out.println("for循环结束！！！！");
+//		return 2;
+//	}
+//    1 写方法 判断一个数是不是质数
+    /*
+     * 参数列表：一个整数：int a
+     * 返回值类型：boolean
+     * */
+	public static boolean isZhiShu1(int a) {
+		//定义标签  记录是否被除尽
+		boolean b=true;
+		//使用循环 让变量m从2判断a的开方
+		for (int m = 2; m <=Math.sqrt(a); m++) {
+			  if(a%m==0) {
+				  b=false;break;
+			  }
+		}
+		if(a!=1&&b==true) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public static boolean isZhiShu2(int a) {
+		//使用循环 让变量m从2判断a的开方
+		for (int m = 2; m <=Math.sqrt(a); m++) {
+			  if(a%m==0) {
+				  return false;//如果被除尽 肯定不是质数
+			  }
+		}
+		//如果for循环能执行完 说明a没有被除尽过  只需要判断a是不是1  
+		return a!=1;
+	}
+  
+
+//  2 写方法 获取1到100内所有质数的平均值
+	/*参数列表：无
+	 *返回值类型：平均数：double
+	 * */
+	public static double qiuPJS() {
+		double sum=0;
+		int geShu=0;
+		for (int n =1; n<=100; n++) {
+			//判断当前n是不是质数
+			boolean  b=true;
+			for (int m = 2; m <=Math.sqrt(n); m++) {
+				if(n%m==0) {
+					b=false;break;
+				}
+			}
+			if(n!=1&&b==true) {
+				//当前n是质数
+				sum+=n;geShu++;
+			}
+		}
+		//所有的n循环完后  获取平均数
+		return sum/geShu;
+	}
+
+//  3 写方法 判断一个年是不是闰年
+	/* 参数列表：年 int year
+	 * 返回值类型：boolean
+	 * */
+	public static boolean isRunNian1(int year) {
+		if(year%400==0) {
+			return true;
+		}
+		if(year%4==0&&year%100!=0) {
+			return true;
+		}
+		return false;
+	}
+	public static boolean isRunNian2(int year) {
+		return (year%400==0)||(year%4==0&&year%100!=0);
+	}
+
+//  4 写方法 获取指定年和指定月有多少天
+	/*参数列表：年和月 int year,int month
+	 *返回值类型:int 
+	 * */
+	public static int getDays1(int year,int month) {
+		int days;
+		switch(month) {
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+			    days=30;
+			    break;
+			case 2:
+				 if((year%4==0&&year%100!=0)||(year%400==0)) {
+					 days=29;
+				 }else {
+					 days=28;
+				 }
+				 break;
+			default:
+				 days=31;
+				 break;
+		}
+		return days;
+	}
+	
+	public static int getDays1(int year,int month) {
+		switch(month) {
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+			    days=30;
+			    break;
+			case 2:
+				 if((year%4==0&&year%100!=0)||(year%400==0)) {
+					 days=29;
+				 }else {
+					 days=28;
+				 }
+				 break;
+			default:
+				 days=31;
+				 break;
+		}
+		return days;
+	}
+
+//  5 写方法 打印99乘法表
+
+}

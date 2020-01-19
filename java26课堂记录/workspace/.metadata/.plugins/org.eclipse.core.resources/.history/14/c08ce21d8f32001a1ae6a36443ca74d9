@@ -1,0 +1,29 @@
+package com.zhiyou100.day06;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		int a=3,b=0;
+		if(true&&a++>0) {
+			b++;
+		}
+		System.out.println("a="+a+",b="+b);
+		a=3;b=0;
+		if(false&&a++>0) {
+			b++;
+		}
+		System.out.println("a="+a+",b="+b);
+		a=3;b=0;
+		if(false&a++>0) {
+			b++;
+		}
+		System.out.println("a="+a+",b="+b);
+		a=3;b=0;
+		if(false&a++>0) {
+			b++;
+		}
+		System.out.println("a="+a+",b="+b);
+
+	}
+
+}

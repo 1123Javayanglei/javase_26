@@ -1,0 +1,40 @@
+package com.zhiyou100.day08;
+public class Demo1_OOP4_OverLoad {
+
+	public static void main(String[] args) {
+		  Student  s1=new Student();
+		  int sum1=s1.add(1, 2);
+		  sum1=s1.add(2);
+		  double sum2=s1.add(1, 1.1);
+		  
+		  //System.out.println("sum1="+sum1);
+	      /*
+	       * 方法重载：同一个类中几个方法  方法名相同 参数列表不同的现象
+	       * 
+	       * 
+	       * */
+		
+	}
+}
+class  Student{
+	//求和：求两个int的和
+	public int  add(int a,int b) {
+		System.out.println("两个int参数！！");
+		return a+b;
+	}
+	//求和：求三个int的和
+	public int  add(int a,int b,int c) {
+		System.out.println("三个int参数！！");
+		return a+b+c;
+	}
+	//求和：求一个int和一个double的和
+	public double add(int a,double b) {
+		System.out.println("一个int 一个double");
+		return a+b;
+	}
+	//求和：求一个int和一个1的和
+	public int add(int a) {
+		System.out.println("一个int");
+		return a+1;
+	}
+} 

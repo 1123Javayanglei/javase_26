@@ -1,0 +1,10 @@
+package com.zhiyou100.day10;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		int[][] arr=new int[10][3];
+
+	}
+
+}

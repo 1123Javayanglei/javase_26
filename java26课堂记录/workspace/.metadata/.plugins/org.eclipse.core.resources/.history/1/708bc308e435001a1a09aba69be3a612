@@ -1,0 +1,18 @@
+package com.zhiyou100.day08;
+public class Demo1_OOP6_this {
+
+	public static void main(String[] args) {
+		   Worker w1=new Worker();
+		   w1.test(1);
+		   
+	}
+} 
+class Worker{
+	int a=10;
+	public void test1(int a) {
+		System.out.println("a="+a);//a=1
+	}
+	public void test2() {
+		System.out.println("a="+a);//a=1
+	}
+}

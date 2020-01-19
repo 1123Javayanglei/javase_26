@@ -1,0 +1,47 @@
+package com.zhiyou100.day06;
+
+public class PaiXu2_MaoPao {
+	public static void main(String[] args) {
+		 //冒泡排序：依次拿相邻的元素做比较
+		 int[] arr= {0,1,2,4,7,9,11};
+		 for (int i = 0; i < arr.length-1; i++) {
+			   for (int j = 0; j < arr.length-i-1; j++) {
+				     System.out.print("arr["+j+"]--arr["+(j+1)+"]\t");
+			   }
+			   System.out.println();
+		 }
+//		 arr[0]--arr[1]	arr[1]--arr[2]	arr[2]--arr[3]	arr[3]--arr[4]	arr[4]--arr[5]	
+//		 arr[0]--arr[1]	arr[1]--arr[2]	arr[2]--arr[3]	arr[3]--arr[4]	
+//		 arr[0]--arr[1]	arr[1]--arr[2]	arr[2]--arr[3]	
+//		 arr[0]--arr[1]	arr[1]--arr[2]	
+//		 arr[0]--arr[1]	
+		 
+		 for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+(i==arr.length-1?"\n":","));
+		 }
+		 for (int i = 0; i < arr.length-1; i++) {
+			   for (int j = 0; j < arr.length-i-1; j++) {
+				     //拿arr[j]和arr[j+1]做比较
+				     if(arr[j]<arr[j+1]) {
+				    	 int k=arr[j];
+				    	 arr[j]=arr[j+1];
+				    	 arr[j+1]=k;
+				     }
+			   }
+		 }
+		 
+		 for (int i = 0; i < arr.length-1; i++) {
+			   for (int j = i+1; j < arr.length; j++) {
+				     //拿arr[j]和arr[j+1]做比较
+				     if(arr[j]<arr[j+1]) {
+				    	 int k=arr[j];
+				    	 arr[j]=arr[j+1];
+				    	 arr[j+1]=k;
+				     }
+			   }
+		 }
+		 for (int i = 0; i < arr.length; i++) {
+				System.out.print(arr[i]+(i==arr.length-1?"\n":","));
+		 }
+	}
+}

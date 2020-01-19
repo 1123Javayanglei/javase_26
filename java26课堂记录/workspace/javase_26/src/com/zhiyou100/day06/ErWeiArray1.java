@@ -1,0 +1,44 @@
+package com.zhiyou100.day06;
+
+public class ErWeiArray1 {
+
+	public static void main(String[] args) {
+		//二维数组
+		int[][] arr=new int[3][4];//创建一个维数组并起个名字  执行元素的个数
+		//int[][] arr ::::定义数组名arr
+		//new int[3][4]:::::创建一个二维数组对象
+		//=            :::::让数组名arr指向此数组对象
+		//3            :::::此二维数组中含有3个一维数组对象
+		//4            :::::每个一维数组中含有4个元素数据
+		
+		System.out.println(arr);//[[I@70dea4e
+		System.out.println(arr.length);//3 二维数组中一维数组的个数
+		System.out.println(arr[0]);//[I@5c647e05   二维数组arr中下标为0的一维数组对象
+		System.out.println(arr[1].length);//4   二维数组arr中下标为1的一维数组对象的元素个数
+		System.out.println(arr[0][1]);//0   二维数组arr中下标为0的一维数组对象中下标为1的元素
+		
+		arr[0][0]=11;arr[1][0]=12;arr[1][1]=13;
+		arr=new int[][] {{1,2,3},{1,3,5,6,7,8},{1,2},{3}};//创建一个二维数组 并指定元素的具体值
+		
+		//遍历二维数组
+		for (int i = 0; i < arr.length; i++) {//遍历二维数组中的所有一维数组
+			for (int j = 0; j < arr[i].length; j++) {//遍历一维数组arr[i]中的所有元素
+				System.out.println("arr["+i+"]["+j+"]="+arr[i][j]);
+			}
+		}
+		
+		//求最大值
+		int max=arr[0][0];
+		//遍历二维数组所有元素 拿元素和max做比较
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				max=arr[i][j]>max?arr[i][j]:max;
+			}
+		}
+		System.out.println("最大值是："+max);
+		
+		
+
+	}
+
+}

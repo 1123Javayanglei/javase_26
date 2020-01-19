@@ -1,0 +1,13 @@
+package com.zhiyou100.day08;
+public class Demo1_OOP6_this {
+
+	public static void main(String[] args) {
+		
+	}
+} 
+class Worker{
+	int a=10;
+	public void test(int a) {
+		System.out.println();
+	}
+}

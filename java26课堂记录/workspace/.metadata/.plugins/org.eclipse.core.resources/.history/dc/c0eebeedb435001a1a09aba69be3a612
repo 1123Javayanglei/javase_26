@@ -1,0 +1,27 @@
+package com.zhiyou100.day08;
+
+public class Demo1_OOP3 {
+
+	public static void main(String[] args) {
+	    
+		
+	}
+}
+//在类中直接定义的变量---成员变量
+//在方法中定义的变量----局部变量
+/*成员变量和基本变量的区别：
+ *    1 定义的位置不同 同时作用域也不同
+ *        成员变量在类中定义的
+ *        局部变量在方法中定义(包括方法列表和方法体)
+ * 
+ * */
+class Demo{
+	int a=10;//成员变量a
+	int b=12;//成员变量b
+	public void test1(int c) {//局部变量c
+		int d=12;//局部变量d
+		for (int i = 0; i <5; i++) {//局部变量i
+			
+		}
+	}
+}
