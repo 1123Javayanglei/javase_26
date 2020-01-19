@@ -7,4 +7,4 @@
 
  - [Java XMind 脑图](https://github.com/1123Javayanglei/javase_26/tree/master/Java_Xmind)
  
- - [Java笔记 老师的笔记](https://github.com/1123Javayanglei/javase_26/tree/master/Java%E7%AC%94%E8%AE%B0)
+ - [Java26课堂记录 老师的笔记(https://github.com/1123Javayanglei/javase_26/tree/master/java26%E8%AF%BE%E5%A0%82%E8%AE%B0%E5%BD%95)
