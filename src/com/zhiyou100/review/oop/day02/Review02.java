@@ -1,4 +1,4 @@
-package com.zhiyou100.review;
+package com.zhiyou100.review.oop.day02;
 
 /**
  * @author yanglei
