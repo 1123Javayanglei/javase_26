@@ -6,7 +6,8 @@ package com.zhiyou100.review.oop.day05;
  */
 public class Demo04Super {
     public static void main(String[] args) {
-
+        BasePlusSalesEmployee basePlusSalesEmployee = new  BasePlusSalesEmployee("杨磊",11,10,0.1,100);
+        System.out.println(basePlusSalesEmployee.getSalary(11));
 
     }
 }
@@ -14,6 +15,9 @@ public class Demo04Super {
 class Employee {
     /**
      * 创建Employee(员工类)
+     * 私有化 名字 name,生日 birthMonth
+     * 提供 get,set 方法，判断数据有效性
+     * 提供了 有参和无参数的构造方法
      */
     private String name;
     private int birthMonth;
@@ -60,7 +64,7 @@ class Employee {
 
 class SalariedEmployee extends Employee {
     /**
-     * SalariedEmployee：Employee的子类，拿固定工资的员工。属性：月薪
+     * SalariedEmployee：Employee的子，拿固定工资的员工。属性：月薪
      */
     private double salary = 0;
 
@@ -77,9 +81,8 @@ class SalariedEmployee extends Employee {
     }
 
     SalariedEmployee(double salary, String name, int birthMonth) {
+        super(name,birthMonth);
         this.salary = salary;
-        this.setName(name);
-        this.setBirthMonth(birthMonth);
     }
 
     @Override
