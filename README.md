@@ -8,7 +8,7 @@
 #### 内存图
 [![静态内存图](https://img.shields.io/badge/%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98%E5%9B%BE-Stars-blue)](https://github.com/1123Javayanglei/javase_26/blob/master/src/com/zhiyou100/review/oop/day05/%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98%E5%9B%BE.md)
 [![创建对象内存图](https://img.shields.io/badge/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%86%85%E5%AD%98%E5%9B%BE-stars-blue)](https://github.com/1123Javayanglei/javase_26/blob/master/src/com/zhiyou100/review/oop/day02/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%86%85%E5%AD%98%E5%9B%BE.md)
-[![继承内存图](https://img.shields.io/badge/%E7%BB%A7%E6%89%BF%E5%86%85%E5%AD%98%E5%9B%BE-stars-blue)](https://github.com/1123Javayanglei/myPicture/blob/master/images/%E7%BB%A7%E6%89%BF%E5%86%85%E5%AD%98%E5%9B%BE.jpeg)
+[![继承内存图](https://img.shields.io/badge/%E7%BB%A7%E6%89%BF%E5%86%85%E5%AD%98%E5%9B%BE-stars-blue)](https://github.com/1123Javayanglei/javase_26/blob/df456ebcc60dd6f3e58b185b8e53fe03d55e7892/src/com/zhiyou100/review/oop/day06/%E7%BB%A7%E6%89%BF%E5%86%85%E5%AD%98%E5%9B%BE.md)
 ***
 #### 目录
  - [src 代码](https://github.com/1123Javayanglei/javase_26/tree/master/src/com/zhiyou100)
