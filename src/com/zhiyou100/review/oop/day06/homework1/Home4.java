@@ -9,7 +9,11 @@ package com.zhiyou100.review.oop.day06.homework1;
  */
 public class Home4 {
     public static void main(String[] args) {
-
+        Complex complex = new Complex(1, 3);
+        System.out.println(complex.toStringOne());
+        Complex complex1=new Complex(3,5);
+        Complex complex2=complex.add(complex1);
+        System.out.println(complex2.toStringOne());
     }
 }
 class Complex{
@@ -20,8 +24,20 @@ class Complex{
         this.real=real;
         this.im=im;
     }
+    public String toStringOne(){
+        return real+im+"i";
+    }
 
     Complex add(Complex complex){
+        /*
+         * @name: add
+         * @description: TODO : this.XX  为当前对象, 加法
+         * @param complex
+         * @return: com.zhiyou100.review.oop.day06.homework1.Complex
+         * @date: 2020/2/11 2:45 下午
+         * @auther: YangLei
+         *
+        */
         double real=this.real+complex.real;
         double im=this.im+complex.im;
         return new Complex(real,im);

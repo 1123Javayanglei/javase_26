@@ -9,15 +9,9 @@ package com.zhiyou100.review.oop.day06.homework1;
  */
 public class Home02 {
     public static void main(String[] args) {
-        Worker worker = new Worker("zhangsan",25,2500);
-         worker.address = new Address("北京市海淀区清华园1号", "100084");
-//        worker.address.zipCode="fads";
-//        worker.address.address="fdasf";
-        System.out.println(worker);
-        System.out.println(worker.address);
-        System.out.println(worker.address.address);
-        System.out.println(worker.address.zipCode);
-
+        Worker worker = new Worker("zhangsan", 25, 2500);
+        worker.setAddress(new Address("fags","234"));
+        worker.printAddress();
     }
 }
 
@@ -31,17 +25,61 @@ class Worker {
      * @date: 2020/2/10 6:11 下午
      * @auther: YangLei
      */
-    String name;
-    int age;
-    double salary;
-    Address address;
+    private String name;
+    private int age;
+    private double salary;
+    private Address address;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+    public void printAddress(){
+        /*
+         * @name: printAddress
+         * @description: TODO  提供一个打印方法，用来打印地址
+         * @return: void
+         * @date: 2020/2/11 4:51 下午
+         * @auther: YangLei
+         *
+        */
+        System.out.println(getAddress().getAddress()+" "+getAddress().getZipCode());
+    }
+
     Worker() {
     }
 
     Worker(String name, int age, double salary) {
-        this.name=name;
-        this.age=age;
-        this.salary=salary;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
     }
 
     void work() {
@@ -52,14 +90,34 @@ class Worker {
         return hours;
     }
 }
-class Address{
-    String address;
-    String zipCode;
-    Address(){
+
+class Address {
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    private String zipCode;
+
+    Address() {
 
     }
-    Address(String address,String zipCode){
-        this.address=address;
-        this.zipCode=zipCode;
+
+    Address(String address, String zipCode) {
+        this.address = address;
+        this.zipCode = zipCode;
     }
 }
