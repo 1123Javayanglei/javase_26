@@ -25,6 +25,9 @@ public class DemoPolymorphism02 {
         };
         System.out.println(totalTax(incomes));
 
+        Income stringTest=new StringText(100);
+        System.out.println(stringTest.getTax());
+        System.out.println(stringTest.sb);
 
     }
 
@@ -64,6 +67,7 @@ class Income {
      * @author: YangLei
      */
     protected double income;
+    String sb="你是个一个sb";
 
     public Income(double income) {
         this.income = income;
@@ -132,5 +136,16 @@ class RoyaltyIncome extends Income {
     @Override
     public double getTax() {
         return income * 0.2;
+    }
+}
+class StringText extends Income{
+    String a="你是250";
+    public StringText(double income) {
+        super(income);
+    }
+    @Override
+    public double getTax() {
+        System.out.println(a);
+        return super.getTax();
     }
 }
