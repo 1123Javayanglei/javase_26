@@ -17,11 +17,12 @@ public class DomePolymorphism07 {
      * 并且保证替换不同种类的灯泡台灯类代码不被修改。
      */
     public static void main(String[] args) {
-        RedAbstractBulb redAbstractBulb =new RedAbstractBulb("红灯");
-        GreenAbstractBulb greenAbstractBulb =new GreenAbstractBulb("绿灯");
+        AbstractBulb redAbstractBulb =new RedAbstractBulb("红灯");
+        AbstractBulb greenAbstractBulb =new GreenAbstractBulb("绿灯");
         Lamp lamp=new Lamp(redAbstractBulb);
         lamp.on();
-
+        lamp=new Lamp(greenAbstractBulb);
+        lamp.on();
     }
 }
 abstract class AbstractBulb {

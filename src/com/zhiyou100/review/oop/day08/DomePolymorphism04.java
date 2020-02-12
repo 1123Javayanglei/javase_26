@@ -9,7 +9,7 @@ package com.zhiyou100.review.oop.day08;
  */
 public class DomePolymorphism04 {
     public static void main(String[] args) {
-
+//        Cat cat=new Cat();
     }
 
     public static void test1(Cat cat) {

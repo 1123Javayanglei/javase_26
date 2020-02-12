@@ -10,7 +10,7 @@ package com.zhiyou100.review.oop.day08;
 public class DomePolymorphism05 {
     public static void main(String[] args) {
         test02(new Cat01("滚"));
-        test02(new Cat01("撒手没"));
+        test02(new Dog01("撒手没"));
     }
 
     public static void test02(Animal animal) {
@@ -47,12 +47,12 @@ class Cat01 extends Animal {
 
     @Override
     void eat() {
-        System.out.println(name);
+        System.out.println(name+" 🐱 吃🐟");
     }
 
     @Override
     void sport() {
-        System.out.println(name);
+        System.out.println(name+" 晒 🌞");
     }
 }
 
@@ -64,11 +64,11 @@ class Dog01 extends Animal {
 
     @Override
     void eat() {
-        System.out.println(name);
+        System.out.println(name+" 🐶 吃 🦴");
     }
 
     @Override
     void sport() {
-        System.out.println(name);
+        System.out.println(name+" 拿 🐭");
     }
 }
