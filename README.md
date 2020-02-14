@@ -9,6 +9,7 @@
 [![静态内存图](https://img.shields.io/badge/%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98%E5%9B%BE-Stars-blue)](https://github.com/1123Javayanglei/javase_26/blob/master/src/com/zhiyou100/review/oop/day05/%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98%E5%9B%BE.md)
 [![创建对象内存图](https://img.shields.io/badge/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%86%85%E5%AD%98%E5%9B%BE-stars-blue)](https://github.com/1123Javayanglei/javase_26/blob/master/src/com/zhiyou100/review/oop/day02/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%86%85%E5%AD%98%E5%9B%BE.md)
 [![继承内存图](https://img.shields.io/badge/%E7%BB%A7%E6%89%BF%E5%86%85%E5%AD%98%E5%9B%BE-stars-blue)](https://github.com/1123Javayanglei/javase_26/blob/df456ebcc60dd6f3e58b185b8e53fe03d55e7892/src/com/zhiyou100/review/oop/day06/%E7%BB%A7%E6%89%BF%E5%86%85%E5%AD%98%E5%9B%BE.md)
+[![多态内存图](https://img.shields.io/badge/%E5%A4%9A%E6%80%81%E5%86%85%E5%AD%98%E5%9B%BE-stars-blue)](https://github.com/1123Javayanglei/javase_26/blob/ed42cab81d3cbb89ac8621741a5cdc99a2bc0fe5/src/com/zhiyou100/review/oop/day10/%E5%A4%9A%E6%80%81%E5%86%85%E5%AD%98%E5%9B%BE.md)
 ***
 #### 目录
  - [src 代码](https://github.com/1123Javayanglei/javase_26/tree/master/src/com/zhiyou100)
@@ -20,4 +21,4 @@
  
  - [Java26课堂记录 老师的笔记](https://github.com/1123Javayanglei/javase_26/tree/master/java26%E8%AF%BE%E5%A0%82%E8%AE%B0%E5%BD%95)
 
-- [课堂录屏](https://www.bilibili.com/video/av84168454)
+- [课堂录屏](https://space.bilibili.com/52704344)
