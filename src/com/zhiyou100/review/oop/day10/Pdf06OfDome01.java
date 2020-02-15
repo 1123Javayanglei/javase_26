@@ -9,8 +9,15 @@ package com.zhiyou100.review.oop.day10;
  */
 public class Pdf06OfDome01 {
     public static void main(String[] args) {
-        String name = "123456";
-        System.out.println(name.length());
+        Account a1 = new Account();
+
+        Account a2 = new Account();
+
+        System.out.println(a1.getId());
+        //输出 100001
+
+        System.out.println(a2.getId());
+        //输 100002
     }
 }
 
@@ -19,16 +26,19 @@ class Account {
      * id 账户id
      * balance 账户余额
      */
-    private long id;
+    final long id = 100000;
+    static long idCunt = 1;
+
+    public long getId() {
+
+        return id + idCunt++;
+    }
+
     private double balance;
     private String password;
 
-    public long getId() {
-        return id;
-    }
+    public Account() {
 
-    public void setId(long id) {
-        this.id = id;
     }
 
     public double getBalance() {
@@ -57,31 +67,20 @@ class Account {
         }
     }
 
-    public Account(long id, String password) {
-        this.id = id;
-        this.password = password;
-    }
-
-    public Account() {
-    }
-
-    public Account(long id, double balance, String password) {
-        this.id = id;
+    public Account(double balance, String password) {
         this.balance = balance;
         this.password = password;
     }
 }
 
 class SavingAccount extends Account {
+
     /**
      * SavingAccount 储蓄账户
      * interestRate 存款利率
      */
     private double interestRate;
 
-    public SavingAccount(long id, double balance, String password) {
-        super(id, balance, password);
-    }
 
     public SavingAccount(long id, String password, double interestRate) {
         super(id, password);
@@ -92,19 +91,6 @@ class SavingAccount extends Account {
         return interestRate;
     }
 
-    public SavingAccount() {
-
-    }
-
-    public SavingAccount(double interestRate) {
-        this.interestRate = interestRate;
-    }
-
-
-    public SavingAccount(long id, double balance, String password, double interestRate) {
-        super(id, balance, password);
-        this.interestRate = interestRate;
-    }
 
     public void setInterestRate(double interestRate) {
         /**
@@ -128,9 +114,6 @@ class CreditAccount extends Account {
         this.creditLine = creditLine;
     }
 
-    public CreditAccount(long id, double balance, String password) {
-        super(id, balance, password);
-    }
 
     public double getCreditLine() {
         return creditLine;
@@ -140,54 +123,48 @@ class CreditAccount extends Account {
         this.creditLine = creditLine;
     }
 
-    public CreditAccount() {
-    }
 
-    public CreditAccount(double creditLine) {
-        this.creditLine = creditLine;
-    }
-
-    public CreditAccount(long id, double balance, String password, double creditLine) {
-        super(id, balance, password);
-        this.creditLine = creditLine;
-    }
 }
 
 class Bank {
     /**
      * 如果一个类没有使用到实例成员，最好定义为static静态的
+     *
      * @param id
      * @param password
      * @param type
      * @return
      */
-   static Account openAccount(long id, String password, int type) {
-        if (type == 0) {
-            return new Account(id, 0, password);
-        }
-        if (type == 1) {
-            return new SavingAccount(id, 0, password);
-        }
-        if (type == 2) {
-            return new CreditAccount(id, 0, password);
-        }
-        return null;
-    }
-
-   static double deposit(Account a, double amount) {
+//   static Account openAccount(long id, String password, int type) {
+//        if (type == 0) {
+//            return new Account(id, 0, password);
+//        }
+//        if (type == 1) {
+//            return new SavingAccount(id, 0, password);
+//        }
+//        if (type == 2) {
+//            return new CreditAccount(id, 0, password);
+//        }
+//        return null;
+//    }
+    static double deposit(Account a, double amount) {
         a.setBalance(amount);
         return a.getBalance();
     }
 
-   static double withdraw(Account a, double amount) {
-        /**
-         * 不考虑类型
-         */
-        if (a.getBalance() <= 0) {
-            return a.getBalance();
-        } else {
+    static double withdraw(Account a, double amount) {
+        if (a instanceof CreditAccount) {
+            double max = a.getBalance();
+            CreditAccount creditAccount = (CreditAccount) a;
+            if (max + creditAccount.getCreditLine() >= amount) {
+                creditAccount.setCreditLine(amount - creditAccount.getCreditLine());
+                return creditAccount.getCreditLine() + max - amount;
+            }
+        }
+        if (a.getBalance() >= amount) {
             a.setBalance(a.getBalance() - amount);
             return a.getBalance();
         }
+        return 0;
     }
 }
