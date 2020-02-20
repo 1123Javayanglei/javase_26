@@ -49,8 +49,16 @@ public class Demo01OfObject {
     }
 }
 
-class Student {
+class Student extends Demo01{
 
+
+    public Student() {
+    }
+
+    public Student(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
 }
 
 class Demo01 {
