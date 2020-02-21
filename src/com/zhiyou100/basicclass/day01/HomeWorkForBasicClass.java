@@ -94,28 +94,30 @@ class Teacher {
          */
         if (object instanceof Teacher) {
             Teacher teacher = (Teacher) object;
-            return this.name.equals(((Teacher) object).name) && this.gender.equals(((Teacher) object).gender) && Math.abs(this.age - ((Teacher) object).age) <= 5 && this.subject.equals(((Teacher) object).subject) && Math.abs(this.salary - ((Teacher) object).salary) <= 100;
+            boolean flag= (this.name.equals(teacher.name))&& (this.gender.equals(teacher.gender)) && (Math.abs(this.age - teacher.age) <= 5) && (this.subject.equals(teacher.subject)) && (Math.abs(this.salary - teacher.salary) <= 100);
+            // Mark一下
+            return MyEquaUtil.compareString(this.name,teacher.name);
         }
         return false;
     }
-    public boolean equalse(Object obj) {
-        //判断传进来的参数类 是否和本；类类型一致
-        if(2>1) {
-            //如果类型一致 此参数超父类中没有我们要比的属性 所以【向下转型】 使对象成为我们需要的类型
+
+}
+class MyEquaUtil{
+    public static boolean compareString(String string1,String string2){
+        if (string1==null&&string2==null){
             return true;
-//			Teacher t1=(Teacher)obj;
-//			//向下转型后 我们开始比较属性是否【基本】一致
-//			 //名字相同 性别相同 年龄相差5岁以内  课程相同 工资相差100元内
-//			if(this.name.equals(t1.name)&&this.sex==t1.sex&&this.subject.equals(t1.subject)) {//判断名字,性别,课程是否一致
-//				if(this.age>=t1.age||this.age<=t1.age) {	//判断年龄是否相差不大于五岁
-//					if(this.salary>=t1.salary||this.salary<=t1.salary) {	//判断工资相差是否在条件内
-//						return true;
-//					}
-//				}
-//			}
+        }
+        if (string1.equals(string2)){
+            return true;
         }else {
             return false;
         }
-    }		//重写equalse 返回值为boolean类型 参数是超父类 object类
+    }
+    public static boolean compareNumber(int a,int b,int c){
+        /**
+         * 判断 a-b是否小于等于c
+         */
+        return Math.abs(a-b)<=c;
+    }
 }
 
