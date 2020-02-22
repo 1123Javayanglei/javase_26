@@ -47,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582384647060</updated>
       <workItem from="1582384650763" duration="813000" />
+      <workItem from="1582386078110" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1582384766987</created>
@@ -55,7 +56,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582384766987</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试git">
+      <created>1582386103284</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582386103284</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,7 +72,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加" />
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="测试git" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试git" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="23" key="CommitChangelistDialog2" timestamp="1582386103149">
