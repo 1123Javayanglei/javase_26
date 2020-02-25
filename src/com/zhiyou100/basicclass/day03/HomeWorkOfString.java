@@ -14,7 +14,8 @@ import static java.lang.Character.getNumericValue;
  */
 public class HomeWorkOfString {
     public static void main(String[] args) {
-
+        String s="色情在爆炸";
+        System.out.println(MyString.filterSensitiveWords(s));
     }
 }
 
@@ -312,9 +313,16 @@ class MyString {
         stringArr[4] = "枪";
         // 把敏感词放一个字符串数组
         for (String s : stringArr) {
-            into = into.replace(s, "*");
+            into = into.replace(s, getStarts(s));
         }
         // 遍历敏感词数组，替换
         return into;
+    }
+    public static String getStarts(String s){
+        String newString="";
+        for (int i = 0; i < s.length(); i++) {
+            newString+="*";
+        }
+        return newString;
     }
 }
