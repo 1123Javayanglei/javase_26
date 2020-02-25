@@ -14,17 +14,44 @@ import static java.lang.Character.getNumericValue;
  */
 public class HomeWorkOfString {
     public static void main(String[] args) {
-        String s="色情在爆炸";
-        System.out.println(MyString.filterSensitiveWords(s));
+        String s = "11223344556677aaaabaaabbb";
+        System.out.println(MyString.changeTruth(s));
+        System.out.println(MyString.change(s));
+
     }
 }
 
 class MyString {
+    public static String changeTruth(String s){
+        /**
+         * @name: changeTruth
+         * @param: String s
+         * @description: TODO 去掉叠词
+         * @date: 2020/2/25 1:19 下午
+         * @return: String
+        */
+        String ss="";
+        // 定义字符串，记录结果
+        ss+=s.charAt(0);
+        // 第一个字符必须加入ss中
+        for (int i = 1; i < s.length(); i++) {
+            // 遍历字符串s，获取当前字符c和前面的字母cc，判断c=cc，如果不等于，就把c加入到ss中
+            char c=s.charAt(i);
+            // 获取当前字符
+            char cc=s.charAt(i-1);
+            // 获取当前字符的上一个字符
+            if (cc!=c){
+                // 判断上一个字符是否等于当前字符
+                ss+=c;
+            }
+        }
+        return ss;
+    }
     public static String change(String s) {
         /**
          * @name: change
          * @param: String s
-         * @description: TODO 去掉s中的所有重复元素，去掉叠词
+         * @description: TODO 去掉s中的所有重复元素 理解错了
          * @date: 2020/2/24 7:00 下午
          * @return: String
          */
@@ -104,6 +131,7 @@ class MyString {
     }
 
     public static int getInt(String s) {
+        // Mark
         /**
          * @name: getInt
          * @param: String s
@@ -120,12 +148,11 @@ class MyString {
             char charInString = s.charAt(i);
             if (charInString >= '0' && charInString <= '9') {
                 // 找到了数字 ，放入数组，下标+1
-
                 int a = getNumericValue((int) charInString);
                 charsArray[charTag++] = a;
             }
         }
-
+//        System.out.println("charTag= "+charTag);
         int charNot32 = 0;
         // charNot32 是 放数字数组的大小
         for (int i = charsArray.length - 1; i >= 0; i--) {
@@ -135,13 +162,18 @@ class MyString {
                 break;
             }
         }
-        Integer[] charsArrayNew = new Integer[charNot32];
+//        System.out.println("最大下标 "+charNot32);
+        Integer[] charsArrayNew = new Integer[charTag];
+        // 下标+1
         // 新建一个数组 最大下标是 charsArray的第一个空下标
-        for (int i = 0; i < charNot32; i++) {
+        for (int i = 0; i < charTag; i++) {
+            // 范围 [0,charNot32]
             charsArrayNew[i] = charsArray[i];
             // 把 charsArray 赋给 charsArrayNew
         }
         Arrays.sort(charsArrayNew, Comparator.reverseOrder());
+//        System.out.println("old "+Arrays.toString(charsArray));
+//        System.out.println("new "+Arrays.toString(charsArrayNew));
         // 倒着排序
         String original = "";
         // 把数组放在字符串中
@@ -149,13 +181,13 @@ class MyString {
             original += charsArrayNew[i];
             // 拼接
         }
-        if (original.length() > 10) {
+        int intMaxLength = 10;
+        if (original.length() >= intMaxLength) {
             //  int max 2147483647, int min -2147483648
             System.out.println("弟弟,int 放不下 ——> int max 2147483647, int min -2147483648");
             System.exit(1);
         }
-        int i = Integer.parseInt(original.trim());
-        return i;
+        return Integer.parseInt(original.trim());
         // 转换为int
     }
 
@@ -218,7 +250,12 @@ class MyString {
                 break;
             }
         }
-        return s.substring(starterTag, endTag + 1);
+        if (starterTag == 0 && endTag == 0) {
+            // 若整个字符串都是空格，返回一个空
+            return "";
+        } else {
+            return s.substring(starterTag, endTag + 1);
+        }
         // substring 范围是 [str,end)
     }
 
@@ -241,7 +278,7 @@ class MyString {
         boolean numberFlag = false;
         // 数字
         boolean finalFlag = false;
-        // 是否包含 大小写字母和数字
+        // 是否包含 字母(大写或小写)和数字
         for (int i = 0; i < pwd.length(); i++) {
             char tempChar = pwd.charAt(i);
             boolean lowercaseFlagIn = tempChar >= 'a' && tempChar <= 'z';
@@ -260,13 +297,10 @@ class MyString {
             }
             if (numberFlagIn) {
                 numberFlag = true;
-                continue;
             }
         }
-        if (capitalFlag && lowercaseFlag && numberFlag) {
-            finalFlag = true;
-            // 若 同时包含 大、小写字母和数字，返回true
-        }
+        finalFlag = ((capitalFlag || lowercaseFlag) && numberFlag);
+        // 若 同时包含 大、小写字母和数字，返回true
         return finalFlag && nameLengthFlag && pwdLengthFlag;
     }
 
@@ -318,10 +352,18 @@ class MyString {
         // 遍历敏感词数组，替换
         return into;
     }
-    public static String getStarts(String s){
-        String newString="";
+
+    public static String getStarts(String s) {
+        /**
+         * @name: getStarts
+         * @param: String s
+         * @description: TODO 有几个字符就返回几个 *
+         * @date: 2020/2/25 10:37 上午
+         * @return: String
+         */
+        String newString = "";
         for (int i = 0; i < s.length(); i++) {
-            newString+="*";
+            newString += "*";
         }
         return newString;
     }
