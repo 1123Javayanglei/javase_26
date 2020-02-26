@@ -30,7 +30,7 @@ public class OPPStatic {
         d1.staticName = "1111";
         System.out.println("d1.staticName=" + d1.staticName + " d2.staticName=" + d2.staticName);
         // out 1111 1111
-        System.out.println("Demo1.staticName=" + Demo1.staticName);
+        System.out.println("Demo1OfPackagingGroup.staticName=" + Demo1.staticName);
         // out 1111
 
         d1.sayHi();
@@ -63,7 +63,7 @@ class Demo1 {
 
     static void sayHey() {
 //        this;
-        // 'com.zhiyou100.oop.day02.Demo1.this' cannot be referenced from a static context 在静态方法中不能使用this
+        // 'com.zhiyou100.oop.day02.Demo1OfPackagingGroup.this' cannot be referenced from a static context 在静态方法中不能使用this
 //        System.out.println("say Hey!"+name);
         // Non-static 字段 'name' cannot be referenced from a static context 在静态方法中无法调用非静态变量
         System.out.println("say Hey!"+staticName);
