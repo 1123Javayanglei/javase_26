@@ -76,6 +76,13 @@ public class Demo03OfTest {
     }
 
     public static int myParseInt(String s) {
+        /**
+         * @name: myParseInt
+         * @param:   String s
+         * @description: TODO string 转 int
+         * @date: 2020/2/27 10:46 上午
+         * @return:  int
+        */
         boolean loadTag = true;
         for (int i = 0; i < s.length(); i++) {
             char tem = s.charAt(i);
@@ -123,6 +130,7 @@ public class Demo03OfTest {
             double positiveNumber=myParseInt(s1);
             double minus=intToDouble(s2);
             return positiveNumber+minus;
+            // double 加减法会精度丢失
         } else {
             // 没有小数点的
             return (double) (myParseInt(s));

@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day04/Demo03OfTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day04/Demo1OfPackagingGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day04/Demo2OfCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Body.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Demo01OfInnerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Demo02OfInnerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Demo03OfInner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Demo04OfInner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Demo05OfInner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/MyOuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Outer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day05/Outer01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java_Xmind/basicclass/basic class.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/basicclass/basic class.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day03/MyString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day03/MyString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day02/OPPStatic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day02/OPPStatic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/oop/day02/OPPStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/oop/day02/OPPStatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day04/Demo03OfTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day04/Demo03OfTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day04/Demo03OfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day04/Demo03OfTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +57,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Demo03OfTest">
-    <configuration name="Demo03OfTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day04.Demo03OfTest" />
+  <component name="RunManager" selected="Application.Demo05OfInner">
+    <configuration name="Body" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day05.Body" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day04.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,11 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo12_BaoZhuang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.Demo12_BaoZhuang" />
+    <configuration name="Demo02OfInnerClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day05.Demo02OfInnerClass" />
+      <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo1OfPackagingGroup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day04.Demo1OfPackagingGroup" />
+    <configuration name="Demo03OfInner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day05.Demo03OfInner" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day04.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo2OfCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day04.Demo2OfCharacter" />
+    <configuration name="Demo04OfInner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day05.Demo04OfInner" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day04.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeWorkOfString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day03.HomeWorkOfString" />
+    <configuration name="Demo05OfInner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day05.Demo05OfInner" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day03.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo03OfTest" />
-        <item itemvalue="Application.Demo12_BaoZhuang" />
-        <item itemvalue="Application.Demo2OfCharacter" />
-        <item itemvalue="Application.Demo1OfPackagingGroup" />
-        <item itemvalue="Application.HomeWorkOfString" />
+        <item itemvalue="Application.Demo05OfInner" />
+        <item itemvalue="Application.Demo04OfInner" />
+        <item itemvalue="Application.Demo03OfInner" />
+        <item itemvalue="Application.Demo02OfInnerClass" />
+        <item itemvalue="Application.Body" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +147,8 @@
       <workItem from="1582386078110" duration="265000" />
       <workItem from="1582387967471" duration="433000" />
       <workItem from="1582557891272" duration="7038000" />
-      <workItem from="1582683232077" duration="19853000" />
+      <workItem from="1582683232077" duration="23529000" />
+      <workItem from="1582797667514" duration="7206000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1582384766987</created>
@@ -175,46 +181,62 @@
       <screen x="-1024" y="0" width="1024" height="768" />
     </state>
     <state x="-794" y="35" key="#Demo12_BaoZhuang/-1024.0.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1582693875083" />
+    <state x="320" y="105" key="#Inspections" timestamp="1582821632659">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="320" y="105" key="#Inspections/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582821632659" />
+    <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1582822997735">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582822997735" />
     <state x="348" y="23" key="CommitChangelistDialog2" timestamp="1582386103149">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="348" y="23" key="CommitChangelistDialog2/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582386103149" />
-    <state width="1398" height="203" key="GridCell.Tab.0.bottom" timestamp="1582715918906">
+    <state width="1398" height="225" key="GridCell.Tab.0.bottom" timestamp="1582823226969">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.bottom/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499269" />
-    <state width="1398" height="203" key="GridCell.Tab.0.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715918906" />
-    <state width="1398" height="203" key="GridCell.Tab.0.center" timestamp="1582715918903">
+    <state width="1398" height="225" key="GridCell.Tab.0.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582823226969" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1582785595234" />
+    <state width="1398" height="225" key="GridCell.Tab.0.center" timestamp="1582823226967">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.center/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499267" />
-    <state width="1398" height="203" key="GridCell.Tab.0.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715918903" />
-    <state width="1398" height="203" key="GridCell.Tab.0.left" timestamp="1582715918903">
+    <state width="1398" height="225" key="GridCell.Tab.0.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582823226967" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1582785595232" />
+    <state width="1398" height="225" key="GridCell.Tab.0.left" timestamp="1582823226967">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.left/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499266" />
-    <state width="1398" height="203" key="GridCell.Tab.0.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715918903" />
-    <state width="1398" height="203" key="GridCell.Tab.0.right" timestamp="1582715918905">
+    <state width="1398" height="225" key="GridCell.Tab.0.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582823226967" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1582785595232" />
+    <state width="1398" height="225" key="GridCell.Tab.0.right" timestamp="1582823226968">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.right/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499268" />
-    <state width="1398" height="203" key="GridCell.Tab.0.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715918905" />
-    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1582715812939">
+    <state width="1398" height="225" key="GridCell.Tab.0.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582823226968" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1582785595233" />
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1582785595236">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715812939" />
-    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1582715812937">
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1582785595236" />
+    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1582785595235">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715812937" />
-    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1582715812937">
+    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1582785595235" />
+    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1582785595234">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715812937" />
-    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1582715812938">
+    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1582785595234" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1582785595235">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582715812938" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1582785595235" />
     <state x="229" y="79" key="SettingsEditor" timestamp="1582384954252">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -223,10 +245,11 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="320" y="176" key="Vcs.Push.Dialog.v2/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582386117983" />
-    <state x="404" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1582683232678">
+    <state x="404" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1582797668195">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="404" y="272" key="com.intellij.ide.util.TipDialog/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582683232678" />
+    <state x="404" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1582797668195" />
     <state x="-1024" y="23" width="1024" height="745" key="dock-window-1" timestamp="1582716427568">
       <screen x="-1024" y="23" width="1024" height="745" />
     </state>
@@ -238,9 +261,9 @@
     </state>
     <state x="-1024" y="0" width="1024" height="768" key="dock-window-2/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582717256830" />
     <state x="-1024" y="23" width="1024" height="723" maximized="true" key="dock-window-2/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582716427569" />
-    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup" timestamp="1582685036919">
+    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup" timestamp="1582815284863">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582685036919" />
+    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582815284863" />
   </component>
 </project>
