@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author: YangLei
  * @date: 2020/2/21 11:50 上午
  */
-public class HomeWorkMath {
+ class HomeWorkMath {
     public static void main(String[] args) {
 
         for (int i = 0; i < 100; i++) {
@@ -20,7 +20,7 @@ public class HomeWorkMath {
     }
 }
 
-class HomeWorkOfMath {
+public class HomeWorkOfMath {
     public static double myRounding(double in) {
         /*
          * @name: rounding
