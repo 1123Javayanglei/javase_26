@@ -1,4 +1,4 @@
-package com.zhiyou100.basicclass.day07;
+package com.zhiyou100.basicclass.day07.preview;
 
 /**
  * @packageName: javase_26

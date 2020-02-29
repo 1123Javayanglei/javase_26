@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/learn/RegularExpressionLearn01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/learn/RegularExpressionLearn02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/learn/RegularExpressionLearn03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java_Xmind/basicclass/basic class.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/basicclass/basic class.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/HomeWorkMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/HomeWorkMath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/HomeWorkOfMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/HomeWorkOfMath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day02/HomeWorkMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day02/HomeWorkOfMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day07/PreviewRegularExpressions01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day07/PreviewRegularExpressions02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day07/PreviewRegularExpressions03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day07/PreviewRegularExpressions04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/preview/PreviewRegularExpressions01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/preview/PreviewRegularExpressions02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/preview/PreviewRegularExpressions03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/PreviewRegularExpressions04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/preview/PreviewRegularExpressions04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,52 +64,52 @@
       <recent name="com.zhiyou100.basicclass.day06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PreviewRegularExpressions04">
-    <configuration name="PreviewRegularExpressions01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.PreviewRegularExpressions01" />
-      <module name="javase_26" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PreviewRegularExpressions02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.PreviewRegularExpressions02" />
-      <module name="javase_26" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PreviewRegularExpressions03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.PreviewRegularExpressions03" />
-      <module name="javase_26" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RegularExpressionLearn03">
     <configuration name="PreviewRegularExpressions04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.PreviewRegularExpressions04" />
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.preview.PreviewRegularExpressions04" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.preview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegularExpressionLearn01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.learn.RegularExpressionLearn01" />
+      <module name="javase_26" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegularExpressionLearn02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.learn.RegularExpressionLearn02" />
+      <module name="javase_26" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegularExpressionLearn03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.learn.RegularExpressionLearn03" />
+      <module name="javase_26" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.learn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,7 +122,7 @@
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.preview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RegularExpressionLearn03" />
+        <item itemvalue="Application.RegularExpressionLearn02" />
+        <item itemvalue="Application.RegularExpressionLearn01" />
         <item itemvalue="Application.PreviewRegularExpressions04" />
         <item itemvalue="Application.TestIO" />
-        <item itemvalue="Application.PreviewRegularExpressions03" />
-        <item itemvalue="Application.PreviewRegularExpressions02" />
-        <item itemvalue="Application.PreviewRegularExpressions01" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +156,7 @@
       <workItem from="1582557891272" duration="7038000" />
       <workItem from="1582683232077" duration="23529000" />
       <workItem from="1582797667514" duration="11361000" />
-      <workItem from="1582861262190" duration="14527000" />
+      <workItem from="1582861262190" duration="19243000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1582384766987</created>
@@ -201,29 +205,29 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="348" y="23" key="CommitChangelistDialog2/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582386103149" />
-    <state width="1398" height="171" key="GridCell.Tab.0.bottom" timestamp="1582903914919">
+    <state width="1398" height="171" key="GridCell.Tab.0.bottom" timestamp="1582969233048">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.bottom/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499269" />
-    <state width="1398" height="171" key="GridCell.Tab.0.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582903914919" />
+    <state width="1398" height="171" key="GridCell.Tab.0.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582969233048" />
     <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1582785595234" />
-    <state width="1398" height="171" key="GridCell.Tab.0.center" timestamp="1582903914917">
+    <state width="1398" height="171" key="GridCell.Tab.0.center" timestamp="1582969233047">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.center/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499267" />
-    <state width="1398" height="171" key="GridCell.Tab.0.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582903914917" />
+    <state width="1398" height="171" key="GridCell.Tab.0.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582969233047" />
     <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1582785595232" />
-    <state width="1398" height="171" key="GridCell.Tab.0.left" timestamp="1582903914917">
+    <state width="1398" height="171" key="GridCell.Tab.0.left" timestamp="1582969233046">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.left/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499266" />
-    <state width="1398" height="171" key="GridCell.Tab.0.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582903914917" />
+    <state width="1398" height="171" key="GridCell.Tab.0.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582969233046" />
     <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1582785595232" />
-    <state width="1398" height="171" key="GridCell.Tab.0.right" timestamp="1582903914918">
+    <state width="1398" height="171" key="GridCell.Tab.0.right" timestamp="1582969233047">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.right/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499268" />
-    <state width="1398" height="171" key="GridCell.Tab.0.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582903914918" />
+    <state width="1398" height="171" key="GridCell.Tab.0.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582969233047" />
     <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1582785595233" />
     <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1582785595236">
       <screen x="0" y="23" width="1440" height="834" />

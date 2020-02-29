@@ -1,4 +1,4 @@
-package com.zhiyou100.basicclass.day07;
+package com.zhiyou100.basicclass.day07.preview;
 
 
 import com.zhiyou100.basicclass.day02.HomeWorkOfMath;
