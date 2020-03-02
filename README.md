@@ -2,7 +2,7 @@
 ***
 #### about me
 [![哔哩哔哩账号](https://img.shields.io/badge/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9-%E5%85%B3%E6%B3%A8-blue)](https://space.bilibili.com/52704344)
-
+[![我的个人博客](https://img.shields.io/badge/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-read-66ccff)](https://javayanglei.tk/)
 
 ***
 #### 内存图
@@ -17,7 +17,7 @@
  - [lib jar包](https://github.com/1123Javayanglei/javase_26/tree/master/lib)
  
 
- - [Java XMind 脑图](https://github.com/1123Javayanglei/javase_26/tree/master/Java_Xmind)
+ - [Java XMind 脑图](https://github.com/1123Javayanglei/javase_26/tree/master/JavaXmind)
  
  - [Java26课堂记录 老师的笔记](https://github.com/1123Javayanglei/javase_26/tree/master/java26%E8%AF%BE%E5%A0%82%E8%AE%B0%E5%BD%95)
 

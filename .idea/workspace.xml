@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreJava习题/chap7static_final_abstract.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/CoreJava习题/chap7static_final_abstract.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/ day005.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/ day005.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/ day10.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/ day10.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/day02.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/day02.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/day03.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/day03.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/day04.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/day04.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/day06.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/day06.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/day08.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/day08.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/OOP/day09.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/OOP/day09.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Xmind/basicclass/basic class.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Xmind/basicclass/basic class.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +147,7 @@
       <workItem from="1582861262190" duration="19600000" />
       <workItem from="1583081822781" duration="464000" />
       <workItem from="1583114692401" duration="300000" />
+      <workItem from="1583123257482" duration="282000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1582384766987</created>
