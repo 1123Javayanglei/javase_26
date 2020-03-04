@@ -137,7 +137,7 @@ public class HomeWorkOfMath {
         return (int) (min + (int) (Math.random() * (max - min + 1)));
     }
 
-    public static int judgeTheDaysOfTheMonth(int year, int month) {
+    public static long judgeTheDaysOfTheMonth(long year, long month) {
         /*
          * @name: judgeTheDaysOfTheMonth
          * @param: int year ,int month
@@ -151,8 +151,8 @@ public class HomeWorkOfMath {
          * 平年的2月份是28天
          * 闰年的2月份是29天
          */
-        int maxDay = 0;
-        switch (month) {
+        long maxDay = 0;
+        switch ((int) month) {
             case 1:
             case 3:
             case 5:
