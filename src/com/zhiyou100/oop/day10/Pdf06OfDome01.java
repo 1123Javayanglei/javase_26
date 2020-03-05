@@ -26,7 +26,8 @@ class Account {
      * id 账户id
      * balance 账户余额
      */
-    final long id = 100000;
+    final Long id= 100000L;
+    // 自动装箱
     static long idCunt = 1;
 
     public long getId() {

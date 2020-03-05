@@ -4,18 +4,22 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/ComparativeMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/DataClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/DateAndMillisecondValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/DateFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/DateHomeWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/DateToSting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/GetAndSetDataClass.java" afterDir="false" />
+    <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="测试git">
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day09/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day10/Pdf09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day10/TesLamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreJava习题/chap9object.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/CoreJava习题/chap9object.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day08/RecordsTheOrderInWhichObjectsAreCreated.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day08/RecordsTheOrderInWhichObjectsAreCreated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day02/HomeWorkOfMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day02/HomeWorkOfMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Worker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/CreditAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/CreditAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/SavingAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day10/SavingAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/oop/day06/homework1/Home02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/oop/day06/homework1/Home02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/oop/day10/Pdf06OfDome01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/oop/day10/Pdf06OfDome01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +66,13 @@
       <recent name="com.zhiyou100.basicclass.day06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DateHomeWork">
-    <configuration name="ComparativeMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day09.ComparativeMethod" />
+  <component name="RunManager" selected="Application.TestLamp">
+    <configuration name="Number11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day10.Number11" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day09.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateAndMillisecondValues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day09.DateAndMillisecondValues" />
+    <configuration name="TestGetClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day10.TestGetClass" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day09.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateFormat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day09.DateFormat" />
+    <configuration name="TestInnerClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day10.TestInnerClass" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day09.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateHomeWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day09.DateHomeWork" />
+    <configuration name="TestLamp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day10.TestLamp" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day09.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateToSting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day09.DateToSting" />
+    <configuration name="TestMyclass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day10.TestMyclass" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day09.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DateHomeWork" />
-        <item itemvalue="Application.ComparativeMethod" />
-        <item itemvalue="Application.DateFormat" />
-        <item itemvalue="Application.DateToSting" />
-        <item itemvalue="Application.DateAndMillisecondValues" />
+        <item itemvalue="Application.TestLamp" />
+        <item itemvalue="Application.TestInnerClass" />
+        <item itemvalue="Application.TestMyclass" />
+        <item itemvalue="Application.Number11" />
+        <item itemvalue="Application.TestGetClass" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +165,7 @@
       <workItem from="1583167147386" duration="1145000" />
       <workItem from="1583169553474" duration="8000" />
       <workItem from="1583212457347" duration="5053000" />
-      <workItem from="1583307528871" duration="15465000" />
+      <workItem from="1583307528871" duration="25661000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1582384766987</created>
@@ -198,70 +202,80 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="320" y="105" key="#Inspections/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582821632659" />
-    <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1583232066683">
+    <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1583400310180">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583232066683" />
+    <state x="533" y="128" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394737806" />
+    <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583400310180" />
     <state x="472" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582858662471">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="472" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582858662471" />
-    <state x="348" y="23" key="CommitChangelistDialog2" timestamp="1582386103149">
+    <state x="348" y="23" key="CommitChangelistDialog2" timestamp="1583336371500">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="348" y="23" key="CommitChangelistDialog2/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582386103149" />
+    <state x="348" y="23" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1583336371500" />
     <state x="0" y="23" key="FileDocumentManager.FileCacheConflict" timestamp="1583313609213">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="0" y="23" key="FileDocumentManager.FileCacheConflict/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583313609213" />
-    <state width="1398" height="101" key="GridCell.Tab.0.bottom" timestamp="1583326166715">
+    <state width="1398" height="206" key="GridCell.Tab.0.bottom" timestamp="1583400841964">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.bottom/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499269" />
-    <state width="1398" height="101" key="GridCell.Tab.0.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583326166715" />
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1582785595234" />
-    <state width="1398" height="101" key="GridCell.Tab.0.center" timestamp="1583326166714">
+    <state width="1398" height="150" key="GridCell.Tab.0.bottom/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394627855" />
+    <state width="1398" height="206" key="GridCell.Tab.0.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583400841964" />
+    <state width="699" height="387" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1583336339129" />
+    <state width="1398" height="206" key="GridCell.Tab.0.center" timestamp="1583400841963">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.center/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499267" />
-    <state width="1398" height="101" key="GridCell.Tab.0.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583326166714" />
-    <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1582785595232" />
-    <state width="1398" height="101" key="GridCell.Tab.0.left" timestamp="1583326166713">
+    <state width="1398" height="150" key="GridCell.Tab.0.center/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394627854" />
+    <state width="1398" height="206" key="GridCell.Tab.0.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583400841963" />
+    <state width="699" height="387" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1583336339128" />
+    <state width="1398" height="206" key="GridCell.Tab.0.left" timestamp="1583400841963">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.left/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499266" />
-    <state width="1398" height="101" key="GridCell.Tab.0.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583326166713" />
-    <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1582785595232" />
-    <state width="1398" height="101" key="GridCell.Tab.0.right" timestamp="1583326166714">
+    <state width="1398" height="150" key="GridCell.Tab.0.left/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394627853" />
+    <state width="1398" height="206" key="GridCell.Tab.0.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583400841963" />
+    <state width="699" height="387" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1583336339127" />
+    <state width="1398" height="206" key="GridCell.Tab.0.right" timestamp="1583400841963">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.right/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582712499268" />
-    <state width="1398" height="101" key="GridCell.Tab.0.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583326166714" />
-    <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1582785595233" />
-    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1583169265351">
+    <state width="1398" height="150" key="GridCell.Tab.0.right/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394627854" />
+    <state width="1398" height="206" key="GridCell.Tab.0.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583400841963" />
+    <state width="699" height="387" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1583336339128" />
+    <state width="1398" height="259" key="GridCell.Tab.1.bottom" timestamp="1583399874567">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583169265351" />
+    <state width="1398" height="259" key="GridCell.Tab.1.bottom/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583399874567" />
     <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1582785595236" />
-    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1583169265351">
+    <state width="1398" height="259" key="GridCell.Tab.1.center" timestamp="1583399874566">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583169265351" />
+    <state width="1398" height="259" key="GridCell.Tab.1.center/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583399874566" />
     <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1582785595235" />
-    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1583169265350">
+    <state width="1398" height="259" key="GridCell.Tab.1.left" timestamp="1583399874566">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583169265350" />
+    <state width="1398" height="259" key="GridCell.Tab.1.left/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583399874566" />
     <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1582785595234" />
-    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1583169265351">
+    <state width="1398" height="259" key="GridCell.Tab.1.right" timestamp="1583399874567">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583169265351" />
+    <state width="1398" height="259" key="GridCell.Tab.1.right/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583399874567" />
     <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1582785595235" />
     <state x="229" y="79" key="SettingsEditor" timestamp="1583168683203">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="229" y="79" key="SettingsEditor/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583168683203" />
+    <state x="450" y="179" width="540" height="540" key="StructurePopup" timestamp="1583394640222">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="450" y="179" width="540" height="540" key="StructurePopup/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394640222" />
     <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1582386117983">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -286,18 +300,19 @@
     </state>
     <state x="-1024" y="0" width="1024" height="768" key="dock-window-2/-1024.0.1024.768/0.23.1440.834@0.23.1440.834" timestamp="1582717256830" />
     <state x="-1024" y="23" width="1024" height="723" maximized="true" key="dock-window-2/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582716427569" />
-    <state x="434" y="60" key="refactoring.ChangeSignatureDialog" timestamp="1583323545449">
+    <state x="434" y="60" key="refactoring.ChangeSignatureDialog" timestamp="1583399903431">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="434" y="60" key="refactoring.ChangeSignatureDialog/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583323545449" />
+    <state x="434" y="60" key="refactoring.ChangeSignatureDialog/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583399903431" />
     <state x="385" y="200" key="run.anything.popup" timestamp="1582899610492">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="385" y="200" key="run.anything.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582899610492" />
-    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup" timestamp="1583313536923">
+    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup" timestamp="1583394900380">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583313536923" />
+    <state x="385" y="95" width="670" height="711" key="search.everywhere.popup/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394597800" />
+    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583394900380" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -306,6 +321,11 @@
           <url>file://$PROJECT_DIR$/src/com/zhiyou100/preview/day12/Demo14.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day10/Pdf09.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

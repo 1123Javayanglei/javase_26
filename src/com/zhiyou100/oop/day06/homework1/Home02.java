@@ -16,80 +16,90 @@ public class Home02 {
 }
 
 
-class Worker {
-    /**
-     * @name: Worker
-     * @description: TODO  工人类
-     * @param null
-     * @return:
-     * @date: 2020/2/10 6:11 下午
-     * @auther: YangLei
-     */
-    private String name;
-    private int age;
-    private double salary;
-    private Address address;
+    class Worker {
+        @Override
+        public boolean equals(Object obj) {
+            return super.equals(obj);
+        }
 
-    public String getName() {
-        return name;
-    }
+        @Override
+        public String toString() {
+            return super.toString();
+        }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-    public void printAddress(){
-        /*
-         * @name: printAddress
-         * @description: TODO  提供一个打印方法，用来打印地址
-         * @return: void
-         * @date: 2020/2/11 4:51 下午
+        /**
+         * @name: Worker
+         * @description: TODO  工人类
+         * @param null
+         * @return:
+         * @date: 2020/2/10 6:11 下午
          * @auther: YangLei
-         *
-        */
-        System.out.println(getAddress().getAddress()+" "+getAddress().getZipCode());
-    }
+         */
+        private String name;
+        private int age;
+        private double salary;
+        private Address address;
 
-    Worker() {
-    }
+        public String getName() {
+            return name;
+        }
 
-    Worker(String name, int age, double salary) {
-        this.name = name;
-        this.age = age;
-        this.salary = salary;
-    }
+        public void setName(String name) {
+            this.name = name;
+        }
 
-    void work() {
+        public int getAge() {
+            return age;
+        }
 
-    }
+        public void setAge(int age) {
+            this.age = age;
+        }
 
-    int work(int hours) {
-        return hours;
+        public double getSalary() {
+            return salary;
+        }
+
+        public void setSalary(double salary) {
+            this.salary = salary;
+        }
+
+        public Address getAddress() {
+            return address;
+        }
+
+        public void setAddress(Address address) {
+            this.address = address;
+        }
+        public void printAddress(){
+            /*
+             * @name: printAddress
+             * @description: TODO  提供一个打印方法，用来打印地址
+             * @return: void
+             * @date: 2020/2/11 4:51 下午
+             * @auther: YangLei
+             *
+            */
+            System.out.println(getAddress().getAddress()+" "+getAddress().getZipCode());
+        }
+
+        Worker() {
+        }
+
+        Worker(String name, int age, double salary) {
+            this.name = name;
+            this.age = age;
+            this.salary = salary;
+        }
+
+        void work() {
+
+        }
+
+        int work(int hours) {
+            return hours;
+        }
     }
-}
 
 class Address {
     private String address;
