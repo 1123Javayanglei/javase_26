@@ -264,3 +264,95 @@ package com.zhiyou100.basicclass.day14;
 //    @Override
 //    public void m() throws FileNotFoundException{}
 //}
+
+//import java.io.*;
+//import java.sql.*;
+//
+//class TestMyException {
+//    public static void main(String[] args) {
+//        try {
+//            System.out.println("main1");
+//            ma();
+//            System.out.println("main2");
+//        } catch (Exception e) {
+//            System.out.println("Catch Exception in main");
+//            System.out.println(e.getMessage());
+//            // 打印  sql exception in mb
+//        }
+//    }
+//
+//    public static void ma() throws IOException {
+//        try {
+//            System.out.println("ma1");
+//            mb();
+//            System.out.println("ma2");
+//        } catch (SQLException e) {
+//            System.out.println("Catch SQLException in ma");
+//            throw new IOException(e.getMessage());
+//            // 是throw，不是print
+//        } catch (Exception e) {
+//            System.out.println("Catch Exception in ma");
+//            System.out.println(e.getMessage());
+//        }
+//    }
+//
+//    public static void mb() throws SQLException {
+//        throw new SQLException("sql exception in mb");
+//    }
+//}
+
+// class TestException{
+//    public static void main(String[] args){
+//        try{
+//            System.out.println("main1");
+//            ma();
+//            System.out.println("main2");
+//        }catch(Exception e){
+//            System.out.println("In Catch");
+//        }
+//    }
+//    public static void ma(){
+//        System.out.println("ma1");
+//        throw new NullPointerException();
+//        System.out.println("ma2");
+//        // 遥不可及的声明 无法访问的语句
+//    }
+//}
+//
+//import java.io.*;
+//import java.sql.*;
+//
+//class TestException {
+//    public static void main(String args[]) {
+//        try {
+//            ma();
+//        }
+////        catch (NumberFormatException npe) {} 过
+////        catch (IOException ioe){} 过
+////        catch (SQLException sqle){} 不过
+//        catch (Exception e) {
+//        }
+//    }
+//
+//    public static void ma() throws IOException {
+//    }
+//}
+
+ class TestTryAndTry {
+    public static void main(String args[]) {
+        System.out.println(ma());
+    }
+
+    public static int ma() {
+        try {
+            return 100;
+        } finally {
+            try {
+                return 200;
+            } finally {
+                return 500;
+            }
+//            return 1000;
+        }
+    }
+}
