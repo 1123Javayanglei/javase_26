@@ -8,7 +8,7 @@ package com.zhiyou100.basicclass.day14.Pdf11Of14;
  * @date: 2020/3/10 7:32 下午
  */
 public class User {
-    /** 
+    /**
      * @name: User
      * @date: 2020/3/10 7:34 下午
      * @description: TODO 创建一个 User 类，包括：用户登录名（ username）、密码（password）、用 户真实姓名（name）、电子邮件地址（email）属性和相应的构造方法及 set/get 方 法。

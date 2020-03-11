@@ -1,5 +1,7 @@
 package com.zhiyou100.basicclass.day14;
 
+import java.util.Scanner;
+
 /**
  * @packageName: javase_26
  * @className: Pdf11
@@ -68,6 +70,8 @@ package com.zhiyou100.basicclass.day14;
 //        // 前面已经抛出了，不需要执行
 //    }
 //}
+
+
 //class MyException1 extends Exception {
 //    // 已检查异常
 //
@@ -89,10 +93,12 @@ package com.zhiyou100.basicclass.day14;
 //        super(message);
 //    }
 //}
-
+//
 //class TestMyException {
 //    public static void main(String[] args) {
-//        int n=1;
+//        Scanner scanner = new Scanner(System.in);
+//
+//        int n = scanner.nextInt();
 ////读入 n
 //        try {
 //            m(n);
@@ -101,7 +107,8 @@ package com.zhiyou100.basicclass.day14;
 //            ex1.printStackTrace();
 //        } catch (MyException2 ex2) {
 ////输出 ex2 的详细信息
-//            ex2.printStackTrace();
+//            System.out.println(ex2.getMessage());
+////            ex2.getMessage();
 ////并把 ex2 重新抛出
 //            throw ex2;
 //        }
@@ -119,6 +126,7 @@ package com.zhiyou100.basicclass.day14;
 //        }
 //    }
 //}
+
 
 //class MyException extends Throwable {
 //}
@@ -169,28 +177,29 @@ package com.zhiyou100.basicclass.day14;
 
 //import java.io.*;
 //import java.sql.*;
-// class TestTryCatch{
-//    public static void main(String args[]){
-//        try{
+//
+//class TestTryCatch {
+//    public static void main(String args[]) {
+//        try {
 //            ma(10);
 //            System.out.println("No Exception");
-//        }
-//        catch(EOFException ex1){
+//        } catch (EOFException ex1) {
 //            System.out.println("ex1");
-//        }
-//        catch(IOException ex2) {
+//        } catch (IOException ex2) {
 //            System.out.println("ex2");
-//        }
-//        catch(SQLException ex3) {
+//        } catch (SQLException ex3) {
 //            System.out.println("ex3");
+//        } catch (Exception ex4) {
+//            System.out.println("ex4");
 //        }
 //    }
-//    public static void ma(int n) throws Exception{
-//        if (n == 1){
+//
+//    public static void ma(int n) throws Exception {
+//        if (n == 1) {
 //            throw new IOException();
-//        }else if (n == 2){
+//        } else if (n == 2) {
 //            throw new EOFException();
-//        }else if (n == 3) {
+//        } else if (n == 3) {
 //            throw new SQLException();
 //        }
 //    }
@@ -338,7 +347,7 @@ package com.zhiyou100.basicclass.day14;
 //    }
 //}
 
- class TestTryAndTry {
+class TestTryAndTry {
     public static void main(String args[]) {
         System.out.println(ma());
     }
@@ -353,6 +362,32 @@ package com.zhiyou100.basicclass.day14;
                 return 500;
             }
 //            return 1000;
+            // 无法访问的语句
         }
     }
 }
+
+//class TestTryAndTry2 {
+//    public static void main(String args[]) {
+//        System.out.println(ma());
+//    }
+//
+//    public static int ma() {
+//        int n = 1;
+//        try {
+//            n++;
+////            System.out.println(n/1);
+//            System.out.println("try::n="+n);
+//            return n;
+//        } catch (Exception e) {
+//            n++;
+//            System.out.println("catch::n="+n);
+//            return n;
+//        } finally {
+//            n++;
+//            System.out.println("finally::n="+n);
+////            return n;
+//        }
+//    } 
+//}
+
