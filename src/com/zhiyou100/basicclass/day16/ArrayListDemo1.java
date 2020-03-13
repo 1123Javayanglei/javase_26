@@ -3,6 +3,7 @@ package com.zhiyou100.basicclass.day16;
 import com.zhiyou100.basicclass.day15.collectionDemo.CollectionDemo01;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @packageName: javase_26
@@ -45,10 +46,21 @@ public class ArrayListDemo1 {
         System.out.println(arrayList.remove(4)+"删除后：");
         CollectionDemo01.printCollection1(arrayList);
 
+        System.out.println("==========");
+        System.out.println("我是第一个更改后："+arrayList.set(0,"我更改了"));
+
+
         text1(0);
+        // 集合只能装基本数据类型
         // 自动装箱，int to Integer，Integer向上转型为Object
     }
     static void text1(Object object){
         // 自动装箱，int to Integer，Integer向上转型为Object
+    }
+    static void printArrayList(ArrayList arrayList){
+        // 通过下标遍历
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.println(arrayList.get(i));
+        }
     }
 }
