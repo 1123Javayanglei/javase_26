@@ -99,7 +99,7 @@ public class CollectionDemo01 {
      * 删除纯数字字符的元素
      * 所有元素大小写转换
      */
-    static String toggleCase(String string){
+    static String toggleCase(String string) {
         StringBuilder ultimately = new StringBuilder();
         for (int i = 0; i < string.length(); i++) {
             // 操作
@@ -141,7 +141,7 @@ public class CollectionDemo01 {
         return isAllNumber;
     }
 
-    static void printCollection1(Collection collection) {
+    public static void printCollection1(Collection collection) {
         // 第一种foreach
         for (Object object :
                 collection) {
@@ -150,7 +150,7 @@ public class CollectionDemo01 {
 
     }
 
-    static void printCollection2(Collection collection) {
+    public static void printCollection2(Collection collection) {
         // 第二种 转换成 Object ，foreach
         Object[] array = collection.toArray();
         for (Object obj :
@@ -159,7 +159,7 @@ public class CollectionDemo01 {
         }
     }
 
-    static void printCollection3(Collection collection) {
+    public static void printCollection3(Collection collection) {
         // 迭代器打印
         Iterator iterator = collection.iterator();
         while (iterator.hasNext()) {
