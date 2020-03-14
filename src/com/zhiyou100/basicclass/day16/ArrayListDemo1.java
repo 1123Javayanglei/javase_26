@@ -57,7 +57,7 @@ public class ArrayListDemo1 {
     static void text1(Object object){
         // 自动装箱，int to Integer，Integer向上转型为Object
     }
-    static void printArrayList(ArrayList arrayList){
+  public   static void printArrayList(ArrayList arrayList){
         // 通过下标遍历
         for (int i = 0; i < arrayList.size(); i++) {
             System.out.println(arrayList.get(i));
