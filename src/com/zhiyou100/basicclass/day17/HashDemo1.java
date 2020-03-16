@@ -52,6 +52,6 @@ public class HashDemo1 {
         }
     }
     public static void printCutOffRule(){
-        System.out.println("===============");
+        System.out.println("==========================================================================================");
     }
 }

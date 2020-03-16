@@ -14,7 +14,6 @@ import java.util.Scanner;
 
         for (int i = 0; i < 100; i++) {
 //            System.out.println(HomeWorkOfMath.randomDate());
-            System.out.println(HomeWorkOfMath.createNewName());
         }
 
     }
@@ -175,7 +174,7 @@ public class HomeWorkOfMath {
         return maxDay;
     }
 
-    public static String createNewName() {
+    public static String createNewName(int start,int end) {
         /*
          * @name: createNewName
          * @param:
@@ -184,10 +183,12 @@ public class HomeWorkOfMath {
          * @return:
          */
         // a=97,z=122;
-        String name = getRandomCharToString() + getRandomCharToString() + getRandomCharToString() + getRandomCharToString() + getRandomCharToString() + getRandomCharToString() + getRandomCharToString() + getRandomCharToString();
-        // 拼接
-        int randomNum = randomOfMinToMax(4, 8);
-        return name.substring(0, randomNum);
+        StringBuilder name= new StringBuilder();
+        int randomNum = randomOfMinToMax(start, end);
+        for (int i = 0; i <randomNum ; i++) {
+            name.append(getRandomCharToString());
+        }
+        return String.valueOf(name);
         // 切片
 
     }

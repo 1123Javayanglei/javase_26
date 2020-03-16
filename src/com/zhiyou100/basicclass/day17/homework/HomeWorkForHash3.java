@@ -18,7 +18,7 @@ public class HomeWorkForHash3 {
     public static void main(String[] args) {
         TreeSet<Student> students = new TreeSet<>();
         // 创建Student的泛型TreeSet
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 20; i++) {
             Student student = new Student("杨磊" + (int) (Math.pow(2, i)), HomeWorkOfMath.randomOfMinToMax(0, 100), (int) (HomeWorkOfMath.randomOfMinToMax(1, 10)));
 //            Student student = new Student("杨磊", HomeWorkOfMath.randomOfMinToMax(0,100)); 测试分数不一样
 //            Student student = new Student("杨磊",100,HomeWorkOfMath.randomOfMinToMax(1,5)); 测试分数一样
@@ -87,7 +87,7 @@ class Student implements Comparable<Student> {
          * @name: compareTo
          * @param: Student o
          * @date: 2020/3/14 8:25 下午
-         * @return:  int
+         * @return: int
          * @description: TODO 实现comparTo方法， 先按分数从大到小排序，如果分数一样按照班级编号从小到大排，如果编号相同，再按照名字升序排序
          */
         if (o.grade != this.grade) {
@@ -102,7 +102,6 @@ class Student implements Comparable<Student> {
                 // 按照班级名字 从小到大
             } else {
                 // 如果班级编号一样 按照姓名从小到大
-                System.out.println("我是班级编号一样");
                 return this.name.compareTo(o.name);
                 // 若调用==参数 R0, 调用<参数 R-1, 若调用>参数 R1
             }

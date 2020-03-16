@@ -94,5 +94,7 @@ public class HomeWorkForHashSet1 {
          */
         Scanner scanner = new Scanner(System.in);
         return scanner.next();
+        // next 获取一个字符串，不换行，无空格
+        // nextLine 换行获取
     }
 }

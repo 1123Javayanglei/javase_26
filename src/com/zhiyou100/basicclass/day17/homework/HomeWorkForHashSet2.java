@@ -4,6 +4,8 @@ import com.zhiyou100.basicclass.day02.HomeWorkOfMath;
 import com.zhiyou100.basicclass.day15.collectionDemo.CollectionDemo01;
 import com.zhiyou100.basicclass.day16.ArrayListDemo1;
 import com.zhiyou100.basicclass.day17.HashDemo1;
+import edu.princeton.cs.algs4.Out;
+import edu.princeton.cs.algs4.StdOut;
 
 import java.net.CookieHandler;
 import java.util.HashSet;
@@ -26,7 +28,10 @@ public class HomeWorkForHashSet2 {
             workers.add(worker);
         }
         HashDemo1.printCutOffRule();
+        // 分隔符
         CollectionDemo01.printCollection1(workers);
+        // 打印
+        StdOut.println();
     }
 
 }
