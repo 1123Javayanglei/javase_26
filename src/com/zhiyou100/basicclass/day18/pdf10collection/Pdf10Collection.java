@@ -947,63 +947,108 @@ import java.util.*;
 //}
 
 
-class Text24 {
-    public static void main(String[] args) {
-        // 科特迪瓦，阿根廷，澳大利亚，塞尔维亚，荷兰，尼日利亚、日本，美国，中国， 新西兰，巴西，比利时，韩国，喀麦隆，洪都拉斯，意大利
-        HashMap<Integer, String> map = new HashMap<>();
-        map.put(0, "意大利");
-        map.put(1, "科特迪瓦");
-        map.put(2, "阿根廷");
-        map.put(3, "澳大利亚");
-        map.put(4, "塞尔维亚");
-        map.put(5, "荷兰");
-        map.put(6, "尼日利亚");
-        map.put(7, "日本");
-        map.put(8, "美国");
-        map.put(9, "中国");
-        map.put(10, "新西兰");
-        map.put(11, "巴西");
-        map.put(12, "比利时");
-        map.put(13, "韩国");
-        map.put(14, "喀麦隆");
-        map.put(15, "洪都拉斯");
-        int arr[] = Cai(16);
-        System.out.println("第一组：");
-        for (int i = 0; i <= 3; i++) {
-            System.out.print(map.get(arr[i]) + " ");
-        }
-        System.out.println();
-        System.out.println("第二组:");
-        for (int i = 4; i <= 7; i++) {
-            System.out.print(map.get(arr[i]) + " ");
-        }
-        System.out.println();
+//class Text24 {
+//    public static void main(String[] args) {
+//        // 科特迪瓦，阿根廷，澳大利亚，塞尔维亚，荷兰，尼日利亚、日本，美国，中国， 新西兰，巴西，比利时，韩国，喀麦隆，洪都拉斯，意大利
+//        HashMap<Integer, String> map = new HashMap<>();
+//        map.put(0, "意大利");
+//        map.put(1, "科特迪瓦");
+//        map.put(2, "阿根廷");
+//        map.put(3, "澳大利亚");
+//        map.put(4, "塞尔维亚");
+//        map.put(5, "荷兰");
+//        map.put(6, "尼日利亚");
+//        map.put(7, "日本");
+//        map.put(8, "美国");
+//        map.put(9, "中国");
+//        map.put(10, "新西兰");
+//        map.put(11, "巴西");
+//        map.put(12, "比利时");
+//        map.put(13, "韩国");
+//        map.put(14, "喀麦隆");
+//        map.put(15, "洪都拉斯");
+//        int arr[] = Cai(16);
+//        System.out.println("第一组：");
+//        for (int i = 0; i <= 3; i++) {
+//            System.out.print(map.get(arr[i]) + " ");
+//        }
+//        System.out.println();
+//        System.out.println("第二组:");
+//        for (int i = 4; i <= 7; i++) {
+//            System.out.print(map.get(arr[i]) + " ");
+//        }
+//        System.out.println();
+//
+//        System.out.println("第三组:");
+//        for (int i = 8; i <= 11; i++) {
+//            System.out.print(map.get(arr[i]) + " ");
+//        }
+//        System.out.println();
+//
+//        System.out.println("第四组:");
+//        for (int i = 12; i <= 15; i++) {
+//            System.out.print(map.get(arr[i]) + " ");
+//        }
+//
+//    }
+//
+//    static int[] Cai(int num) {
+//        // 生成 [0,num-1]的不重复的数组
+//        int[] arr = new int[num];
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = HomeWorkOfMath.randomOfMinToMax(0, num-1);
+//            for (int j = 0; j < i; j++) {
+//                if (arr[i] == arr[j]) {
+//                    i--;
+//                    break;
+//                }
+//            }
+//        }
+//        return arr;
+//    }
+//}
 
-        System.out.println("第三组:");
-        for (int i = 8; i <= 11; i++) {
-            System.out.print(map.get(arr[i]) + " ");
-        }
-        System.out.println();
+class MyStack {
+    public static LinkedList<Object> linkedList = new LinkedList<>();
 
-        System.out.println("第四组:");
-        for (int i = 12; i <= 15; i++) {
-            System.out.print(map.get(arr[i]) + " ");
-        }
-
+    public void push(Object object) {
+        // 入栈
+        linkedList.add(object);
     }
 
-    static int[] Cai(int num) {
-        // 生成 [0,num-1]的不重复的数组
-        int[] arr = new int[num];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = HomeWorkOfMath.randomOfMinToMax(0, num-1);
-            for (int j = 0; j < i; j++) {
-                if (arr[i] == arr[j]) {
-                    i--;
-                    break;
-                }
-            }
-        }
-        return arr;
+    public Object pop() {
+        // 出栈
+        return linkedList.removeLast();
+    }
+
+    public Object peek() {
+        // 查看栈顶元素
+        return linkedList.getFirst();
+    }
+
+    public boolean isEmpty() {
+        // 判断是否为空
+        return linkedList.isEmpty();
+    }
+
+    public int size() {
+        // 大小
+        return linkedList.size();
+    }
+}
+class Text25{
+    public static void main(String[] args) {
+        MyStack myStack = new MyStack();
+        myStack.push("1");
+        myStack.push("2");
+        myStack.push("3");
+        myStack.push("4");
+        myStack.pop();
+        System.out.println(myStack.peek());
+        System.out.println(myStack.peek());
+        myStack.pop();
+        myStack.pop();
+        System.out.println(myStack.isEmpty());
+
     }
 }
