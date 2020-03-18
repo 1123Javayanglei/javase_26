@@ -8,13 +8,6 @@ package com.zhiyou100.basicclass.day18.pdf10collection;
  * @date: 2020/3/16 4:15 下午
  */
 
-import com.zhiyou100.basicclass.day02.HomeWorkOfMath;
-import com.zhiyou100.basicclass.day15.collectionDemo.CollectionDemo01;
-import edu.princeton.cs.algs4.In;
-import jdk.swing.interop.LightweightContentWrapper;
-
-import java.net.CookieHandler;
-import java.sql.Blob;
 import java.util.*;
 
 //class TestList {
@@ -1008,47 +1001,56 @@ import java.util.*;
 //    }
 //}
 
-class MyStack {
-    public static LinkedList<Object> linkedList = new LinkedList<>();
-
-    public void push(Object object) {
-        // 入栈
-        linkedList.add(object);
-    }
-
-    public Object pop() {
-        // 出栈
-        return linkedList.removeLast();
-    }
-
-    public Object peek() {
-        // 查看栈顶元素
-        return linkedList.getFirst();
-    }
-
-    public boolean isEmpty() {
-        // 判断是否为空
-        return linkedList.isEmpty();
-    }
-
-    public int size() {
-        // 大小
-        return linkedList.size();
-    }
-}
-class Text25{
-    public static void main(String[] args) {
-        MyStack myStack = new MyStack();
-        myStack.push("1");
-        myStack.push("2");
-        myStack.push("3");
-        myStack.push("4");
-        myStack.pop();
-        System.out.println(myStack.peek());
-        System.out.println(myStack.peek());
-        myStack.pop();
-        myStack.pop();
-        System.out.println(myStack.isEmpty());
-
-    }
-}
+//class MyStack {
+//    public static LinkedList<Object> linkedList = new LinkedList<>();
+//
+//    public void push(Object object) {
+//        // 入栈
+//        linkedList.add(object);
+//    }
+//
+//    public Object pop() {
+//        // 出栈
+//        return linkedList.removeLast();
+//    }
+//
+//    public Object peek() {
+//        // 查看栈顶元素
+//        return linkedList.getFirst();
+//    }
+//
+//    public boolean isEmpty() {
+//        // 判断是否为空
+//        return linkedList.isEmpty();
+//    }
+//
+//    public int size() {
+//        // 大小
+//        return linkedList.size();
+//    }
+//}
+//class MyStackComparator implements Comparator<MyStack>{
+//
+//    @Override
+//    public int compare(MyStack o1, MyStack o2) {
+//        return 0;
+//    }
+//}
+//class Text25{
+//    public static void main(String[] args) {
+//        MyStack myStack = new MyStack();
+//        myStack.push("1");
+//        myStack.push("2");
+//        myStack.push("3");
+//        myStack.push("4");
+//        myStack.pop();
+//        System.out.println(myStack.peek());
+//        System.out.println(myStack.peek());
+//        myStack.pop();
+//        myStack.pop();
+//        System.out.println(myStack.isEmpty());
+//        TreeSet<MyStack> myStacks = new TreeSet<>(new MyStackComparator());
+//
+//
+//    }
+//}
