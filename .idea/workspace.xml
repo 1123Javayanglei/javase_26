@@ -5,330 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="测试git">
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemo/BufferedReaderDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemo/BufferedWriterDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/File 文件和目录.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/IO流.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/其他.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/内部类.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/包装类.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/基础类库.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/基础类库常用的包.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/字符串缓冲区StringBuffer&amp;StringBuilder.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/字符类 String.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/工具类 Collections.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/异常 Throwable.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/数学类 Math.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/日历类 Calendar.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/日期格式化类 SimpleDateForamt.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/日期类 Date.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/正则 Rages.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/泛型 Generics.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/系统类System.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/系统输入流监控器类Scanner.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/线程.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/超类 Object.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/集合Collection.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day24/TheadDemo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day24/TheadDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day24/ThreadDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day24/threadhomework/TheadHomeWork03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day24/threadhomework/ThreadHomeWork02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/META-INF/javase_26.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day01/Demo01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day01/Demo01OfObject 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day01/Demo02OfObject 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day01/HomeWorkForBasicClass 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day01/MyEquaUtil 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day01/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day01/Teacher 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/Demo01OfSystem 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/Demo02OfSystem 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/Demo03OfMath 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/HomeWorkMath 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day02/HomeWorkOfMath 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day03/Demo02OfString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day03/Demo02OfString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day03/MyString 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day04/Demo03OfTest 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day02/Review 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day03/LoopStructure 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day04/TextWork 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day05/TextArray 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day06/TwoDimensionalArray 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day07/MethodOf3Test 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day08/ClasssA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day09/Day09Test 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Animal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Animal 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Bird 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Bird 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Cat 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Cat 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Demon10 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Dog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Fish 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Fish 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/FlyFish 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Mobile 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Player 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/Player 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day10/VideoPlayer 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day11/Animal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day11/Animal 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day11/Demo11 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day11/Dog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day11/Dog 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day11/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day11/Person 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/day12/Demo12 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day01/Demo1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day01/OOPReview 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day01/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day03/Car 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day03/Demo01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day03/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/BasePlusSalesEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/Circle 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/Employee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/ExtendsDemo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/ExtendsTest00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/ExtendsTest01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/HourlyEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/Rect 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/SalariedEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/SalesEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/Shape 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/Square 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/test/Main 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/test/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/test/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/test/Test01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/test/Test02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/test02/Test03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day04/test02/Test04 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Address 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Animal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Cat 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/ClassA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/ClassA1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Dog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Home02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Home4 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Home5 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Home6 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Home7 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Home8 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Sub 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Sub00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Sub03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Super 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Super00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Super03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework1/Worker 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/Address 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/TestMyClass2 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/TetstMyclass06 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/Text01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/Worker 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number13/Sub 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number13/Super 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number13/TestSuperSub 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number6/Myclass06 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number6/Mylars01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number6/TestMyclass1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number8/ClassA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number8/ClassB 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number8/ClassC 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number8/ClassD 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day06/homework2/number8/Home8 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/AbstractGraphTest1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Animal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Cat 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Cat01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/CircularAbstract1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Dog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Dog01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/DomePolymorphism03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/DomePolymorphism04 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/DomePolymorphism05 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/DomePolymorphism08 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Father 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/RectangleAbstract1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Son 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/SquareAbstract1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day08/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/AbstractMyClass06 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/ClassA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/ClassB 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/ClassC 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Father 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/IA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/IA01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/IA03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/IB00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/IC00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/ID00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Magicer 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass05 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass06 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass07 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass08 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass09 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/MyClass10 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Pdf07OfDemo01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Pdf07OfDemo02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Pdf07OfDemo03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Pdf07OfDemo04 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Pdf08Demo01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Role 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Soldier 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Son 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Sub04 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Super04 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/Team 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/TestClass10 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/TestInstanceof01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/TestInterface01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/TestMain01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/TestMain02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/TestMain03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/oop/day11/TestMain05 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day02/Grammar01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day02/Grammar02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day02/Grammar03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day02/Review 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day03/Day03OfGrammar01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day03/Day03OfHomeWork 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day03/LoopStructure 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day03/ProcessControl 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day03/Review 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day04/Day04HomeWork 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day04/ForRepeat 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day04/TextWork 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day05/BreakAndContinue 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day05/Day05HomeWork 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day05/TextArray 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day05/TextArray00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day06/BubbleSortDome 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day06/Day06HomeWork 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day06/PascalIsTriangle 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day06/TestDome 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day06/TwoDimensionalArray 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day07/Day07HomeWork 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day07/MethodOf3Test 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day07/MethodOfPracticeAtNoon 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day07/MethodTest 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day07/ObjectOrientedProgramming 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day07/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Address 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Car 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/ClassA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/ClassB 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/ClassC 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/ClassificationOfVariables 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/ClasssA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Complex 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/ComplexOne 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Day07Review 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Day08TestCar 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Dome1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/FunctionOverloadingTest01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/FunctionOverloadingTest02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/KeyWordOfThis 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/MyClass 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/PersonTest 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Teacher 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/TestClassA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/TestConstructor 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/TestMyClass 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/Worker 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day08/WorkerTwo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day09/Day09Test 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Animal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Bird 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Cat 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Demon10 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Dog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Fish 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/FlyFish 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Mobile 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/Player 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day10/VideoPlayer 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day11/Animal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day11/Demo11 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day11/Dog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day11/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day12/Demo12 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day01/Demo1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day01/OOPReview 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day01/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/Car 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/Demo00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/Demo1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/OPPFinal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/OPPStatic 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/Review02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day02/创建对象内存图 2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day03/Car 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day03/Demo01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day03/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/BasePlusSalesEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/Circle 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/Employee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/ExtendsDemo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/ExtendsTest00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/ExtendsTest01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/HourlyEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/Rect 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/SalariedEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/SalesEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/Shape 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/Square 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/test/Main 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/test/Person 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/test/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/test/Test01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/test/Test02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/test02/Test03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day04/test02/Test04 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/BasePlusSalesEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Demo01Static 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Demo02Super 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Demo03Super 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Demo04Super 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Demo1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Employee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Father 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Father01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/HourlyEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/SalariedEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/SalesEmployee 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Son 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/Son01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day05/静态内存图 2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/Demo04 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Address 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Animal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Cat 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Cat 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/ClassA 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/ClassA1 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Complex 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Dog 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home01 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home02 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home3 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home4 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home5 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home6 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home7 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Home8 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Student 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Sub 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Sub00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Sub03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Super 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Super00 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Super03 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework1/Worker 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework2/number13/Super 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework2/number13/TestSuperSub 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework2/number6/Myclass06 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/homework2/number8/Home8 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day06/继承内存图 2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/review/oop/day08/DemoPolymorphism02 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,13 +88,13 @@
       <recent name="com.zhiyou100.basicclass.day06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BufferedHomeWorkDemo5">
-    <configuration name="BufferedHomeWorkDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day23.bufferedemohomework.BufferedHomeWorkDemo1" />
+  <component name="RunManager" selected="Application.TheadHomeWork03">
+    <configuration name="TheadDemo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day24.TheadDemo02" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day23.bufferedemohomework.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day24.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -395,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedHomeWorkDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day23.bufferedemohomework.BufferedHomeWorkDemo2" />
+    <configuration name="TheadDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day24.TheadDemo3" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day23.bufferedemohomework.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day24.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -408,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedHomeWorkDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day23.bufferedemohomework.BufferedHomeWorkDemo3" />
+    <configuration name="TheadHomeWork03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day24.threadhomework.TheadHomeWork03" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day23.bufferedemohomework.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day24.threadhomework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -421,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedHomeWorkDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day23.bufferedemohomework.BufferedHomeWorkDemo4" />
+    <configuration name="ThreadDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day24.ThreadDemo1" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day23.bufferedemohomework.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day24.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -434,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedHomeWorkDemo5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day23.bufferedemohomework.BufferedHomeWorkDemo5" />
+    <configuration name="ThreadHomeWork02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day24.threadhomework.ThreadHomeWork02" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day23.bufferedemohomework.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day24.threadhomework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -449,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BufferedHomeWorkDemo5" />
-        <item itemvalue="Application.BufferedHomeWorkDemo4" />
-        <item itemvalue="Application.BufferedHomeWorkDemo3" />
-        <item itemvalue="Application.BufferedHomeWorkDemo2" />
-        <item itemvalue="Application.BufferedHomeWorkDemo1" />
+        <item itemvalue="Application.TheadHomeWork03" />
+        <item itemvalue="Application.ThreadHomeWork02" />
+        <item itemvalue="Application.TheadDemo3" />
+        <item itemvalue="Application.TheadDemo02" />
+        <item itemvalue="Application.ThreadDemo1" />
       </list>
     </recent_temporary>
   </component>
@@ -493,7 +200,7 @@
       <workItem from="1584764869696" duration="5357000" />
       <workItem from="1584881631503" duration="1458000" />
       <workItem from="1584887002644" duration="6932000" />
-      <workItem from="1584897183646" duration="4484000" />
+      <workItem from="1584897183646" duration="16429000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1582384766987</created>
@@ -535,7 +242,7 @@
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state x="-888" y="262" key="#com.intellij.fileTypes.FileTypeChooser/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1584899250879" />
-    <state x="-907" y="128" width="475" height="654" key="#com.intellij.ide.util.MemberChooser" timestamp="1584889846975">
+    <state x="-907" y="128" width="475" height="654" key="#com.intellij.ide.util.MemberChooser" timestamp="1585039586480">
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state x="-645" y="92" key="#com.intellij.ide.util.MemberChooser/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583840032718" />
@@ -543,7 +250,8 @@
     <state x="533" y="128" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394737806" />
     <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583466889651" />
     <state x="-907" y="108" width="475" height="654" key="#com.intellij.ide.util.MemberChooser/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1584454141104" />
-    <state x="-907" y="128" key="#com.intellij.ide.util.MemberChooser/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1584889846975" />
+    <state x="-907" y="128" key="#com.intellij.ide.util.MemberChooser/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585039586480" />
+    <state x="-907" y="128" key="#com.intellij.ide.util.MemberChooser/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585020923331" />
     <state x="-1440" y="0" width="576" height="900" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1584174786060">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
@@ -556,6 +264,10 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="472" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583464088052" />
+    <state x="-982" y="216" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585037161402">
+      <screen x="-1440" y="23" width="1440" height="877" />
+    </state>
+    <state x="-982" y="216" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585037161402" />
     <state x="-982" y="204" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1584524706997">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
@@ -569,7 +281,7 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="0" y="23" key="FileDocumentManager.FileCacheConflict/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583313609213" />
-    <state width="1398" height="203" key="GridCell.Tab.0.bottom" timestamp="1584901854853">
+    <state width="1024" height="662" key="GridCell.Tab.0.bottom" timestamp="1585040327280">
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.bottom/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999516" />
@@ -589,10 +301,11 @@
     <state width="1878" height="273" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105020" />
     <state width="1398" height="342" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1584789969793" />
     <state width="1398" height="232" key="GridCell.Tab.0.bottom/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491981" />
+    <state width="1024" height="662" key="GridCell.Tab.0.bottom/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585039909392" />
     <state width="1398" height="186" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277079" />
-    <state width="1398" height="223" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1584896679048" />
-    <state width="1398" height="35" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1584890159280" />
-    <state width="1398" height="203" key="GridCell.Tab.0.center" timestamp="1584901854851">
+    <state width="1024" height="662" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585040327280" />
+    <state width="1398" height="654" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585021412516" />
+    <state width="1024" height="662" key="GridCell.Tab.0.center" timestamp="1585040327272">
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.center/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999513" />
@@ -612,10 +325,11 @@
     <state width="1878" height="273" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105015" />
     <state width="1398" height="342" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1584789969792" />
     <state width="1398" height="232" key="GridCell.Tab.0.center/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491981" />
+    <state width="1024" height="662" key="GridCell.Tab.0.center/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585039909389" />
     <state width="1398" height="186" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277076" />
-    <state width="1398" height="223" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1584896679047" />
-    <state width="1398" height="35" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1584890159279" />
-    <state width="1398" height="203" key="GridCell.Tab.0.left" timestamp="1584901854850">
+    <state width="1024" height="662" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585040327272" />
+    <state width="1398" height="654" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585021412514" />
+    <state width="1024" height="662" key="GridCell.Tab.0.left" timestamp="1585040327271">
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.left/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999511" />
@@ -635,10 +349,11 @@
     <state width="1878" height="273" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105005" />
     <state width="1398" height="342" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1584789969792" />
     <state width="1398" height="232" key="GridCell.Tab.0.left/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491980" />
+    <state width="1024" height="662" key="GridCell.Tab.0.left/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585039909387" />
     <state width="1398" height="186" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277075" />
-    <state width="1398" height="223" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1584896679046" />
-    <state width="1398" height="35" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1584890159279" />
-    <state width="1398" height="203" key="GridCell.Tab.0.right" timestamp="1584901854852">
+    <state width="1024" height="662" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585040327271" />
+    <state width="1398" height="654" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585021412511" />
+    <state width="1024" height="662" key="GridCell.Tab.0.right" timestamp="1585040327274">
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.right/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999515" />
@@ -658,9 +373,10 @@
     <state width="1878" height="273" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105018" />
     <state width="1398" height="342" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1584789969792" />
     <state width="1398" height="232" key="GridCell.Tab.0.right/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491981" />
+    <state width="1024" height="662" key="GridCell.Tab.0.right/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585039909390" />
     <state width="1398" height="186" key="GridCell.Tab.0.right/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277078" />
-    <state width="1398" height="223" key="GridCell.Tab.0.right/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1584896679048" />
-    <state width="1398" height="35" key="GridCell.Tab.0.right/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1584890159280" />
+    <state width="1024" height="662" key="GridCell.Tab.0.right/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585040327274" />
+    <state width="1398" height="654" key="GridCell.Tab.0.right/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585021412515" />
     <state width="1398" height="259" key="GridCell.Tab.1.bottom" timestamp="1584899014412">
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
@@ -778,14 +494,15 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="385" y="200" key="run.anything.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582899610492" />
-    <state x="385" y="92" width="943" height="678" key="search.everywhere.popup" timestamp="1584785004191">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="-1055" y="96" width="943" height="713" key="search.everywhere.popup" timestamp="1585024339433">
+      <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state x="-750" y="63" width="670" height="623" key="search.everywhere.popup/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583838601604" />
     <state x="385" y="95" width="670" height="711" key="search.everywhere.popup/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394597800" />
     <state x="385" y="91" width="670" height="676" key="search.everywhere.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583394900380" />
     <state x="-1055" y="74" width="943" height="731" key="search.everywhere.popup/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1584382324023" />
     <state x="385" y="92" width="943" height="678" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1584785004191" />
+    <state x="-1055" y="96" width="943" height="713" key="search.everywhere.popup/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585024339433" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

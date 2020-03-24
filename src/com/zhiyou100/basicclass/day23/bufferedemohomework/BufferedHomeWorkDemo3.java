@@ -41,7 +41,7 @@ public class BufferedHomeWorkDemo3 {
             System.out.println(now.getAbsolutePath()+"是文件");
             return;
         }
-        // 一下就是安全情况
+        // 以下就是安全情况
         File file = new File(now, "number.txt");
         File letter = new File(now, "letter.txt");
         File file1 = new File(now, "other.txt");

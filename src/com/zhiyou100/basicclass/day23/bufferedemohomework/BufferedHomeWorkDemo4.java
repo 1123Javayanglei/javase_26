@@ -71,7 +71,7 @@ public class BufferedHomeWorkDemo4 {
     }
 
     public static boolean isChinese(char c) {
-        // 判断是不汉字
+        // 判断是不是汉字
         Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
         return ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
                 || ub == Character.UnicodeBlock.CJK_COMPATIBILITY_IDEOGRAPHS
