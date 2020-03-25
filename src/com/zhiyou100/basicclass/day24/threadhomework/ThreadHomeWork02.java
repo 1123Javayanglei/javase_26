@@ -11,14 +11,53 @@ import com.zhiyou100.basicclass.day02.HomeWorkOfMath;
  */
 public class ThreadHomeWork02 {
     public static void main(String[] args) {
-        // 创建对象
+        /*// 创建对象
         RandomlyPrintedUppercaseCharacters randomlyPrintedUppercaseCharacters = new RandomlyPrintedUppercaseCharacters();
         PrintRandomLowercase printRandomLowercase = new PrintRandomLowercase();
         PrintRandomNumbers printRandomNumbers = new PrintRandomNumbers();
         // 启动
         randomlyPrintedUppercaseCharacters.start();
         printRandomLowercase.start();
-        printRandomNumbers.start();
+        printRandomNumbers.start();*/
+        BeMergedInto beMergedInto = new BeMergedInto('a', 'z');
+        BeMergedInto beMergedInto1 = new BeMergedInto('0', '9');
+        BeMergedInto beMergedInto2 = new BeMergedInto('A', 'Z');
+
+        beMergedInto.start();
+        beMergedInto1.start();
+        beMergedInto2.start();
+    }
+}
+class BeMergedInto extends Thread{
+    /**
+     * 合并方法
+     */
+    private char start;
+    private char end;
+
+    public char getStart() {
+        return start;
+    }
+
+    public void setStart(char start) {
+        this.start = start;
+    }
+
+    public char getEnd() {
+        return end;
+    }
+
+    public void setEnd(char end) {
+        this.end = end;
+    }
+    BeMergedInto(char start,char end){
+        setStart(start);
+        setEnd(end);
+    }
+
+    @Override
+    public void run() {
+        InTwoNumberPrint.print50Times(start,end);
     }
 }
 class RandomlyPrintedUppercaseCharacters extends Thread{
