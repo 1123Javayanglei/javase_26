@@ -11,7 +11,7 @@ import com.zhiyou100.basicclass.day02.HomeWorkOfMath;
  */
 public class ThreadHomeWork02 {
     public static void main(String[] args) {
-        /*// 创建对象
+        /*  创建对象
         RandomlyPrintedUppercaseCharacters randomlyPrintedUppercaseCharacters = new RandomlyPrintedUppercaseCharacters();
         PrintRandomLowercase printRandomLowercase = new PrintRandomLowercase();
         PrintRandomNumbers printRandomNumbers = new PrintRandomNumbers();
