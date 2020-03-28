@@ -32,24 +32,70 @@ class Votes {
     int number = 100;
 }
 
+class TextDemo1 {
+    public static void main(String[] args) {
+        Windows windows = new Windows();
+        Votes votes = new Votes();
+
+        windows.s = votes;
+
+        new Thread(windows, "窗口1").start();
+        new Thread(windows, "窗口2").start();
+        new Thread(windows, "窗口3").start();
+        new Thread(windows, "窗口4").start();
+        /**
+         * 同一个票号 被打印两次，a线程
+         */
+    }
+}
+
+class Windows implements Runnable {
+    /**
+     * 记录火车票
+     */
+    Votes s;
+
+    @Override
+    public void run() {
+
+            while (true) {
+                synchronized (s) {
+                if (s.number <= 0) {
+                    break;
+                } else {
+                    System.out.println(Thread.currentThread().getName() + " 卖了一张票，票号是" + s.number);
+                    try {
+                        Thread.sleep(100);
+                    } catch (Exception ignored) {
+
+                    }
+                    s.number--;
+                }
+            }
+        }
+
+    }
+}
+
 class TheTicketApplication implements Runnable {
     /**
      * @date: 2020/3/27 10:39 下午
      * @description: TODO 售票程序
      */
     Votes number;
+
     @Override
     public void run() {
         int max = 100;
-        for (int i = max; i >=1 ; i--) {
-            /**
+        for (int i = max; i >= 1; i--) {
+            /*
              * 我也不知道为啥，反正能编译通过
              */
             if (number.number <= 3) {
                 return;
             } else {
                 synchronized (number) {
-                    System.out.println(Thread.currentThread().getName()+" 卖了第"+number.number+"张票");
+                    System.out.println(Thread.currentThread().getName() + " 卖了第" + number.number + "张票");
                     number.number--;
                 }
             }
