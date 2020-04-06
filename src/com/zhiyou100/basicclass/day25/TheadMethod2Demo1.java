@@ -13,7 +13,7 @@ package com.zhiyou100.basicclass.day25;
  */
 public class TheadMethod2Demo1 {
     public static void main(String[] args) {
-        /**
+        /*
          * 创建实现类对象
          * 创建Thread对象，通过构造方法参数列表关联实现类对象
          * 开启线程
@@ -31,7 +31,8 @@ class Demo1 implements Runnable{
      */
     @Override
     public void run() {
-        for (int i = 0; i < 50; i++) {
+        int max=50;
+        for (int i = 0; i < max; i++) {
             System.out.println(Thread.currentThread().getName()+"--------i="+i);
         }
     }

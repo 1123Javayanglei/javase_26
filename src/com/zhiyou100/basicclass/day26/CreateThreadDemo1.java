@@ -6,8 +6,8 @@ import java.util.concurrent.FutureTask;
 
 /**
  * @packageName: javase_26
- * @className: JoinDemo1
- * @Description: TODO
+ * @className: CreateThreadDemo1
+ * @Description: TODO 使用Callable创建线程
  * @author: YangLei
  * @date: 2020/3/26 10:27 上午
  *
@@ -41,7 +41,8 @@ class CallableImp implements Callable<Integer>{
     @Override
     public Integer call() throws Exception {
         int sum=0;
-        for (int i = 0; i < 100; i++) {
+        int max=100;
+        for (int i = 0; i < max; i++) {
             System.out.println("i="+i);
             Thread.sleep(100);
             sum+=i;

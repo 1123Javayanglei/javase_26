@@ -26,7 +26,8 @@ public class HomeWorkOfRunnableDemo1 {
 
     }
 }
-class MyRunnable1 implements Runnable{
+
+class MyRunnable1 implements Runnable {
     /**
      * 创建Runnable的实现类
      */
@@ -38,15 +39,18 @@ class MyRunnable1 implements Runnable{
         this.end = end;
     }
 
-    public MyRunnable1() {
-    }
-
     @Override
     public void run() {
         // 实现run方法
-        int max=50;
+        int max = 50;
         for (int i = 0; i < max; i++) {
-            System.out.println((char) (HomeWorkOfMath.randomOfMinToMax((int)(start),(int)(end))));
+            System.out.println((char) (HomeWorkOfMath.randomOfMinToMax((int) (start), (int) (end))));
+            try {
+                Thread.sleep(100);
+                // 线程休眠
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }

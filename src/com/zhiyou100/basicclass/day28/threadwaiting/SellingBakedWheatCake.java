@@ -42,7 +42,9 @@ class BakedWheatCake {
      * @description: TODO 记录烧饼
      */
     int number;
-    // 记录烧饼的数量
+    /**
+     * 记录烧饼的数量
+     */
     boolean b = false;
     // 记录烧饼的状态，是否有烧饼
 }

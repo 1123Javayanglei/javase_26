@@ -19,6 +19,9 @@ import java.util.Scanner;
     }
 }
 
+/**
+ * @author yanglei
+ */
 public class HomeWorkOfMath {
     public static double myRounding(double in) {
         /*
