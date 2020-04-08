@@ -5,7 +5,7 @@ import com.zhiyou100.basicclass.day02.HomeWorkOfMath;
 /**
  * @packageName: javase_26
  * @className: LockJoinDemo1
- * @Description: TODO 死锁
+ * @Description: TODO 死锁方式1 join方法
  * @author: YangLei
  * @date: 2020/3/27 10:23 上午
  * <p>
@@ -48,12 +48,13 @@ class RunImp implements Runnable {
                 Thread.sleep(100);
                 // 使得当前线程休眠 100毫秒
             } catch (Exception ignored) {
-
+                ignored.printStackTrace();
             }
             if (n == 5) {
-                // 如果等于5，调用thread的join方法
+                // 如果随机数等于5，调用thread的join方法
                 try {
                     thread.join();
+                    // 调用thread的join方法
                 } catch (Exception ignored) {
 
                 }
