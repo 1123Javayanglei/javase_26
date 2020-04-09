@@ -14,8 +14,8 @@ import java.net.Socket;
  * @date: 2020/4/8 8:07 下午
  */
 public class Demo01TcpServer {
-    public static final int PORT = 10086;
-    public static final String IP = "127.0.0.1";
+    private static final int PORT = 10086;
+    private static final String IP = "127.0.0.1";
 
     public static void main(String[] args) throws IOException {
 
