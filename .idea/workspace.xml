@@ -93,7 +93,7 @@
       <recent name="com.zhiyou100.basicclass.day06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DeserializationStream">
+  <component name="RunManager" selected="Application.InsertionSort">
     <configuration name="Demo05UserDatagramProtocol" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day29.udp.Demo05UserDatagramProtocol" />
       <module name="javase_26" />
@@ -161,9 +161,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.DeserializationStream" />
         <item itemvalue="Application.TheSerializationStream" />
-        <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.Demo06UserDatagramProtocol" />
         <item itemvalue="Application.Demo05UserDatagramProtocol" />
       </list>
