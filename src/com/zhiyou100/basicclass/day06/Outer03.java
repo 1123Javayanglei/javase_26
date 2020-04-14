@@ -1,13 +1,11 @@
 package com.zhiyou100.basicclass.day06;
 
-import edu.princeton.cs.algs4.Out;
-
 /**
  * @packageName: javase_26
  * @className: Outer03
- * @Description: TODO
+ * @Description: TODO 局部内部类
  * @author: YangLei
- * @date: 2020/2/28 10:57 上午
+ * @date: 20202/28 10:57 上午
  */
 public class Outer03 {
 
@@ -35,5 +33,6 @@ class Outer04 {
         }
         new Inner3().sayHi();
         // 只能在这个show方法中创建对象
+        // 出了这个方法，就无法创建对象，无法访问
     }
 }

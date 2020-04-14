@@ -10,7 +10,7 @@ package com.zhiyou100.basicclass.day06;
 public class Outer01 {
     public static void main(String[] args) {
         /**
-         * 创建内部类对象格式：
+         * 创建内部类对象格式： 局部内部类
          *  外.内
          */
         Outer02.Inner01 inner01 =  new Outer02().new Inner01();

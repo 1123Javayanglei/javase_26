@@ -1,7 +1,6 @@
 package com.zhiyou100.basicclass.day20.filedemo;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Arrays;
 
 /**
@@ -56,7 +55,7 @@ public class FileDemo2 {
 
     }
 
-    public static boolean delString(String string) {
+    public static void delString(String string) {
         /*
          * @description: TODO 删除参数字符串表示的文件夹/文件,总结实现 rm -rf
          */
@@ -70,7 +69,7 @@ public class FileDemo2 {
                 String stringNull = "[]";
                 if (stringNull.equals(Arrays.toString(file1))) {
                     //如果为空说明没有子文件和子文件夹，删除
-                    return file.delete();
+                    file.delete();
                 } else {
                     // 说明有子文件和子文件夹，递归删除
                     File[] file2 = new File[file1.length + 1];
@@ -90,18 +89,15 @@ public class FileDemo2 {
                         // 递归删除
                         delString(s);
                     }
-                    return true;
                 }
             } else if (file.isFile()) {
                 // 如果是文件删除
-                return file.delete();
+                file.delete();
             } else {
                 System.out.println("啥也不是");
-                return false;
             }
         } catch (Exception e) {
             System.out.println("不是目录或文件");
-            return false;
         }
 
     }

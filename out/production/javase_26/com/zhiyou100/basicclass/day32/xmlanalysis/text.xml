@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?><!--声明区-->
+<file> <!--    数据区的根标签 file-->
+    <Class id="Class_1">
+        <Student id="0001">
+            <name>
+                韩梅梅
+            </name>
+            <age>
+                18
+            </age>
+            <gender>
+                女
+            </gender>
+        </Student>
+
+    </Class>
+    <Class id="Class_2">
+        <Student id="0002">
+            <name>
+                韩雪
+            </name>
+            <age>
+                19
+            </age>
+            <gender>
+                女
+            </gender>
+        </Student>
+    </Class>
+</file>

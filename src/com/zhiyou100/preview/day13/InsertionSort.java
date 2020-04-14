@@ -1,7 +1,5 @@
 package com.zhiyou100.preview.day13;
 
-import com.zhiyou100.basicclass.day02.HomeWorkOfMath;
-
 import java.util.Arrays;
 
 /**
@@ -18,9 +16,21 @@ public class InsertionSort {
         int size=10;
         int[] ints = new int[size];
 
-        for (int i = 0; i < ints.length; i++) {
-            ints[i] = HomeWorkOfMath.randomOfMinToMax(0, size);
-        }
+//        for (int i = 0; i < ints.length; i++) {
+//            ints[i] = HomeWorkOfMath.randomOfMinToMax(0, size);
+//            // 生成0到size的随机数
+//        }
+        ints[0]=2;
+        ints[1]=1;
+        ints[2]=5;
+        ints[3]=1;
+        ints[4]=4;
+        ints[5]=6;
+        ints[6]=7;
+        ints[7]=3;
+        ints[8]=7;
+        ints[9]=0;
+        // [2, 1, 5, 1, 4, 6, 7, 3, 7, 0]
 
         System.out.println("排序前");
         System.out.println(Arrays.toString(ints));
@@ -38,11 +48,15 @@ public class InsertionSort {
     }
 
     public static int[] arrSort(int[] arr) {
-        for (int i = 1; i < arr.length; i++) {
+        int i;
+        int j;
+        // 定义i和j记录循环变量
+        // i为外层循环，循环元素个数
+        // j为内层循环，为每个元素的比较次数
+        for (i = 1; i < arr.length; i++) {
             // 当前元素是arr[i]
             int temp = arr[i];
             // 用 temp 记录arr[i]的值
-            int j;
             for (j = i - 1; j >= 0; j--) {
                 // 拿temp倒着和前面的元素做比较
                 if (arr[j] > temp) {

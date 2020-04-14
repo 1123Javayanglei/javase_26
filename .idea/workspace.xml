@@ -5,19 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="测试git">
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day29/udp/Demo03UserDatagramProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day29/udp/Demo04UserDatagramProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day29/udp/Demo05UserDatagramProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day29/udp/Demo06UserDatagramProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day29/udp/UserDatagramPutAway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day29/udp/UserDatagramSend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day30/serialize/DeserializationStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day30/serialize/TheSerializationStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/preview/day13/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/dom 解析 xml.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/枚举.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaXmind/基础类库/设计模式 Design Patter.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dom4j-2.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/DelTheFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/DownFileForWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/DownloadThePictures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/MainMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/ProcessingString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/ReadTheFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/WriterTheFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day31/designpattern/DesignPatternDemo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day31/designpattern/DesignPatternDemo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day32/enumdemo/EnumDemo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day32/xmlanalysis/HomeWorksForXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day32/xmlanalysis/XmlAnalysisDemo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day32/xmlanalysis/input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day32/xmlanalysis/student.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day32/xmlanalysis/text.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库/File 文件和目录.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库/File 文件和目录.xmind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库/IO流.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库/IO流.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库/工具类 Collections.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库/工具类 Collections.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库/网络编程.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库/网络编程.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库/内部类.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库/内部类.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库/正则 Rages.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库/正则 Rages.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaXmind/基础类库/集合Collection.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/基础类库/集合Collection.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase_26.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javase_26.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day06/Outer03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day06/Outer03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day06/Outer04$1Inner3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day06/Outer04$1Inner3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day06/Outer04.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day06/Outer04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day20/filedemo/FileDemo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/basicclass/day20/filedemo/FileDemo2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day13/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javase_26/com/zhiyou100/preview/day13/InsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day06/Outer01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day06/Outer01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day06/Outer03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day06/Outer03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day20/filedemo/FileDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/basicclass/day20/filedemo/FileDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/preview/day13/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/preview/day13/InsertionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +69,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="XSLT Stylesheet" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -70,6 +97,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -80,8 +108,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -93,13 +124,13 @@
       <recent name="com.zhiyou100.basicclass.day06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InsertionSort">
-    <configuration name="Demo05UserDatagramProtocol" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day29.udp.Demo05UserDatagramProtocol" />
+  <component name="RunManager" selected="Application.HomeWorksForXml">
+    <configuration name="DownFileForWeb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.downimages.DownFileForWeb" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day29.udp.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.downimages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo06UserDatagramProtocol" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day29.udp.Demo06UserDatagramProtocol" />
+    <configuration name="EnumDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day32.enumdemo.EnumDemo01" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day29.udp.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day32.enumdemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeserializationStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day30.serialize.DeserializationStream" />
+    <configuration name="HomeWorksForXml" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day32.xmlanalysis.HomeWorksForXml" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day30.serialize.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day32.xmlanalysis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.preview.day13.InsertionSort" />
+    <configuration name="MainMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day07.downimages.MainMethod" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.preview.day13.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day07.downimages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheSerializationStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day30.serialize.TheSerializationStream" />
+    <configuration name="XmlAnalysisDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.basicclass.day32.xmlanalysis.XmlAnalysisDemo01" />
       <module name="javase_26" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhiyou100.basicclass.day30.serialize.*" />
+          <option name="PATTERN" value="com.zhiyou100.basicclass.day32.xmlanalysis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InsertionSort" />
-        <item itemvalue="Application.DeserializationStream" />
-        <item itemvalue="Application.TheSerializationStream" />
-        <item itemvalue="Application.Demo06UserDatagramProtocol" />
-        <item itemvalue="Application.Demo05UserDatagramProtocol" />
+        <item itemvalue="Application.HomeWorksForXml" />
+        <item itemvalue="Application.XmlAnalysisDemo01" />
+        <item itemvalue="Application.EnumDemo01" />
+        <item itemvalue="Application.DownFileForWeb" />
+        <item itemvalue="Application.MainMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -262,29 +293,37 @@
     </state>
     <state x="320" y="105" key="#Inspections/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582821632659" />
     <state x="-1120" y="88" key="#Inspections/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1584359080635" />
+    <state x="558" y="312" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1586708263611">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="558" y="312" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1440.900@0.0.1440.900" timestamp="1586708263611" />
     <state x="-888" y="262" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584899250879">
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state x="-888" y="262" key="#com.intellij.fileTypes.FileTypeChooser/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1584899250879" />
-    <state x="533" y="123" width="475" height="654" key="#com.intellij.ide.util.MemberChooser" timestamp="1586491146648">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="1840" y="-444" width="475" height="654" key="#com.intellij.ide.util.MemberChooser" timestamp="1586834044434">
+      <screen x="1440" y="-674" width="1080" height="1920" />
     </state>
     <state x="-645" y="92" key="#com.intellij.ide.util.MemberChooser/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583840032718" />
     <state x="-645" y="92" key="#com.intellij.ide.util.MemberChooser/-1024.0.1024.768/0.23.1440.834@-1024.0.1024.768" timestamp="1583840392064" />
     <state x="533" y="128" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394737806" />
     <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583466889651" />
     <state x="-907" y="108" width="475" height="654" key="#com.intellij.ide.util.MemberChooser/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1584454141104" />
+    <state x="1840" y="-444" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586834044434" />
+    <state x="533" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1586781099313" />
     <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser/0.23.1440.834@0.23.1440.834" timestamp="1586400010946" />
     <state x="533" y="108" key="#com.intellij.ide.util.MemberChooser/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586350829554" />
     <state x="533" y="123" key="#com.intellij.ide.util.MemberChooser/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586491146648" />
     <state x="533" y="128" key="#com.intellij.ide.util.MemberChooser/1440.219.996.681/0.23.1440.877@0.23.1440.877" timestamp="1585276049775" />
     <state x="1840" y="250" key="#com.intellij.ide.util.MemberChooser/2520.1178.1024.681/0.23.1440.834/1440.23.1080.1897@1440.23.1080.1897" timestamp="1586417668230" />
+    <state x="1840" y="-273" key="#com.intellij.ide.util.MemberChooser/2520.652.1024.704/0.0.1440.900/1440.-503.1080.1920@1440.-503.1080.1920" timestamp="1586768086313" />
     <state x="-907" y="128" key="#com.intellij.ide.util.MemberChooser/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585388138028" />
     <state x="-907" y="128" key="#com.intellij.ide.util.MemberChooser/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585020923331" />
     <state x="-907" y="128" key="#com.intellij.ide.util.MemberChooser/380.1103.1024.681/-1440.23.1440.877/0.23.1882.1057@-1440.23.1440.877" timestamp="1585313895856" />
-    <state x="390" y="51" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1586517827501">
+    <state x="390" y="38" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1586707608016">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
+    <state x="390" y="38" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.834@0.23.1440.834" timestamp="1586707608016" />
     <state x="390" y="51" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586517827501" />
     <state x="-1050" y="52" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585393238332" />
     <state x="-1440" y="0" width="576" height="900" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1584174786060">
@@ -299,10 +338,11 @@
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
     <state x="-991" y="47" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1584691547923" />
-    <state x="-968" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585391860962">
-      <screen x="-1440" y="23" width="1440" height="877" />
+    <state x="472" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586774776681">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="472" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583464088052" />
+    <state x="472" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1586774776681" />
     <state x="-968" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585391860962" />
     <state x="-982" y="216" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585037161402">
       <screen x="-1440" y="23" width="1440" height="877" />
@@ -341,7 +381,7 @@
       <screen x="-1440" y="23" width="1440" height="877" />
     </state>
     <state width="1880" height="999" key="GridCell.Tab.-1.right/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585131697348" />
-    <state width="1349" height="181" key="GridCell.Tab.0.bottom" timestamp="1586537961023">
+    <state width="1360" height="367" key="GridCell.Tab.0.bottom" timestamp="1586889373769">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.bottom/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999516" />
@@ -360,24 +400,26 @@
     <state width="1398" height="192" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.1884.1057@-1440.23.1440.877" timestamp="1585375734845" />
     <state width="1398" height="216" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.1920.1014@-1440.23.1440.877" timestamp="1584621149054" />
     <state width="1878" height="273" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105020" />
-    <state width="1038" height="777" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586179597535" />
+    <state width="1038" height="811" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586834526261" />
+    <state width="1398" height="743" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586860281103" />
     <state width="1363" height="25" key="GridCell.Tab.0.bottom/0.23.1405.877@0.23.1405.877" timestamp="1585289207926" />
     <state width="1038" height="274" key="GridCell.Tab.0.bottom/0.23.1440.834/1440.-651.1080.1897@1440.-651.1080.1897" timestamp="1586415046638" />
-    <state width="1398" height="274" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1586402037755" />
+    <state width="1360" height="367" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1586889373769" />
     <state width="1398" height="573" key="GridCell.Tab.0.bottom/0.23.1880.1057@0.23.1880.1057" timestamp="1585396586246" />
     <state width="1398" height="232" key="GridCell.Tab.0.bottom/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491981" />
     <state width="1024" height="662" key="GridCell.Tab.0.bottom/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586433635894" />
-    <state width="1349" height="181" key="GridCell.Tab.0.bottom/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586537961023" />
+    <state width="1360" height="318" key="GridCell.Tab.0.bottom/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586882394224" />
     <state width="1398" height="287" key="GridCell.Tab.0.bottom/1440.219.996.681/0.23.1440.877@0.23.1440.877" timestamp="1585276454869" />
     <state width="1080" height="1796" key="GridCell.Tab.0.bottom/2520.1178.1024.681/0.23.1440.834/1440.23.1080.1897@1440.23.1080.1897" timestamp="1586430188087" />
     <state width="1037" height="1748" key="GridCell.Tab.0.bottom/2520.1178.1024.681/0.23.1440.877/1440.23.1080.1856@1440.23.1080.1856" timestamp="1586420093362" />
+    <state width="1038" height="1102" key="GridCell.Tab.0.bottom/2520.652.1024.704/0.0.1440.900/1440.-503.1080.1920@1440.-503.1080.1920" timestamp="1586768334185" />
     <state width="1024" height="662" key="GridCell.Tab.0.bottom/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585044501191" />
     <state width="1398" height="186" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277079" />
     <state width="1024" height="662" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1879.1057@-1440.23.1440.877" timestamp="1585044770095" />
     <state width="1398" height="573" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585393496464" />
     <state width="1398" height="357" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585388747529" />
     <state width="1880" height="999" key="GridCell.Tab.0.bottom/380.1103.1024.681/-1440.23.1440.877/0.23.1882.1057@-1440.23.1440.877" timestamp="1585319128882" />
-    <state width="1349" height="181" key="GridCell.Tab.0.center" timestamp="1586537961022">
+    <state width="1360" height="367" key="GridCell.Tab.0.center" timestamp="1586889373750">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.center/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999513" />
@@ -396,24 +438,26 @@
     <state width="1398" height="192" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.1884.1057@-1440.23.1440.877" timestamp="1585375734844" />
     <state width="1398" height="216" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.1920.1014@-1440.23.1440.877" timestamp="1584621149053" />
     <state width="1878" height="273" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105015" />
-    <state width="1038" height="777" key="GridCell.Tab.0.center/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586179597533" />
+    <state width="1038" height="811" key="GridCell.Tab.0.center/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586834526258" />
+    <state width="1398" height="743" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586860281102" />
     <state width="1363" height="25" key="GridCell.Tab.0.center/0.23.1405.877@0.23.1405.877" timestamp="1585289207925" />
     <state width="1038" height="274" key="GridCell.Tab.0.center/0.23.1440.834/1440.-651.1080.1897@1440.-651.1080.1897" timestamp="1586415046637" />
-    <state width="1398" height="274" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1586402037753" />
+    <state width="1360" height="367" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1586889373750" />
     <state width="1398" height="573" key="GridCell.Tab.0.center/0.23.1880.1057@0.23.1880.1057" timestamp="1585396586245" />
     <state width="1398" height="232" key="GridCell.Tab.0.center/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491981" />
     <state width="1024" height="662" key="GridCell.Tab.0.center/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586433635891" />
-    <state width="1349" height="181" key="GridCell.Tab.0.center/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586537961022" />
+    <state width="1360" height="318" key="GridCell.Tab.0.center/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586882394221" />
     <state width="1398" height="287" key="GridCell.Tab.0.center/1440.219.996.681/0.23.1440.877@0.23.1440.877" timestamp="1585276454867" />
     <state width="1080" height="1796" key="GridCell.Tab.0.center/2520.1178.1024.681/0.23.1440.834/1440.23.1080.1897@1440.23.1080.1897" timestamp="1586430188086" />
     <state width="1037" height="1748" key="GridCell.Tab.0.center/2520.1178.1024.681/0.23.1440.877/1440.23.1080.1856@1440.23.1080.1856" timestamp="1586420093355" />
+    <state width="1038" height="1102" key="GridCell.Tab.0.center/2520.652.1024.704/0.0.1440.900/1440.-503.1080.1920@1440.-503.1080.1920" timestamp="1586768334182" />
     <state width="1024" height="662" key="GridCell.Tab.0.center/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585044501189" />
     <state width="1398" height="186" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277076" />
     <state width="1024" height="662" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1879.1057@-1440.23.1440.877" timestamp="1585044770093" />
     <state width="1398" height="573" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585393496463" />
     <state width="1398" height="357" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585388747518" />
     <state width="1880" height="999" key="GridCell.Tab.0.center/380.1103.1024.681/-1440.23.1440.877/0.23.1882.1057@-1440.23.1440.877" timestamp="1585319128881" />
-    <state width="1349" height="181" key="GridCell.Tab.0.left" timestamp="1586537961021">
+    <state width="1360" height="367" key="GridCell.Tab.0.left" timestamp="1586889373748">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.left/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999511" />
@@ -432,24 +476,26 @@
     <state width="1398" height="192" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.1884.1057@-1440.23.1440.877" timestamp="1585375734844" />
     <state width="1398" height="216" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.1920.1014@-1440.23.1440.877" timestamp="1584621149053" />
     <state width="1878" height="273" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105005" />
-    <state width="1038" height="777" key="GridCell.Tab.0.left/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586179597532" />
+    <state width="1038" height="811" key="GridCell.Tab.0.left/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586834526255" />
+    <state width="1398" height="743" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586860281101" />
     <state width="1363" height="25" key="GridCell.Tab.0.left/0.23.1405.877@0.23.1405.877" timestamp="1585289207925" />
     <state width="1038" height="274" key="GridCell.Tab.0.left/0.23.1440.834/1440.-651.1080.1897@1440.-651.1080.1897" timestamp="1586415046636" />
-    <state width="1398" height="274" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1586402037753" />
+    <state width="1360" height="367" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1586889373748" />
     <state width="1398" height="573" key="GridCell.Tab.0.left/0.23.1880.1057@0.23.1880.1057" timestamp="1585396586245" />
     <state width="1398" height="232" key="GridCell.Tab.0.left/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491980" />
     <state width="1024" height="662" key="GridCell.Tab.0.left/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586433635890" />
-    <state width="1349" height="181" key="GridCell.Tab.0.left/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586537961021" />
+    <state width="1360" height="318" key="GridCell.Tab.0.left/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586882394220" />
     <state width="1398" height="287" key="GridCell.Tab.0.left/1440.219.996.681/0.23.1440.877@0.23.1440.877" timestamp="1585276454866" />
     <state width="1080" height="1796" key="GridCell.Tab.0.left/2520.1178.1024.681/0.23.1440.834/1440.23.1080.1897@1440.23.1080.1897" timestamp="1586430188086" />
     <state width="1037" height="1748" key="GridCell.Tab.0.left/2520.1178.1024.681/0.23.1440.877/1440.23.1080.1856@1440.23.1080.1856" timestamp="1586420093314" />
+    <state width="1038" height="1102" key="GridCell.Tab.0.left/2520.652.1024.704/0.0.1440.900/1440.-503.1080.1920@1440.-503.1080.1920" timestamp="1586768334181" />
     <state width="1024" height="662" key="GridCell.Tab.0.left/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585044501187" />
     <state width="1398" height="186" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277075" />
     <state width="1024" height="662" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1879.1057@-1440.23.1440.877" timestamp="1585044770092" />
     <state width="1398" height="573" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585393496462" />
     <state width="1398" height="357" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1881.1057@-1440.23.1440.877" timestamp="1585388747516" />
     <state width="1880" height="999" key="GridCell.Tab.0.left/380.1103.1024.681/-1440.23.1440.877/0.23.1882.1057@-1440.23.1440.877" timestamp="1585319128881" />
-    <state width="1349" height="181" key="GridCell.Tab.0.right" timestamp="1586537961022">
+    <state width="1360" height="367" key="GridCell.Tab.0.right" timestamp="1586889373754">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state width="982" height="186" key="GridCell.Tab.0.right/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583898999515" />
@@ -468,17 +514,19 @@
     <state width="1398" height="192" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.1884.1057@-1440.23.1440.877" timestamp="1585375734845" />
     <state width="1398" height="216" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.1920.1014@-1440.23.1440.877" timestamp="1584621149053" />
     <state width="1878" height="273" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.1920.1014@0.23.1920.1014" timestamp="1584618105018" />
-    <state width="1038" height="777" key="GridCell.Tab.0.right/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586179597534" />
+    <state width="1038" height="811" key="GridCell.Tab.0.right/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586834526259" />
+    <state width="1398" height="743" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586860281102" />
     <state width="1363" height="25" key="GridCell.Tab.0.right/0.23.1405.877@0.23.1405.877" timestamp="1585289207926" />
     <state width="1038" height="274" key="GridCell.Tab.0.right/0.23.1440.834/1440.-651.1080.1897@1440.-651.1080.1897" timestamp="1586415046637" />
-    <state width="1398" height="274" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1586402037754" />
+    <state width="1360" height="367" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1586889373754" />
     <state width="1398" height="573" key="GridCell.Tab.0.right/0.23.1880.1057@0.23.1880.1057" timestamp="1585396586245" />
     <state width="1398" height="232" key="GridCell.Tab.0.right/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491981" />
     <state width="1024" height="662" key="GridCell.Tab.0.right/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586433635892" />
-    <state width="1349" height="181" key="GridCell.Tab.0.right/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586537961022" />
+    <state width="1360" height="318" key="GridCell.Tab.0.right/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586882394223" />
     <state width="1398" height="287" key="GridCell.Tab.0.right/1440.219.996.681/0.23.1440.877@0.23.1440.877" timestamp="1585276454868" />
     <state width="1080" height="1796" key="GridCell.Tab.0.right/2520.1178.1024.681/0.23.1440.834/1440.23.1080.1897@1440.23.1080.1897" timestamp="1586430188087" />
     <state width="1037" height="1748" key="GridCell.Tab.0.right/2520.1178.1024.681/0.23.1440.877/1440.23.1080.1856@1440.23.1080.1856" timestamp="1586420093358" />
+    <state width="1038" height="1102" key="GridCell.Tab.0.right/2520.652.1024.704/0.0.1440.900/1440.-503.1080.1920@1440.-503.1080.1920" timestamp="1586768334184" />
     <state width="1024" height="662" key="GridCell.Tab.0.right/380.1080.1024.704/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1585044501190" />
     <state width="1398" height="186" key="GridCell.Tab.0.right/380.1103.1024.681/-1440.0.1440.900/0.23.1920.1014@-1440.0.1440.900" timestamp="1583919277078" />
     <state width="1024" height="662" key="GridCell.Tab.0.right/380.1103.1024.681/-1440.23.1440.877/0.23.1879.1057@-1440.23.1440.877" timestamp="1585044770094" />
@@ -541,21 +589,30 @@
     <state width="1398" height="201" key="GridCell.Tab.1.right/0.23.1920.1014@0.23.1920.1014" timestamp="1584597491975" />
     <state width="1398" height="259" key="GridCell.Tab.1.right/380.1103.1024.681/-1440.23.1440.877/0.23.1879.1057@-1440.23.1440.877" timestamp="1585040891577" />
     <state width="1880" height="999" key="GridCell.Tab.1.right/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585131696000" />
-    <state x="-1211" y="82" key="SettingsEditor" timestamp="1585319089161">
-      <screen x="-1440" y="23" width="1440" height="877" />
+    <state x="231" y="23" width="1024" height="834" key="SettingsEditor" timestamp="1586876386863">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="229" y="79" key="SettingsEditor/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583168683203" />
+    <state x="229" y="60" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586860390943" />
+    <state x="229" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1586707731469" />
+    <state x="229" y="60" key="SettingsEditor/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586860754913" />
+    <state x="231" y="23" width="1024" height="834" key="SettingsEditor/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586876386863" />
     <state x="-1211" y="82" key="SettingsEditor/380.1103.1024.681/-1440.23.1440.877/0.23.1882.1057@-1440.23.1440.877" timestamp="1585319089161" />
     <state x="450" y="160" width="540" height="555" key="StructurePopup" timestamp="1586351591842">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="450" y="179" width="540" height="540" key="StructurePopup/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394640222" />
     <state x="450" y="160" width="540" height="555" key="StructurePopup/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586351591842" />
-    <state x="-823" y="391" key="VCS.ChangelistChooser" timestamp="1584898754901">
-      <screen x="-1440" y="23" width="1440" height="877" />
+    <state x="527" y="70" key="VCS.ChangeListViewerDialog" timestamp="1586707704012">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="527" y="70" key="VCS.ChangeListViewerDialog/0.23.1440.834@0.23.1440.834" timestamp="1586707704012" />
+    <state x="617" y="373" key="VCS.ChangelistChooser" timestamp="1586864800687">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="822" y="466" key="VCS.ChangelistChooser/-1440.23.1440.834/0.23.1920.1057@0.23.1920.1057" timestamp="1584610669549" />
     <state x="-823" y="391" key="VCS.ChangelistChooser/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1584898754901" />
+    <state x="617" y="373" key="VCS.ChangelistChooser/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586864800687" />
     <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1582386117983">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -623,17 +680,20 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="385" y="200" key="run.anything.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1582899610492" />
-    <state x="385" y="93" width="943" height="679" key="search.everywhere.popup" timestamp="1586525332813">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="1729" y="-514" width="708" height="1562" key="search.everywhere.popup" timestamp="1586835339887">
+      <screen x="1440" y="-674" width="1080" height="1920" />
     </state>
     <state x="-750" y="63" width="670" height="623" key="search.everywhere.popup/-1024.0.1024.768/0.0.1440.900@-1024.0.1024.768" timestamp="1583838601604" />
     <state x="385" y="95" width="670" height="711" key="search.everywhere.popup/-1024.23.1024.707/0.23.1440.877@0.23.1440.877" timestamp="1583394597800" />
     <state x="385" y="91" width="670" height="676" key="search.everywhere.popup/-1024.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1583394900380" />
     <state x="-1055" y="74" width="943" height="731" key="search.everywhere.popup/-1440.0.1440.900/0.0.1920.1080@-1440.0.1440.900" timestamp="1584382324023" />
-    <state x="385" y="92" width="943" height="678" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1584785004191" />
+    <state x="1729" y="-514" width="708" height="1562" key="search.everywhere.popup/0.0.1440.900/1440.-674.1080.1920@1440.-674.1080.1920" timestamp="1586835339887" />
+    <state x="385" y="75" width="944" height="732" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1586780817658" />
+    <state x="385" y="92" width="943" height="678" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1586707616980" />
     <state x="385" y="75" width="943" height="732" key="search.everywhere.popup/1440.196.1024.704/0.0.1440.900@0.0.1440.900" timestamp="1586350925282" />
     <state x="385" y="93" width="943" height="679" key="search.everywhere.popup/1440.219.1024.681/0.23.1440.834@0.23.1440.834" timestamp="1586525332813" />
     <state x="385" y="96" width="943" height="713" key="search.everywhere.popup/1440.219.996.681/0.23.1440.877@0.23.1440.877" timestamp="1585276389275" />
+    <state x="1729" y="-344" width="708" height="1561" key="search.everywhere.popup/2520.652.1024.704/0.0.1440.900/1440.-503.1080.1920@1440.-503.1080.1920" timestamp="1586766594508" />
     <state x="-1055" y="96" width="943" height="713" key="search.everywhere.popup/380.1103.1024.681/-1440.23.1440.877/0.23.1880.1057@-1440.23.1440.877" timestamp="1585024339433" />
   </component>
   <component name="XDebuggerManager">
@@ -645,24 +705,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day10/Pdf09.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day18/pdf10collection/Pdf10Collection.java</url>
           <line>471</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day20/filedemo/RecursionDemo1.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day20/filedemo/FileDemo2.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day21/homework/FileOperations.java</url>
@@ -673,6 +718,16 @@
           <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day23/bufferedemohomework/BufferedHomeWorkDemo3.java</url>
           <line>27</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zhiyou100/preview/day13/InsertionSort.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zhiyou100/basicclass/day07/downimages/MainMethod.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
