@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @packageName: javase_26
+ * @packageName: javaSe_26
  * @className: XmlHomeWorkDemo01
  * @Description: TODO  xml作业
  * @author: YangLei
@@ -24,7 +24,6 @@ public class XmlHomeWorkDemo01 {
     public static final String FILEPATH = "/Users/yanglei/Documents/javase_26/src/com/zhiyou100/basicclass/day32/xmlanalysis/homework/homeWork.xml";
 
     public static void main(String[] args) {
-//        new XmlHomeWorkDemo01().setTeacher();
         new XmlHomeWorkDemo01().getTheAverageSalaryOfAllTeachers();
     }
 
@@ -32,60 +31,59 @@ public class XmlHomeWorkDemo01 {
     public void getTheAverageSalaryOfAllTeachers() {
         // TODO  获取所有老师的平均工资
         try {
-            SAXReader saxReader = new SAXReader();
-            Document read = saxReader.read(FILEPATH);
-            // 读取xml文件获取Document
-
-            Element rootElement = read.getRootElement();
-            // 获取根标签
-
-            List<Element> elements = rootElement.elements();
-            // 获取所有的子标签
+            List<Element> elements = getElements();
 
             double theTotalWagesAnd = 0;
-            int cnt=0;
+            int cnt = 0;
             for (Element e :
                     elements) {
-                Element salary=e.element("salary");
+                Element salary = e.element("salary");
                 // 获取工资子标签
-                double salaryTemp=Double.parseDouble(salary.getText());
+                double salaryTemp = Double.parseDouble(salary.getText());
                 // 获取工资
-                theTotalWagesAnd+=salaryTemp;
+                theTotalWagesAnd += salaryTemp;
                 cnt++;
             }
-            System.out.println("所有老师平均工资是 "+theTotalWagesAnd/cnt);
+            System.out.println("所有老师平均工资是 " + theTotalWagesAnd / cnt);
         } catch (DocumentException e) {
             e.printStackTrace();
         }
     }
+
+    private List<Element> getElements() throws DocumentException {
+        // TODO 获取子标签
+        Document read = getDocument();
+        // 读取xml文件获取Document
+
+        Element rootElement = read.getRootElement();
+        // 获取根标签
+        // 获取所有的子标签
+        return rootElement.elements();
+    }
+
     public void giveWomenTeachersRaise() {
         // TODO  给所有的女老师 工资+100
         try {
-            SAXReader saxReader = new SAXReader();
-            Document read = saxReader.read(FILEPATH);
-            // 读取xml文件获取Document
+            Document read = getDocument();
 
-            Element rootElement = read.getRootElement();
-            // 获取根标签
-
-            List<Element> elements = rootElement.elements();
+            List<Element> elements = getElements();
             // 获取所有的子标签
 
             for (Element e :
                     elements) {
                 Element gender = e.element("gender");
                 // 获取性别子标签
-                Element salary=e.element("salary");
+                Element salary = e.element("salary");
                 // 获取工资子标签
-                if ("女".equals(gender.getText())){
+                if ("女".equals(gender.getText())) {
                     // 如果性别为女
-                    double salaryTemp=Double.parseDouble(salary.getText())+100;
+                    double salaryTemp = Double.parseDouble(salary.getText()) + 100;
                     // 工资加100
                     salary.setText(String.valueOf(salaryTemp));
                     // 设置工资增加100
                 }
             }
-            refreshXml(FILEPATH,"UTF-8",read);
+            refreshXml(FILEPATH, "UTF-8", read);
             // 刷新到文件
 
         } catch (DocumentException e) {
@@ -97,9 +95,7 @@ public class XmlHomeWorkDemo01 {
         // TODO 2 写一个方法 删除工资少于2000的Teacher标签
 
         try {
-            SAXReader saxReader = new SAXReader();
-            Document read = saxReader.read(FILEPATH);
-            // 读取xml文件获取document
+            Document read = getDocument();
 
             Element rootElement = read.getRootElement();
             // 获取根标签
@@ -125,13 +121,17 @@ public class XmlHomeWorkDemo01 {
 
     }
 
-    public void setTeacher() {
-        // TODO 写一个方法 把参数list中的所有Teacher写入一个xml文件中  根标签File  Teacher属性  name tid salary sex
-//    public void setTeacher(ArrayList<XmlHomeWorkForTeacher> arrayList,String filePath){
-        XmlHomeWorkForTeacher xmlHomeWorkForTeacher = new XmlHomeWorkForTeacher();
-        ArrayList<XmlHomeWorkForTeacher> arrayList = xmlHomeWorkForTeacher.getArrayList();
-        // 获取老师的集合
+    private Document getDocument() throws DocumentException {
+        // TODO 获取document
+        SAXReader saxReader = new SAXReader();
+        // 读取xml文件获取document
+        return saxReader.read(FILEPATH);
+    }
 
+
+    public void setTeacher(ArrayList<XmlHomeWorkForTeacher> arrayList, String filePath) {
+        // TODO 写一个方法 把参数list中的所有Teacher写入一个xml文件中  根标签File  Teacher属性  name tid salary sex
+        // 获取老师的集合
         Document document = DocumentHelper.createDocument();
         // 创建一个 document 对象
         Element file = document.addElement("File");
@@ -157,7 +157,7 @@ public class XmlHomeWorkDemo01 {
         // 把更改刷新到文件中
     }
 
-    private static void refreshXml(String fileName, String encoding, Document doc) {
+    public void refreshXml(String fileName, String encoding, Document doc) {
         // TODO 写一个方法：把document对象刷新到xml文件中
         try {
             FileOutputStream fos = new FileOutputStream(fileName);
@@ -168,9 +168,9 @@ public class XmlHomeWorkDemo01 {
             opf.setEncoding(encoding);
             //创建一个OutputFormat指定xml声明区的编码集
             XMLWriter writer = new XMLWriter(osw, opf);
-            //创建一个xmlwrietr方法关联字符流
+            //创建一个xml writer方法关联字符流
             writer.write(doc);
-            //使用xmlwrietr的writer方法把doc对象中的信息刷新到xml文件中
+            //使用xml writer的writer方法把doc对象中的信息刷新到xml文件中
             writer.close();
         } catch (Exception e) {
             System.out.println("刷新文件出错");

@@ -39,22 +39,22 @@ public class HomeWorksForXml {
             // 存储数据
         }
 
-        String maxId ="";
-        int maxScore=0;
+        String maxId = "";
+        int maxScore = 0;
         // 记录最大成绩和id
         Set<Map.Entry<String, String>> entries = stringHashMap.entrySet();
         for (Map.Entry<String, String> entry :
                 entries) {
-            String id= (entry.getKey());
-            int score=Integer.parseInt(entry.getValue());
-            if (score>=maxScore){
+            String id = (entry.getKey());
+            int score = Integer.parseInt(entry.getValue());
+            if (score >= maxScore) {
                 // 找到成绩最高的人
-                maxScore=score;
-                maxId=id;
+                maxScore = score;
+                maxId = id;
             }
         }
 
-        System.out.println("分数最高的学生的id是:"+maxId+" 分数是"+maxScore);
+        System.out.println("分数最高的学生的id是:" + maxId + " 分数是" + maxScore);
 
 
     }

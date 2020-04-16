@@ -62,20 +62,21 @@ public class XmlHomeWorkForTeacher {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    public ArrayList<XmlHomeWorkForTeacher> getArrayList(){
+
+    public ArrayList<XmlHomeWorkForTeacher> getArrayList() {
         ArrayList<XmlHomeWorkForTeacher> xmlHomeWorkForTeachers = new ArrayList<>();
         // 创建一个集合放置
-        int max=10;
+        int max = 10;
         for (int i = 0; i < max; i++) {
             // 生成10个老师对象
-            String id=String.valueOf(HomeWorkOfMath.randomOfMinToMax(1,5000));
+            String id = String.valueOf(HomeWorkOfMath.randomOfMinToMax(1, 5000));
             // 随机 0-50的id
-            String name=("杨"+ HomeWorkOfMath.randomOfMinToMax(1,500)+"磊");
+            String name = ("杨" + HomeWorkOfMath.randomOfMinToMax(1, 500) + "磊");
             // 随机姓名
-            double salary=HomeWorkOfMath.randomOfMinToMax(1000,3000);
+            double salary = HomeWorkOfMath.randomOfMinToMax(1000, 3000);
             // 随机 1000-3000的工资
-            int genderTemp=HomeWorkOfMath.randomOfMinToMax(0,1);
-            String gender=(genderTemp==0?"男":"女");
+            int genderTemp = HomeWorkOfMath.randomOfMinToMax(0, 1);
+            String gender = (genderTemp == 0 ? "男" : "女");
             // 随机性别
             XmlHomeWorkForTeacher xmlHomeWorkForTeacher = new XmlHomeWorkForTeacher(name, id, salary, gender);
             // 创建老师对象
@@ -89,7 +90,7 @@ public class XmlHomeWorkForTeacher {
         // TODO 打印方法
         for (XmlHomeWorkForTeacher x :
                 arrayList) {
-            System.out.println(x.getId()+" "+x.getName()+" "+x.getSalary()+" "+x.getGender());
+            System.out.println(x.getId() + " " + x.getName() + " " + x.getSalary() + " " + x.getGender());
         }
     }
 }
