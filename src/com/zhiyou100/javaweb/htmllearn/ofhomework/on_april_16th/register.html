@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register 注册界面</title>
+</head>
+<body>
+<!--注册界面
+组成 表单+表格
+-->
+<h1 align="center">注册页面</h1>
+<form action="#">
+    <table align="center" border="1px" cellpadding="2px" cellspacing="0" width="60%">
+        <caption>注册表单</caption>
+        <tr>
+            <td>用户名</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>照片</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td>电话</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                女:<input type="radio" checked="checked" name="Sex" value="woman">
+                <!--         性别，默认是女性       -->
+                男: <input type="radio" name="Sex" value="man">
+            </td>
+        </tr>
+        <tr>
+            <td>爱好</td>
+            <td>
+                篮球: <input type="checkbox" name="basketball">
+                足球: <input type="checkbox" name="football">
+                排球: <input type="checkbox" name="volleyball">
+                台球: <input type="checkbox" name="billiards" checked="checked">
+                <!-- 默认选择台球 -->
+            </td>
+        </tr>
+        <tr>
+            <td>籍贯</td>
+            <td>
+                <select name="province" id="province" >
+                    <option >选择省份</option>
+<!--                    <option value="null" selected="selected">选择省份</option>-->
+                    <option value="henanProvince">河南省</option>
+                    <option value="yunnanProvince">云南省</option>
+                    <option value="zhejiangProvince"></option>
+                </select>
+                <select name="city" id="city">
+                    <option >选择城市</option>
+<!--                    <option value="null" selected="selected">选择城市</option>-->
+
+
+                    <option value="peking">北京</option>
+                    <option value="shanghai">上海</option>
+                    <option value="guangzhou">广州</option>
+                    <option value="shenzhen">深圳</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>介绍</td>
+            <td>
+                <textarea rows="2" cols="30">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="reset" value="重填">
+                <input type="submit" value="提交" align="center">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
