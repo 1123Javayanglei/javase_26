@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style type="text/css">
+        a:link{
+            /* *:link 只作用于a标签，表示a标签被访问前的的样式 */
+            color: white;
+            font-size: 20px;
+            background-color: yellow;
+        }
+        a:visited{
+        /* *:visited 只作用于a标签，表示a标签已经被访问过的样式   */
+            color: red;
+            font-size: 1px;
+            background-color: blue;
+        }
+        a:hover{
+        /*    *:hover 表示鼠标悬停时的样式 */
+            color: green;
+            background-color: red;
+        }
+        a:active{
+        /*    *:active 表示元素被点击瞬间的样式*/
+            font-size: 70px;
+            background-color: #66ccff;
+        }
+        input:focus{
+        /*  *:focus  表单组件获取输入焦点时的样式*/
+            color: yellow;
+            background-color: red;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<form action="#">
+    <label>
+        <input type="text">
+    </label>
+    <input type="submit" value="搜索">
+</form>
+<br>
+<a href="#">伪类标签</a>
+</body>
+</html>
