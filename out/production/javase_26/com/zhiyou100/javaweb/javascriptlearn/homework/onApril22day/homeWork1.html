@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业1</title>
+    <!--    写四个方法 打印四个方向的乘法口诀-->
+    <style>
+        table {
+            width: 900px;
+            height: 400px;
+            border: 1px red solid;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        table td {
+            text-align: center;
+            border-radius: 5px;
+            border: 1px blue solid;
+        }
+
+        h1 {
+            width: 900px;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<script>
+    function printStart(start) {
+        // TODO 打印标签起始标签
+        if (typeof start != "string") {
+            // 如果不是个字符串，抛出异常
+            throw "not a string";
+        }
+        document.write("<" + start + ">");
+    }
+
+    function printEnd(end) {
+        // TODO 打印结束标签
+        if (typeof end != "string") {
+            // 如果不是个字符串，抛出异常
+            throw "not a string";
+        }
+        document.write("</" + end + ">");
+    }
+
+    function printH1Title(title) {
+        // TODO 打印标题
+        document.write("<h1>" + title + "</h1>");
+    }
+
+    function leftTopPrint() {
+        // TODO 打印左上角
+        printH1Title("第一个九九乘法");
+        printStart("table");
+        for (let i = 1; i < 10; i++) {
+            printStart("tr");
+            for (let j = i; j < 10; j++) {
+                document.write("<td>" + i + "*" + j + "=" + (i * j) + "</td>");
+            }
+            printEnd("tr");
+        }
+        printEnd("table");
+        printStart("br");
+    }
+
+    function leftBottomPint() {
+        // TODO 打印左下角
+        printH1Title("第二个九九乘法");
+        printStart("table");
+        for (let i = 1; i < 10; i++) {
+            printStart("tr");
+            for (let j = 1; j <= i; j++) {
+                document.write("<td>" + i + "*" + j + "=" + (i * j) + "</td>");
+            }
+            printEnd("tr");
+        }
+        printEnd("table");
+    }
+
+    function rightTopPrint() {
+        // TODO 打印右上角
+        printH1Title("第三个九九乘法表");
+        printStart("table");
+        for (let i = 1; i < 10; i++) {
+            printStart("tr");
+            for (let j = 0; j < i; j++) {
+                document.write("<td style='border: none;'></td>");
+            }
+            for (let j = i; j < 10; j++) {
+                document.write("<td>" + i + "*" + j + "=" + (i * j) + "</td>");
+            }
+            printEnd("tr");
+        }
+        printEnd("table");
+    }
+
+    function rightBottomPrint() {
+        // TODO 打印右下角
+        printH1Title("第四个九九乘法表");
+        printStart("table");
+        for (let i = 1; i < 10; i++) {
+            printStart("tr");
+            for (let j = 1; j < (10 - i); j++) {
+                document.write("<td style='border: none;'></td>");
+            }
+            for (let j = i; j > 0; j--) {
+                document.write("<td>" + i + "*" + j + "=" + (i * j) + "</td>");
+            }
+            printEnd("tr");
+        }
+        printEnd("table");
+    }
+
+    leftTopPrint();
+    leftBottomPint();
+    rightTopPrint();
+    rightBottomPrint();
+</script>
+</body>
+</html>

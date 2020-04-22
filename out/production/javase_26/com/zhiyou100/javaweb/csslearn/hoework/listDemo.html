@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表练习</title>
+    <style type="text/css">
+        .allDiv {
+            border: 1px red solid;
+
+            width: 800px;
+            height: 600px;
+            margin: 50px auto;
+            /*    居中效果*/
+        }
+
+        .topDiv {
+            border: 1px blue solid;
+
+            width: 700px;
+            height: 200px;
+            margin: 30px auto;
+
+        }
+
+        .topDivLeft {
+            border: 1px blue solid;
+
+            width: 300px;
+            height: 195px;
+        }
+
+        .topDivRight {
+            border: 1px red solid;
+
+            width: 300px;
+            height: 195px;
+            position: absolute;
+            left: 53%;
+            top: 82px;
+        }
+
+        .bottomDiv {
+            border: 1px #d0ff00 solid;
+
+            height: 330px;
+            width: 700px;
+            margin: 10px auto;
+
+
+        }
+
+        .bottomLeftDiv {
+            border: 1px #214770 solid;
+
+            height: 320px;
+            width: 200px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .bottomMiddleDiv {
+            border: 1px #8f15c3 solid;
+
+            height: 320px;
+            width: 200px;
+            margin-left: 30px;
+            float: left;
+        }
+
+        .bottomRightDiv {
+            border: 1px #25cfa8 solid;
+
+            height: 320px;
+            width: 200px;
+            margin-left: 40px;
+            float: left;
+        }
+
+        .selectStyle {
+            border: #e0225e 2px solid;
+
+            width: 200px;
+            height: 320px;
+            font-size: 45px;
+        }
+
+
+        .bottomMiddleDiv input{
+            border: 1px seagreen solid;
+            width: 200px;
+            height: 75px;
+            background-image: url("https://gitee.com/Java1123yanglei/myPicture/raw/master/uPic/Yn0y4i.png");
+        }
+
+        #button1 {
+            background-position: 40% 14%;
+        }
+
+        #button2 {
+            background-position: 40% 38%;
+        }
+
+        #button3 {
+            background-position: 40% 60%;
+        }
+
+        #button4 {
+            background-position: 40% 84%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="allDiv">
+    <div class="topDiv">
+        <div class="topDivLeft"></div>
+        <div class="topDivRight"></div>
+    </div>
+    <div class="bottomDiv">
+        <div class="bottomLeftDiv">
+            <form action="#">
+                <label>
+                    <select class="selectStyle" size="8">
+                        <option value="11">选项11</option>
+                        <option value="12">选项12</option>
+                        <option value="13">选项13</option>
+                        <option value="14">选项14</option>
+                        <option value="15">选项15</option>
+                    </select>
+                </label>
+            </form>
+        </div>
+        <div class="bottomMiddleDiv">
+            <form action="#">
+                <input type="button" id="button1"><br>
+                <input type="button" id="button2"><br>
+                <input type="button" id="button3"><br>
+                <input type="button" id="button4"><br>
+            </form>
+        </div>
+        <div class="bottomRightDiv">
+            <form action="#">
+                <label>
+                    <select class="selectStyle" size="8">
+
+                    </select>
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

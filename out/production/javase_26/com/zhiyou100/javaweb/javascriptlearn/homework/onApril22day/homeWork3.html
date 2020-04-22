@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业 3</title>
+<!--    写一个方法 判断求圆周率到3.1415926-3.1415927之间需要的是运算步骤：
+                   Pi=4/1-4/3+4/5-4/7+4/9+…-->
+</head>
+<body>
+<script>
+    function MyPI() {
+        // TODO  求圆周率到3.1415926-3.1415927之间需要的是运算步骤
+        let cnt;
+        let pi=0;
+        let piMin=3.1415926;
+        let piMax=3.1415927;
+        let sum=0;
+        for (cnt=1;pi<piMin||pi>piMax;cnt++){
+            if (cnt%2===0){
+                sum=-4.0/(2*cnt-1);
+            }else {
+                sum=4.0/(2*cnt-1);
+            }
+            pi+=sum;
+        }
+        console.log("计算了 "+(cnt-1)+"次");
+    }
+    MyPI();
+</script>
+
+</body>
+</html>

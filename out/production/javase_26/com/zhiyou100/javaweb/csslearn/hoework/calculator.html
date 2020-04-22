@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器实现</title>
+    <style type="text/css">
+        .frame{
+            width: 560px;
+            height: 260px;
+            border: 2px solid black;
+            /* 设置边框*/
+            border-radius:10px;
+            /* 圆角效果*/
+        }
+        .calculatorStyle{
+            font-size: 30px;
+            position: absolute;
+            letter-spacing: 50px;
+            top: 5px;
+            left: 180px;
+        }
+        .theFormStyle{
+            position: absolute;
+            top: 80px;
+            left: 180px;
+
+        }
+        .inputBox{
+            width: 180px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .empty{
+            border: none;
+            font-size: 25px;
+            font-weight: bold;
+            color: brown;
+        }
+        .tableStyle{
+            width: 250px;
+            height: 100px;
+            position: absolute;
+            left: 20px;
+            top: 160px;
+            text-align: center;
+        /*    字体居中 */
+        }
+        .tableTwoStyle{
+            width: 240px;
+            height: 100px;
+            position: absolute;
+            left: 300px;
+            top: 160px;
+            text-align: center;
+            font-size: 25px;
+        }
+        td{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="frame">
+    <h2 class="calculatorStyle">计算器</h2>
+    <form action="#" class="theFormStyle">
+        <label>
+            <input type="text" class="inputBox">
+        </label>
+        <input type="submit" value="清空" class="empty">
+    </form>
+    <table  class="tableStyle">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <table class="tableTwoStyle">
+        <tr>
+            <td>+</td>
+            <td>-</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>.</td>
+            <td>=</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
