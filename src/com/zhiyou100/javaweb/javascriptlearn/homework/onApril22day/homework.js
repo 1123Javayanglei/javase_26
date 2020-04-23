@@ -114,7 +114,7 @@ function toDetermineWhetherANumberIsPrime(number) {
 }
 
 function returnsTheNumberOfDigitsOfANumber(number) {
-    // TODO 判断一个数字的位数
+    // TODO 判断一个整数的位数
     if (typeof number != "number") {
         return;
     }
