@@ -180,3 +180,5 @@ function MyPI() {
     }
     console.log("计算了 " + (cnt - 1) + "次");
 }
+
+console.log("hello");

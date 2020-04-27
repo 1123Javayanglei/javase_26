@@ -26,7 +26,7 @@ public class Day04HomeWork {
         judgingPrimeNumbers(4);
 
 
-        myPi();
+        piOfZuChongZhi();
 
         getAllWaterFlowerNumber();
 
@@ -87,7 +87,7 @@ public class Day04HomeWork {
         System.out.println();
     }
 
-    public static void myPi(){
+    public static void piOfZuChongZhi(){
         /*
          * 特点：
          * 奇数次为正，偶数次为负
@@ -167,10 +167,5 @@ public class Day04HomeWork {
             }
             System.out.println();
         }
-    }
-}
-class text{
-    public static void main(String[] args) {
-        Day04HomeWork.myPi();
     }
 }
