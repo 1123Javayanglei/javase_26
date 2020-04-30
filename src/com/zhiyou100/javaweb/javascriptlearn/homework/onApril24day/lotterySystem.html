@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖系统</title>
+</head>
+<body>
+<script src="../onApril23day/datehomework/homework.js">
+    // 引入文件
+</script>
+<script>
+    numberOfTimes = 0;
+    // 记录次数
+    wins = 0;
+    // 记录赢的次数
+    function getMessage(){
+        // TODO 获取信息
+        numberOfTimes++;
+        // 次数增加
+        let rule = "随机3位数，含有8为赢";
+        // 记录规则;
+        let thisResult = myRandom(0, 9) + myRandom(0, 9) * 10 + myRandom(1, 9) * 100;
+        // 记录随机的3位数
+        let victoryOrDefeat=thisResult.toString().indexOf('8')===-1?"输":"赢";
+        // 判断是否包含8
+
+        if (victoryOrDefeat==="赢"){
+            wins++;
+            // 赢的次数+1
+        }
+        let probabilityOfWinning = wins/numberOfTimes*100+"%"
+        // 记录概率
+        return `抽奖规则：${rule}
+本次结果: ${thisResult} ${victoryOrDefeat}
+累计次数: ${numberOfTimes}
+赢得概率：${probabilityOfWinning}
+继续抽奖吗？
+    `;
+    }
+    function lotterySystem(){
+        // TODO 抽奖系统
+        let b = confirm(getMessage());
+        if (b===true){
+            // 如果等于true，继续
+            lotterySystem();
+        }
+    }
+    lotterySystem();
+
+
+
+</script>
+</body>
+</html>

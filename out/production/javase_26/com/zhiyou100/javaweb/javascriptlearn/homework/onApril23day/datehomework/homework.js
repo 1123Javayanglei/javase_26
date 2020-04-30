@@ -53,7 +53,7 @@ function addZero(num) {
 }
 
 function getIntoStringOutDate(s) {
-    // TODO 写一个方法获取参数字符串表示的时间 距离过年还有多少天：字符串格式：1900-11-12,  距离下一年的1月1日
+    // TODO 写一个方法获取参数字符串表示的时间 距离过年还有多少天：字符串格式：1900-11-12
     if (typeof s != "string" || s.length < 10 || s.indexOf("-") === -1) {
         // 判断格式是否合法
         return;
@@ -109,7 +109,7 @@ function returnsTheNumberOfDigitsOfANumber(number) {
 }
 
 function printArray1(array) {
-    // TODO 打印参数整数数组 横着打印
+    // TODO 打印参数整数数组
     for (let i = 0; i < array.length; i++) {
         for (let j = 1; j <= array[i]; j++) {
             document.write("*");
@@ -119,7 +119,7 @@ function printArray1(array) {
 }
 
 function printArray2(array) {
-    // TODO 打印参数整数数组：竖着打印
+    // TODO 打印参数整数数组：
     let max = array.slice().sort().pop();
     // 找到最大值
     document.write("<table>");
@@ -134,3 +134,5 @@ function printArray2(array) {
         }
     }
 }
+
+
