@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4月26日作业</title>
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            margin: 10px auto;
+            border: 1px #66ccff solid;
+        }
+        input{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<script>
+    window.onload=function () {
+        addSpan();
+        // 放在onload中
+    }
+    function myDelOne() {
+        // TODO  删除文本中含有4的div标签
+        let elementsByTagName = document.getElementsByTagName("div");
+        // 获取所有的div
+        for (let i = 0; i < elementsByTagName.length; i++) {
+            let elementsByTagNameElement = elementsByTagName[i];
+            // 提取每个div节点
+            let innerText = elementsByTagNameElement.innerHTML;
+            // 获取文本内容
+            if (innerText.indexOf("4")!==-1){
+                // 判读是否包含4
+                let parentElement = elementsByTagNameElement.parentElement;
+                // 获取父标签
+                parentElement.removeChild(elementsByTagNameElement);
+                // 删除此标签
+            }
+        }
+    }
+    function addSpan() {
+        // TODO 在文档一加载，就给div_1 添加一个span标签
+        let elementById1 = document.getElementById("div_1");
+        // 获取div1
+        let htmlSpanElement = document.createElement("span");
+        // 创建span标签
+        htmlSpanElement.innerHTML="<br>我是一个span";
+        // 设置属性
+        elementById1.appendChild(htmlSpanElement);
+        // 添加到div1中
+    }
+</script>
+
+<div id="div_1">div_1111</div>
+<div id="div_2">div_1112222</div>
+<div id="div_3">div_111222233333</div>
+<div id="idv_4">div_1111223334</div>
+    <input type="button" value="删除文本中有4的div标签" onclick="myDelOne()">
+    <input type="button" value="在div_1中添加一个span标签" id="buttonOne">
+
+</body>
+</html>
