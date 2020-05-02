@@ -41,12 +41,6 @@
         }
     </style>
     <script>
-        let a="1343.43245";
-        let b=a.indexOf(".");
-        console.log(b);
-        let c=a.substring(0,b+3);
-        console.log(c);
-
         function insert(num) {
             // TODO 插入
             document.form.textView.value = document.form.textView.value + num;
@@ -56,17 +50,17 @@
             // TODO 计算结果，并且结果保留两位小数
             let exp = document.form.textView.value;
             if (exp) {
-                 let eval1 = eval(document.form.textView.value);
+                let eval1 = eval(document.form.textView.value);
                 // eval() 执行括号内的语句 , 记录结果
                 let number = eval1.toString().indexOf(".");
-                if (number!==-1){
+                if (number !== -1) {
                     // 如果是小数，保留两位小数
-                    eval1=eval1.toString().substring(0,number+3);
+                    eval1 = eval1.toString().substring(0, number + 3);
                     // 截取
-                    document.form.textView.value=eval1;
-                }else {
+                    document.form.textView.value = eval1;
+                } else {
                     // 如果不是小数，直接赋值
-                    document.form.textView.value=eval1;
+                    document.form.textView.value = eval1;
                 }
             }
         }
