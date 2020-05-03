@@ -110,12 +110,17 @@
 
     </style>
     <script>
-        var selLeft, selRight, div_1, div_2;
+        let selLeft, selRight, div_1, div_2;
+        // 设置全局变量，记录左边的select、右边的select，左上角的div、右上角的div
         window.onload = function () {
             selLeft = document.getElementsByName("sel_left")[0];
+            // 获取左边的select
             selRight = document.getElementsByName("sel_right")[0];
+            // 获取右边的select
             div_1 = document.getElementById("div_top_1");
+            // 获取左上角的div
             div_2 = document.getElementById("div_top_2");
+            // 获取右上角的div
 
             document.getElementById("button1").onclick = function () {
                 changeOption(selLeft, selRight, false);
@@ -135,30 +140,39 @@
         function setDiv() {
             // TODO 给左边的div设置内容
             let collLeft = selLeft.options, collRight = selRight.options;
+            // 获取左右两边select的所有option子节点
             let strLeft = "", strRight = "";
+            // 定义两个空字符串记录内容
             for (let i = 0; i < collLeft.length; i++) {
                 strLeft += collLeft[i].innerText + " ";
+                // 获取左边所有option的内容
             }
             for (let i = 0; i < collRight.length; i++) {
                 strRight += collRight[i].innerText + " ";
+                // 获取右边所有option的内容
             }
             div_1.innerText = strLeft;
             div_2.innerText = strRight;
+            // 赋值
         }
 
         function changeOption(node1, node2, isTag) {
             // TODO 把node1的option，添加到node2中
             let collOption = node1.options;
+            // 获取node1的所有option子节点
             for (let i = 0; i < collOption.length; i++) {
+                // 循环遍历
                 if (isTag || collOption[i].selected) {
+                    // 判断该option是否被选中
                     collOption[i].selected = false;
                     // 取消选中
                     node2.appendChild(collOption[i]);
-                    i++;
                     // 添加到右边的select中
+                    i--;
                 }
             }
             setDiv();
+            // 设置div的内容
         }
     </script>
 </head>
