@@ -1,5 +1,5 @@
 /*
- 单表查询
+ dql 单表查询
  */
 show databases;
 use db_266;
@@ -7,7 +7,13 @@ show tables;
 drop table student1;
 
 insert into student1(id, name, age, gender, score)
-values ('s110', '张三', 18, '男', 30.4);
+values ('s000', '王五', 10, '男', 100),
+       ('s002', '王舞', 98, '女', 40.4),
+       ('s003', '赵四', 45, '男', 34),
+       ('s004', '发展', 45, '女', 33),
+       ('s005', 'u哦v', 45, '男', 34),
+       ('s006', '团购', 45, '女', 53),
+       ('s007', '发个', 45, '男', 32);
 
 select *
 from student1;
@@ -127,46 +133,77 @@ select concat("hello", null);
  */
 select concat("我的生日是", ifnull(birthday, '2020-1-1'))
 from student1;
-/**
-  SELECT [DISTINCT] * | {fieldName1,fieldName2,...} FROM tableName
-	无条件查询
-		SELECT * FROM tabName
-			查询所有字段名
-		SELECT fieldName1,fieldName2,... FROM tabName
-			查询指定字段名
-	按条件查询
-		SELECT * FROM tabName
- WHERE 条件表达式
-			带关系运算符的查询
-		SELECT * | fieldName FROM tabName   WHERE fieldName [NOT] IN (元素1,元素2,...)
-			带in关键子的查询
-		SELECT * | fieldName FROM tabName  WHERE fieldName [NOT]  BETWEEN 值1 AND 值2
-			带BETWEEN AND 关键字
-		SELECT * | fieldName FROM tabName  WHERE fieldName IS [NOT] NULL
-			空值查询
-		SELECT DISTINCT fieldName FROM tabName
-			SELECT DISTINCT fieldName1,fieldName2,~ FROM tabName
-				用于多个字段
-			带DISTINCT关键字的查询语句 可以查询多个字段名，关系是&&
-		SELECT *|{fieldName1,fieldName2~}  FROM tableName [NOT] LIKE '匹配字符串';
-			带LIKE 关键字
-		SELECT *|{fieldName1,fieldName2~~} FROM tableName WHERE 条件表达式1 AND 条件表达式2 [···AND 条件表达式 n];
-			带 AND 关键字的多条件查询
-		SELECT *|{fieldName1,fieldName2~~} FROM tableName WHERE 条件表达式1 OR 条件表达式2 [···OR 条件表达式 n];
-			带 OR 关键字的多条件查询
-		or 和 and一起用
-	高级查询
-		聚合函数
-			SELECT COUNT(*) FROM tableName
-				COUNT()函数
-			SELECT SUM(字段名) FROM tableName
-				SUM()函数
-			SELECT AVG(字段名) FROM tableName
-				AVG()函数
-			SELECT MAX(字段名) FROM tableName
-				MAX()函数
-			SELECT MIN(字段名) FROM tableName
-				MIN()函数
-		对查询结果进行排序
- */
 
+
+/**
+  13 where 条件后面可以使用的运算符
+  + - * / %  算数运算符都可以
+ */
+use db_266;
+
+select *
+from student1
+where age + 1 = 13;
+/**
+  * = != >= <= <> 比较运算符
+ */
+select *
+from student1
+where age <> 12;
+# 不等于
+select *
+from student1
+where age != 12;
+# 不等于
+/*
+ between a and b 取值[a,b]之间的所有记录
+ */
+select *
+from student1
+where age between 12 and 18;
+# 取值 age 在12到18的信息
+
+/*
+ in(a,b,c,d) 取值a/b/c/d的所有记录
+ */
+select *
+from student1
+where age in (1, 2, 3, 4, 6, 18);
+# 取值age为 1、2、3、4、6、18的人
+
+/**
+  and 取得交集     or 取得并集
+ */
+select *
+from student1
+where age >= 10
+  and gender = '男';
+# 查找 年龄大于等于10，并且性别为男的数据
+/**
+  is null / is not null 判断是不是空值
+ */
+select *
+from student1
+where image is null
+   or score >= 30;
+# 查找 image为null，或者 分数大于等于30的人
+
+
+/**
+  having 组条件
+ */
+select age, count(*), max(score)
+from student1
+group by age;
+# 分组后 只能查询分组信息+聚合数据
+select age, count(*), max(score)
+from student1
+where age >= 15
+group by age;
+# 先条件查询，再分组
+select age, count(*), max(score)
+from student1
+group by age
+having age >= 15;
+# 先分组，再组条件筛选
+# 在HAVING子句中使用无聚合条件可能会效率低下。考虑将它们移到WHERE
