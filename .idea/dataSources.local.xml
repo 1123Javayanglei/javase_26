@@ -16,6 +16,8 @@
             <name qname="firsttext1" />
             <name qname="db_266" />
             <name qname="db_26_2" />
+            <name qname="myDatabase_26" />
+            <name qname="homework" />
           </node>
         </introspection-scope>
       </schema-mapping>
