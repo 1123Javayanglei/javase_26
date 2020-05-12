@@ -1,133 +1,182 @@
+/*
+作业：创建一个数据库db_26_2  指定编码集utf-8
+      删除数据库db_26_2
+      创建一个数据库db_26_2  指定编码集utf-8
+      使用数据库db_26_2
+      创建表：worker: wid wname wsalary wsex wbirthday wdy(是不是党员)
+      插入10条记录
+      查询所有记录
+      查询男工人的记录
+      把女工人的工资统一更改为4000  并且生日值为空
+      删除工资少于3000的工人
+      删除所有记录
+*/
+create database db_26_2 character set 'utf8mb4';
+# 创建一个数据库db_26_2  指定编码集utf-8
+drop database db_26_2;
+# 删除数据库db_26_2
+create database db_26_2 character set 'utf8mb4';
+# 创建一个数据库db_26_2  指定编码集utf-8
+use db_26_2;
+# 使用数据库db_26_2
+drop table worker;
+create table worker
+(
+    id               char(4),
+    name             varchar(10),
+    salary           float(20, 6),
+    gander           char(1),
+    birthday         date,
+    isItAPartyMember boolean,
+    department       char(3) comment '部门'
+# comment 注释
+);
+# 创建表：worker: wid wname wsalary wsex wbirthday wdy(是不是党员)
+insert into worker
+values ('s001', '张三', 2000, '男', '2020-10-1', false, '销售部'),
+       ('s002', '李四', 3000, '男', '2020-10-3', false, '销售部'),
+       ('s003', '王五', 4000, '男', '2020-10-3', true, '销售部'),
+       ('s004', '王路', 2100, '男', '2020-10-3', true, '教学部'),
+       ('s005', '王舞', null, '女', '2020-10-3', false, '教学部'),
+       ('s006', '赵六', 5000, '男', '2020-10-3', true, '教学部'),
+       ('s007', '赵四', 6000, '女', '2020-10-3', false, null),
+       ('s008', '王富贵', 7000, '男', '2020-10-3', true, '人事部'),
+       ('s009', '李狗蛋', 8000, '女', '2020-10-3', false, '人事部'),
+       ('s010', '李瞬水', null, '男', '2020-10-3', false, '人事部');
+insert into worker
+values ('s011', '张三1', 20000, '男', '2020-10-1', false, '销售部'),
+       ('s012', '李四2', 30004, '男', '2020-10-3', false, '销售部'),
+       ('s013', '王五3', 40003, '男', '2020-10-3', true, '销售部'),
+       ('s014', '王路4', 21030, '男', '2020-10-3', true, '教学部'),
+       ('s015', '王舞1', null, '女', '2020-10-3', false, '教学部'),
+       ('s016', '赵六4', 50030, '男', '2020-10-3', true, '教学部'),
+       ('s017', '赵四5', 60030, '女', '2020-10-3', false, null),
+       ('s018', '王富5贵', 70300, '男', '2020-10-3', true, '人事部'),
+       ('s019', '李狗1蛋', 80030, '女', '2020-10-3', false, '人事部'),
+       ('s010', '李瞬1水', null, '男', '2020-10-3', false, '人事部');
+# 插入10条记录
+select *
+from worker;
+# 查询所有记录
+select *
+from worker
+where gander = '男';
+# 查询男工人的记录
+update worker
+set salary=4000,
+    birthday=null
+where gander = '女';
+# 把女工人的工资统一更改为4000  并且生日值为空
+delete
+from worker
+where salary <= 3000;
+#       删除工资少于3000的工人
+truncate table worker;
+#       删除所有记录
+
+
 /**
-  创建一个学生表：
-    student： sid 学号,name 姓名,gender 性别,id 班级编号,score 分数,level 级别(班长/学生 一个班级只有一个班长)
-  创建一个班级表
-    class: class: id 班级编号,name 班级名称,classTraining 班训
+  作业：
+  获取工资小于1200或者出生日期在1995年后的
+  获取工资为null或者部门为null
+  获取工资在10000到12000之间的
+  获取名字为 张工或者苗工 或者 王工
+  获取所有员工信息但是工资倒序，工资相同按年龄升序
+  获取名字中含有2
+  获取姓为苗的记录
+  让素有员工自我介绍，我叫xx 工资xx，我是人
+  所有女员工的工资+100
+  获取总人数，最高工资，有工资的员工的平均工资，所有员工的普通工资
+  获取男员工和女员工的总人数，最高工资
+  获取部门信息：部门的名字 部门员工数 部门最高工资 平均工资
+  获取每个部门男生的人数
+  获取部门信息：部门的名字 部门员工数 部门最高工资 平均工资 要求：平均工资大于12000
+ */
 
-  创建20个学生，4个班级，3个班长，2个学生的id为null，一个班级没有学生
-  获取所有班长的信息
-  获取所有班级的平均分，最高分和班级信息
-  获取所有学生及其班级的信息
-  获取每个班级的最高分的学生的信息
-  获取班训中含有 '好' 字的所有学生的信息
-  获取每个学生的信息及其与平均分之间的差距
-  获取每个学生及其班长的信息
-  获取不和张三同一个班级的学生的信息
-  获取和张三班的任意一个学生相同分数的学生的信息
-  */
+select *
+from worker
+where salary < 1200
+   or birthday >= '1996-1-1';
+# 获取工资小于1200或者出生日期在1995年后的
+select *
+from worker
+where salary is null
+   or department is null;
+#   获取工资为null或者部门为null
+select *
+from worker
+where salary between 10000 and 12000;
+#   获取工资在10000到12000之间的
+select *
+from worker
+where name like '_工';
+#   获取名字为 张工或者苗工 或者 王工
+select distinct name
+from worker;
+# 获取所有名字但不重复
+select timestampdiff(year, '2001-11-23', curdate());
+# 计算年龄
+select *
+from worker
+order by salary desc, timestampdiff(year, birthday, curdate());
+#   获取所有员工信息但是工资倒序，工资相同按年龄升序
+select *
+from worker
+where name like '%2%';
+#   获取名字中含有2
+select *
+from worker
+where name like '苗%';
+#   获取姓为苗的记录
+select concat('我叫', name, '工资', salary, '我是', gander, '人')
+from worker;
+#   让所  有员工自我介绍，我叫xx 工资xx，我是人
+update worker
+set salary=salary + 100
+where gander = '女';
+#   所有女员工的工资+100
+select count(*)                      as '总人数',
+       max(salary)                   as '最高工资',
+       (sum(salary) / count(salary)) as '有工资的的员工的平均工资',
+       (sum(salary) / count(*))      as '所有员工的平均工资'
+from worker;
+#   获取总人数，最高工资，有工资的员工的平均工资，所有员工的普通工资
+select count(gander = '男') as '男员工的总人数', count(gander = '女') as '女员工的总人数', max(salary) as '最高工资'
+from worker;
+#   获取男员工和女员工的总人数，最高工资
+select department as '部门名字', count(*) as '部门的员工数', max(salary) as '部门的最高工资', sum(salary) / count(*) as '平均工资'
+from worker
+group by department;
+#   获取部门信息：部门的名字 部门员工数 部门最高工资 平均工资
+select department as '部门', count(gander = '男') as '男生的人数'
+from worker
+group by department;
+#   获取每个部门男生的人数
+select department as '部门名字', count(*) as '部门的员工数', max(salary) as '部门的最高工资', sum(salary) / count(*) as '平均工资'
+from worker
+group by department
+having '平均工资' > 12000;
+#   获取部门信息：部门的名字 部门员工数 部门最高工资 平均工资 要求：平均工资大于12000
 
-show databases;
-create database homework;
-use homework;
-create table student
-(
-    studentId       int primary key,
-    studentName     varchar(10),
-    studentGender   char(1),
-    studentScore    float(5, 2),
-    studentPosition boolean unique,
-    # 班长为唯一
-    myClassId       int
-    # 预备主键
-);
-#   创建一个学生表：
-#     student： sid 学号,name 姓名,gender 性别,id 班级编号,score 分数,position 级别(班长/学生 一个班级只有一个班长)
-create table class
-(
-    classId       int primary key,
-    className     varchar(10),
-    classTraining text
-);
-#   创建一个班级表
-#     class: class: id 班级编号,name 班级名称,classTraining 班训
 
-alter table student
-    add constraint fk_1 foreign key (myClassId) references class (classId);
-# ALTER TABLE students ADD CONSTRAINT fk_class_id FOREIGN KEY (class_id) REFERENCES classes (id);
-# 给myClassId 字段添加外键约束
+/**
+  查询语句 查询条件 分组 组条件 排序 分页
 
-insert into class
-values (001, '第1班', '只要坚持不懈，嘲笑你的人，迟早会被你笑死。'),
-       (002, '第2班', '真正的勇士，敢于直面银行卡上的余额，敢于正视磅秤上的数字。'),
-       (003, '第3班', '远方的路，除了未知，还有绝望。'),
-       (004, '第7班', '谁说我不会乐器？我退堂鼓打的可好了。')
-;
-select *
-from class;
-insert into student (myClassId, studentName, studentGender, studentScore, studentPosition, studentId)
-values (001, '张1', '男', 10.5, false, 001),
-       (001, '张2', '女', 30, false, 002),
-       (001, '张3', '男', 110, false, 003),
-       (004, '张4', '女', 63, false, 004),
-       (001, '张5', '男', 84, false, 005),
-       (001, '张6', '女', 57, false, 006),
-       (004, '张7', '男', 45, false, 007),
-       (001, '张8', '女', 50.5, true, 008),
-       (002, '张9', '男', 11.5, false, 009),
-       (002, '李1', '女', 16.5, false, 0010),
-       (002, '李2', '女', 105, true, 0011),
-       (002, '李3', '男', 175, false, 0012),
-       (002, '李4', '女', 87, false, 0013),
-       (002, '李5', '男', 104, false, 0014),
-       (004, '李6', '女', 60.5, false, 0015),
-       (004, '李7', '男', 13, false, 0016),
-       (004, '李8', '女', 141, true, 0017),
-       (004, '李9', '男', 115, false, 0018),
-       (null, '王1', '女', 65, false, 0019),
-       (null, '王2', '男', 1.5, false, 0020)
-;
-select *
-from student;
-#   创建20个学生，4个班级，3个班长，2个学生的id为null，一个班级没有学生
-select *
-from student
-where studentPosition = true;
-#   获取所有班长的信息
+  获取每个部门男生的人数和平均工资，只要平均工资大于8000 按人数倒序，只显示前三名
+ */
+select count(gander='男') "人数", department "部门", avg(ifnull(salary, 0)) "平均工资"
+from worker
+group by department
+having avg(ifnull(salary,0))>8000
+order by count(gander='男') desc
+limit 0,3;
 
-select (select avg(ifnull(studentScore, 0)) from student) "平均分",
-       (select max(ifnull(studentScore, 0)) from student) "最高分",
-       classId,
-       className,
-       classTraining
-from class;
-#   获取所有班级的平均分，最高分和班级信息
-select *
-from student s
-         left join class t on s.myClassId = t.classId
-union
-select *
-from student s
-         right join class t on s.myClassId = t.classId;
-#   获取所有学生及其班级的信息
-
-select myClassId "班级", studentScore "最高分", studentId, studentName, studentPosition, studentScore
-from student
-where studentScore in (SELECT MAX(ifnull(studentScore, 0)) FROM student group by myClassId);
-#   获取每个班级的最高分的学生的信息
-select *
-from student
-where myClassId = (select classId from class where classTraining like '%好%');
-#   获取班训中含有 '好' 字的所有学生的信息
-select *, (select avg(ifnull(studentScore, 0)) from student) - studentScore "和平均分的差距"
-from student;
-#   获取每个学生的信息及其与平均分之间的差距
-select myClassId, studentName
-from student
-where studentPosition = true;
-# 班长信息
-# 1,张8
-# 2,李2
-# 4,李8
-select *, case myClassId when 1 then "张8" when 2 then "李2" when 4 then "李8" else "没有班长" end "班长"
-from student;
-# 是在写不了，只能用判断了
-#   获取每个学生及其班长的信息
-select *
-from student
-where myClassId != (select myClassId from student where studentName = '张3');
-#   获取不和张三同一个班级的学生的信息
-select *
-from student
-where myClassId = (select myClassId from student where studentName = '张3')
-  and studentScore = (select studentScore from student where studentName = '张3');
-#   获取和张三班的任意一个学生相同分数的学生的信息
+/*
+select 列/聚合数据
+from 表
+where 行条件
+group by 分组列
+having 组条件
+order by 排序列1 desc/asc,排序列2 desc/asc
+limit start,end;
+*/

@@ -22,16 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="git在Mac中第一次测试">
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/javaweb/mysql/demo/multiTableQuery.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zhiyou100/javaweb/mysql/homework/may11.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef999728-71d9-4813-a864-f9f32f64b1c9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ef999728-71d9-4813-a864-f9f32f64b1c9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaXmind/javaWeb/mySQL.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/JavaXmind/javaWeb/mySQL.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/javaweb/mysql/demo/constraint.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/javaweb/mysql/demo/constraint.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zhiyou100/javaweb/mysql/demo/dql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zhiyou100/javaweb/mysql/demo/dql.sql" afterDir="false" />
-    </list>
+    <list default="true" id="12ed42b6-bc84-4299-a0e0-60920c0c04f8" name="默认更改列表" comment="git在Mac中第一次测试" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -375,7 +366,7 @@
       <workItem from="1588947862635" duration="4747000" />
       <workItem from="1588953354683" duration="1299000" />
       <workItem from="1588965475141" duration="43743000" />
-      <workItem from="1589250432935" duration="20944000" />
+      <workItem from="1589250432935" duration="21247000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1582384766987</created>
