@@ -7,11 +7,242 @@
         // 引入百度的jQuery 版本 2.1.4
     </script>
     <script>
-        console.log("jQuery的版本 "+$.fn.jquery);
-        let 
+        // console.log("jQuery的版本 " + $.fn.jquery);
     </script>
+    <style>
+        #div_1 {
+            border: 1px solid blue;
+            width: 400px;
+            margin: 0;
+            padding: 2px;
+            background-color: #ffccff;
+        }
+
+        .cla_text {
+            width: 50px;
+        }
+
+        table {
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+            text-align: center;
+            width: 400px;
+            margin: 2px auto;
+        }
+
+        table td, table th {
+            border: 1px solid #aaaaaa;
+        }
+
+        table th {
+            border-color: #aaaaaa;
+        }
+
+        .showDiv {
+            display: block;
+        }
+
+        .hiderDiv {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+<div id="div_1">
+    <div id="div_top">
+        <input type="text" name="text_time">
+    </div>
+    <div id="div_2">
+        <div id="div_middle">
+            <input type="button" value="<<" id="but_11" class="cla_but">
+            <input type="button" value="<" id="but_12" class="cla_but">
+            <input type="text" name="text_year" class="text_text">年
+            <input type="text" name="text_month" class="cla_text"> 月
+            <input type="button" value=">" id="but_13" class="cla_but">
+            <input type="button" value=">>" id="but_14" class="cla_but">
+        </div>
+        <div id="div_bottom">
+            <table id="tab_time">
 
+            </table>
+        </div>
+    </div>
+</div>
 </body>
+<script>
+    let date = new Date();
+    // 定义一个全局变量记录时间
+    let objectTdNow;
+    // 定义一个全局变量记录 当前时间对应的td
+    window.onload=function () {
+        // 文档加载完毕时运行
+        document.getElementById("div_2").className="hiderDiv";
+        // 隐藏div_2
+        createTableAndSetText();
+        setButtonOn();
+    }
+    function setButtonOn() {
+        // TODO 给按钮注册事件
+        document.getElementById("but_11").onclick=function () {
+            // 年-1 按钮
+            date.setFullYear(date.getFullYear()-1);
+            // 设置date的值年-1
+            createTableAndSetText();
+            // 创建表格给文本框赋值
+        }
+        document.getElementById("but_14").onclick=function () {
+            // 年+1 按钮
+            date.setFullYear(date.getFullYear()+1);
+            // 设置date的年+1
+            createTableAndSetText();
+            // 创建表格
+        }
+        document.getElementById("but_12").onclick=function () {
+            // 月-1 按钮
+            date.setMonth(date.getMonth()-1);
+            // 设置date的值—1
+            createTableAndSetText();
+            // 创建表格
+        }
+        document.getElementById("but_13").onclick=function () {
+            // 月-1 按钮
+            date.setMonth(date.getMonth()+1);
+            // 设置date的值+1
+            createTableAndSetText();
+            // 创建表格
+        }
+        document.getElementsByName("text_time")[0].onfocus=function () {
+            // 给text_time 注册焦点事件
+            document.getElementById("div_2").className="showDiv";
+        }
+    }
+    function createTableAndSetText() {
+        // TODO 创建表格，给文本框赋值
+        setTextTime();
+        // 给text_time 设置文本内容
+        let table = document.getElementById("tab_time");
+        // 获取table
+        table.innerHTML="";
+        // 清除表格的内容
+        let tr = document.createElement("tr");
+        // 创建tr，添加第一行
+        for (let i = 0; i < "日一二三四五六".length; i++) {
+            let th = document.createElement("th");
+            // 创建th
+            th.innerText="日一二三四五六".charAt(i);
+            tr.appendChild(th);
+            // 把th添加到tr
+        }
+        table.appendChild(tr);
+        // 把tr添加到table中
+        let days = judgeTheDaysOfTheMonth(date.getFullYear(),date.getMonth()+1);
+        let day=1;
+        // 定义个变量记录号
+        let weekFirst = getWeekFirst(date.getFullYear(),date.getMonth()+1);
+        for (let i = 1; i <= 6; i++) {
+            // 创建最多6行，一个月最多有6个星期
+            let myTr = document.createElement("tr");
+            // 创建tr
+            for (let j = 0; j < 7; j++) {
+                // 创建7列， 第一列是星期日
+                let myTd = document.createElement("td");
+                // 创建td
+                if (i===1&&j<weekFirst||(day)>days){
+                    // 空行
+                    myTd.innerText=null;
+                }else {
+                    myTd.innerText=day.toString();
+                    if (day===date.getDate()){
+                        // 如果本天是date的天设置一下颜色
+                        objectTdNow=myTd;
+                        // 记录
+                        myTd.style.backgroundColor="#66ccff";
+                        // 设置背景颜色
+                    }
+                    day++;
+                    // 号++
+                    myTd.onclick=function () {
+                        // 给td注册事件
+                        changeDate(this);
+                    }
+                }
+                myTr.appendChild(myTd);
+                // td写入tr
+            }
+            table.appendChild(myTr);
+            // tr写入table
+            if (day>days){
+                break;
+            }
+        }
+        setExtYearMonth();
+    }
+    function setExtYearMonth() {
+        // TODO 给text_year 和text_month 赋值
+        document.getElementsByName("text_year")[0].value=date.getFullYear();
+        document.getElementsByName("text_month")[0].value=date.getMonth()+1;
+    }
+    function changeDate(node) {
+        //  TODO 更改日期
+        objectTdNow.style.backgroundColor=null;
+        // 清空原来的颜色
+        objectTdNow=node;
+        // 全局变量记录当前单元格
+        objectTdNow.style.backgroundColor="#66ccff";
+        // 更改当前单元格的颜色
+        date.setDate(node.innerText);
+        // 更改日期
+        setTextTime();
+        // 更改text_time的文本内容
+        document.getElementById("div_2").className="hideDiv";
+        // 隐藏div_1
+    }
+    function setTextTime(){
+        // TODO 湖区date的字符串，设置给text_time
+        document.getElementsByName("text_time")[0].value=date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "号";
+        // 设置给text_time
+    }
+    function judgeTheDaysOfTheMonth(year, month) {
+        /*
+         * @name: judgeTheDaysOfTheMonth
+         * @param: int year ,int month
+         * @description: TODO  判断本月有多少天
+         * @date: 2020/2/21 5:00 下午
+         * @return: int
+         */
+        let yearLag = (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0));
+        // yearLag true为闰年，false为平年
+        /*
+         * 平年的2月份是28天
+         * 闰年的2月份是29天
+         */
+        let maxDay = 0;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                maxDay = 31;
+                break;
+            case 2:
+                if (yearLag) {
+                    maxDay = 29;
+                } else {
+                    maxDay = 28;
+                }
+                break;
+            default:
+                maxDay = 30;
+        }
+        return maxDay;
+    }
+    function getWeekFirst(year,month) {
+        // TODO  判断该年该月的第一天是周期
+        return new Date(year, month - 1, 1).getDay();
+    }
+
+</script>
 </html>

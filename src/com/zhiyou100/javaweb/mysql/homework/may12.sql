@@ -25,8 +25,8 @@ create table student
     studentName     varchar(10),
     studentGender   char(1),
     studentScore    float(5, 2),
-    studentPosition boolean unique,
-    # 班长为唯一
+    studentPosition boolean,
+    # 班长不能为唯一
     myClassId       int
     # 预备主键
 );
@@ -90,6 +90,12 @@ select (select avg(ifnull(studentScore, 0)) from student) "平均分",
        className,
        classTraining
 from class;
+# 错误
+select avg(ifnull(s.studentScore, 0)) 平均分, max(ifnull(s.studentScore, 0)) "最高分", count(*) "总人数", c.*
+from student s,
+     class c
+where s.myClassId = c.classId
+group by c.classId;
 #   获取所有班级的平均分，最高分和班级信息
 select *
 from student s
@@ -98,6 +104,11 @@ union
 select *
 from student s
          right join class t on s.myClassId = t.classId;
+
+select c.*, s.*
+from class c,
+     student s
+where c.classId = s.myClassId;
 #   获取所有学生及其班级的信息
 
 select myClassId "班级", studentScore "最高分", studentId, studentName, studentPosition, studentScore
@@ -121,13 +132,48 @@ where studentPosition = true;
 select *, case myClassId when 1 then "张8" when 2 then "李2" when 4 then "李8" else "没有班长" end "班长"
 from student;
 # 是在写不了，只能用判断了
+
+select *
+from student
+where studentPosition = false;
+# 学生的信息
+select *
+from student
+where studentPosition = true;
+# 班长的信息
+
+select *
+from student s,
+     student ss
+where s.studentPosition = true
+  and ss.studentPosition = false
+  and ss.myClassId = s.myClassId;
+# 获取学生和班长的信息
+select *
+from (select * from student where studentPosition = false) s
+         left join student ss on ss.studentPosition = true and ss.myClassId = s.myClassId;
+# 获取所有学生和班长的信息
+
+
 #   获取每个学生及其班长的信息
 select *
 from student
-where myClassId != (select myClassId from student where studentName = '张3');
+where myClassId not in (select myClassId from student where studentName = '张3');
 #   获取不和张三同一个班级的学生的信息
+
+select myClassId
+from student
+where studentName = '张3';
+# 获取张3的cid
+# 获取张三版的学生的分数
+select studentScore
+from student
+where myClassId in (select myClassId from student where studentName = '张3');
+
+
 select *
 from student
-where myClassId = (select myClassId from student where studentName = '张3')
-  and studentScore = (select studentScore from student where studentName = '张3');
+where studentScore in
+      (select studentScore from student where myClassId in (select myClassId from student where studentName = '张3'))
+  and myClassId not in (select myClassId from student where studentName = '张3');
 #   获取和张三班的任意一个学生相同分数的学生的信息
