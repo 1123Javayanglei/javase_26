@@ -13,7 +13,7 @@ import java.sql.Statement;
  * @packageName: javase_26
  * @className: MyUtil01
  * @Description: TODO c3p0 工具类
- * @author: yanglei
+ * @author: yanglei5
  * @date: 2020/5/17
  */
 public class C3P0_Util {
