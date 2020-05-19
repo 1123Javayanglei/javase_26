@@ -137,7 +137,7 @@
       <recent name="$PROJECT_DIR$/src/com/zhiyou100/javaweb/htmllearn/htmldemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.myLocalTomcat">
+  <component name="RunManager" selected="应用程序.OOPReview">
     <configuration name="AddDeleteAndModify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhiyou100.javaweb.jdbc.AddDeleteAndModify" />
       <module name="javase_26" />
@@ -170,6 +170,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zhiyou100.javaweb.jdbc.homework.may14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OOPReview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhiyou100.oop.day01.OOPReview" />
+      <module name="javase_26" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhiyou100.oop.day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -338,9 +351,11 @@
       <item itemvalue="应用程序.HomeWork1" />
       <item itemvalue="应用程序.PreparedStatementDemo01" />
       <item itemvalue="应用程序.PreparedStatementDemo02" />
+      <item itemvalue="应用程序.OOPReview" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.OOPReview" />
         <item itemvalue="应用程序.PreparedStatementDemo02" />
         <item itemvalue="应用程序.PreparedStatementDemo01" />
         <item itemvalue="应用程序.HomeWork1" />
