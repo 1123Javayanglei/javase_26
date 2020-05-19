@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加删除相关的方法</title>
+</head>
+<body>
+<script>
+    window.onload = addTag;
+
+    function myDelNode() {
+        // TODO 删除标签方法
+        /**
+         * 先获取字节点的父节点
+         * 再调用父节点的removeChild() 方法删除子节点
+         * @type {HTMLElement}
+         */
+        let elementById = document.getElementById("input_1");
+        // 根据id获取
+
+        let parentElement = elementById.parentElement;
+        // 获取父节点
+
+        alert("删除前" + elementById.title);
+        // title_1
+
+        // elementById.title=null;
+        // 或者直接设置属性的值
+
+        let htmlElement = parentElement.removeChild(elementById);
+        // 调用父节点的removeChild() 来删除子节点
+
+        alert("删除之后" + elementById.title);
+        // title_1 还有是因为还在内存中可以添加到别的地方
+
+        let elementById1 = document.getElementById("input_1");
+        // 再获取一次
+
+        alert(elementById1);
+        // null 不在页面上了，但是还在内存中
+    }
+
+    function deleteAttribute() {
+        // TODO 删除属性
+        let elementById = document.getElementById("input_1");
+        // 获取标签
+        alert("name删除前" + elementById.name);
+        elementById.removeAttribute("name");
+        // 删除name属性
+        alert("name删除后" + elementById.name);
+
+    }
+
+    function addAttributes() {
+        // TODO 添加属性
+        let elementById = document.getElementById("submit_1");
+        // 获取
+        elementById.setAttribute("name","oneSubmit");
+        elementById.setAttribute("class","submit_1");
+        elementById.value="按钮";
+
+    }
+    function addTag() {
+        // TODO 添加标签
+        let htmlParagraphElement = document.createElement("p");
+        // 创建一个p标签
+        htmlParagraphElement.innerHTML="我是第一个被创建的p标签，我被添加了!";
+        let elementById = document.getElementById("oneDiv");
+        // 获取要子节点添加的父节点
+        elementById.appendChild(htmlParagraphElement);
+        // 把创建的p标签添加到div的最后面
+
+        let htmlParagraphElement1 = document.createElement("p");
+        // 创建第一个p标签
+        htmlParagraphElement1.innerHTML="我是第二个被创建的p标签，我到最前面了！"
+        let child = elementById.children[0];
+        // 获取div中第一子标签作为锚点
+        elementById.insertBefore(htmlParagraphElement1,child);
+        // 把 第二个创建的p，添加到最前面
+
+
+    }
+
+
+</script>
+<input type="text" name="oneName" value="tom" id="input_1" class="class_1" title="title_1">
+<input type="submit" id="submit_1">
+<div id="oneDiv">
+    <p id="oneDivInnerOne">我是div中的第一个p标签</p>
+</div>
+</body>
+</html>

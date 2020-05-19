@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作表格</title>
+    <style>
+        div {
+            border: 1px solid blue;
+            width: 1000px;
+            margin: 10px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            margin: 10px auto;
+            border: 1px solid blue;
+            border-collapse: collapse;
+            /*    合并相邻单元格之间的边框*/
+        }
+
+        table td {
+            border: 1px solid blue;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="div_1">
+
+</div>
+<hr size="3px" widht="80%" algin="center"/>
+<label>
+    行数
+    <input type="text" name="input_row">
+</label> <br>
+<label>
+    列数
+    <input type="text" name="input_column"/>
+</label> <br>
+<input type="button" value="createATable" onclick="creatTable();">
+<br>
+<script>
+    let div_1 = document.getElementById("div_1");
+    // 获取div_1
+    let color;
+
+    // 记录tr原本的颜色
+    function creatTable() {
+        // TODO 创建表格的方法
+        div_1.innerHTML = null;
+        // 设置div的内容为空
+        let table = document.createElement("table");
+        // 创建一个表格
+        let row = parseInt(document.getElementsByName("input_row")[0].value);
+        // 获取行
+        let column = parseInt(document.getElementsByName("input_column")[0].value);
+        // 获取列
+        if (isNaN(row) || isNaN(column)) {
+            // 合理性判断，行和列是否是数字
+            alert("行和列必须为数字");
+            return;
+        }
+        if (row < 0 || column < 0 || row > 20 || column > 20) {
+            // 合理性判断 行和列 取值范围 (0,20)
+            alert("行和列的取值范围 大于0，小于20");
+            return;
+        }
+        for (let i = 1; i <= row; i++) {
+            // 创建行
+            let tr = document.createElement("tr");
+            for (let j = 1; j <= column; j++) {
+                let td = document.createElement("td");
+                // 创建单元格
+                td.innerText = i + ":" + j;
+                // 设置td的文本内容
+                tr.appendChild(td);
+                // 把td添加到tr
+            }
+            tr.onmouseover = function () {
+                // TODO 鼠标移入，颜色更改
+                // 创建鼠标悬停在tr上的事件
+                color = this.style.backgroundColor;
+                // 记录颜色
+                this.style.backgroundColor = "yellow";
+            }
+            tr.onmouseout = function () {
+                // TODO 鼠标移出，颜色为原来的颜色
+                this.style.backgroundColor = color;
+                // 设置颜色为原来的颜色
+            }
+            table.appendChild(tr);
+            // 把tr添加到table
+        }
+        div_1.appendChild(table);
+        // 把table添加到div_1
+        changeBackgroundColor();
+    }
+</script>
+<hr size="3px" widht="80%" algin="center"/>
+<label>
+    要删删除的行
+    <input type="text" name="input_del_row">
+    <input type="button" value="删除行" id="button_row">
+</label> <br>
+<label>
+    要删除的列
+    <input type="text" name="input_del_column"/>
+    <input type="button" value="删除列" id="button_column">
+</label> <br>
+<br>
+<script>
+    window.onload = function () {
+        // TODO 文档加载成功给删除按钮添加事件
+        document.getElementById("button_row").onclick = delRow;
+        document.getElementById("button_column").onclick = delColumn;
+    }
+
+    function delRow() {
+        // TODO 删除行
+        let tableElement = div_1.getElementsByTagName("table")[0];
+        // 获取div_1下的第一个table标签
+        if (!tableElement) {
+            alert("table 不存在");
+            return;
+        }
+        // 获取删除的行
+        let row = parseInt(document.getElementsByName("input_del_row")[0].value);
+        if (isNaN(row) || row < 1) {
+            alert("输入的数据不合理");
+            return;
+        }
+        let tr = tableElement.getElementsByTagName("tr");
+        // 获取table下的所有tr标签
+        if (tr.length < row) {
+            alert("第" + row + "行不存在");
+            return;
+        }
+        let trElement = tr[row - 1];
+        // 获取要删除的行
+        tableElement.removeChild(trElement);
+        // 使用table的removeChild方法删除次行
+        changeBackgroundColor();
+    }
+
+    function delColumn() {
+        // TODO 删除列
+        let tableElement = div_1.getElementsByTagName("table")[0];
+        // 获取div下的第一个table
+        if (!tableElement) {
+            alert("table 不存在");
+            return;
+        }
+        // 获取删除的列
+        let column = parseInt(document.getElementsByName("input_del_column")[0].value);
+        let tr = tableElement.getElementsByTagName("tr");
+        // 获取table下的所有tr标签
+        for (let i = 0; i < tr.length; i++) {
+            let td = tr[i].getElementsByTagName("td");
+            // 获取本行内的所有单元格
+            if (column > td.length) {
+                // 合理性判断
+                alert("第" + column + "列 不存在");
+                return;
+            }
+            let trElement = td[column - 1];
+            // 获取要删除的单元格
+            tr[i].removeChild(trElement);
+            // 删除
+        }
+
+    }
+
+</script>
+<script>
+    function changeBackgroundColor() {
+        // TODO 实现隔行换色
+        let tableElement = div_1.getElementsByTagName("table")[0];
+        // 获取table
+        let tr = tableElement.getElementsByTagName("tr");
+        // 获取所有的tr
+        for (let i = 0; i < tr.length; i++) {
+            tr[i].style.backgroundColor = (i % 2 === 0 ? "#66ccff" : "white");
+        }
+    }
+</script>
+</body>
+</html>
