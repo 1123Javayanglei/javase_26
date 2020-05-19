@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内置对象</title>
+</head>
+<body>
+<script src="../homework/onApril23day/datehomework/homework.js"></script>
+<script>
+    /**
+     *
+     * DHTML: dynamic html
+     *      组成: 由三门语言和一个技术组成
+     *      html 提供标签，封装数据
+     *      css 提供属性，控制样式
+     *      dom 把标签解析为对象，对页面的元素进行解析，得到dom树
+     *      js 通过编程逻辑，操作对象实现页面动态效果
+     *
+     * 内置对象：浏览器对页面解析时，根据页面已经创建好的对象(js不需要创建，直接使用)
+     *     查看API： DHTML的API
+     *     把html页面解析为一个dom树
+     *
+     */
+
+    /**
+     * 内置对象：window
+     * 事件：
+     *      onload 页面加载成功的事件
+     *      onunload 页面关闭的事件
+     *      onresize 页面大小改变
+     *      onscroll 滚动条滚动
+     *
+     *      弹出对话框
+     *          window.alter([message]) 只有确定按钮
+     *          bConfirmed= window.confirm([message]) 有确定和取消按钮，可以获取选择
+     *          vTextData=window.prompt([message][,sDefaultValue]) 可以输入的对话框
+     *
+     *    移动
+     *          window.moveTo(ix,iY) 将当前窗口移动到指定的坐标位置
+     *          window.moveBy(iX,iY) 根据指定的值，移动当前窗口。
+     *          window.resizeBy(iX,iY) 调整窗口大小。
+     *          window.resizeTo(iWidth,iHeight) 动态调整窗口的大小。
+     *
+     *
+     */
+
+    function openAndCloseMethod() {
+        let myWindow = window.open("", null,
+            "height=1000,width=1000,status=yes,toolbar=yes,menubar=yes,location=no");
+        // 除了宽和高，其他在mac上都没用
+
+    }
+
+    function myCloseMethod(myWindow) {
+        myWindow.close();
+        // 关闭 当前页面,chrome无关闭提示
+    }
+
+    function judgeWhetherItIsPerfect(into) {
+        // TODO 判断一个数是不是完数
+        let sum = 0;
+        for (let i = 1; i < into; i++) {
+            if (into % i === 0) {
+                sum += i;
+            }
+        }
+        return sum === into;
+    }
+
+    function anAdvertisement() {
+        // TODO: 我是一个广告，实现围绕窗口行动，一直到点击为止
+        let myWindow = open("", "", "width=200px,height=200px"), interval;
+        // 打开一个页面
+        myWindow.onload = function () {
+            // 页面打开时执行
+            myWindow.document.write("<p>8块钱买不了上当，买不了吃亏</p>");
+            // 写入广告词语
+            myWindow.document.title = "我是一个广告";
+            // 写入标题
+            myWindow.resizeTo(window.screen.availWidth / 4, window.screen.availHeight / 4);
+            // 设置窗口为整个屏幕1/16的面积
+            function myRandMove() {
+                interval = myWindow.setInterval(function () {
+                    myWindow.moveTo(myRandom(0,window.screen.availWidth),myRandom(0,window.screen.availHeight));
+                    // 移动到屏幕内的随机位置
+                    // window.screen.availWidth 获取窗口的最大宽度
+                    // window.screen.availHeight 获取窗口的最大高度
+                },3000);
+            }
+
+            myRandMove();
+            myWindow.document.write("\<script\>\n" +
+                "    function myStop() {\n" +
+                "        // TODO 关闭页面\n" +
+                "        close();\n" +
+                "    }\n" +
+                "\<\/script\>");
+            // 写一个关闭页面的方法
+            myWindow.document.write("<input type='submit' value='stop' onclick='myStop()'>");
+            // 写一个按钮，通过按钮的onclick属性关联关闭页面的方法
+        }
+    }
+
+    anAdvertisement();
+
+
+    function myMoveToMethod() {
+        let window1 = window.open('', '我是一个新窗口', 'width=500px,height=500px');
+        // 创建一个小窗口，指定大小
+        window1.document.write("我是一个新窗口");
+        // 在创建的窗口写入信息
+        window1.moveTo(800, 800);
+        // 移动小窗口
+    }
+
+    // myMoveToMethod();
+
+    function myMoveByMethod() {
+        let windowOfMoveBy = open('', '', 'width=200px,height=200px');
+        // 创建一个小窗口，指定大小
+        windowOfMoveBy.document.write("<h1>moveBy测试</h1>");
+        // 在创建的窗口写入信息
+        windowOfMoveBy.moveBy(200, 300);
+        // 移动
+    }
+
+    // myMoveByMethod();
+
+    function myResizeByMethod() {
+        let windowOfMoveBy = open('', '', 'width=200px,height=200px');
+        // 创建一个小窗口，指定大小
+        windowOfMoveBy.document.write("<h1>ResizeBy测试</h1>");
+        // 在创建的窗口写入信息
+        windowOfMoveBy.resizeBy(1000, 1000);
+        // 改变窗口大小
+    }
+
+    // myResizeByMethod();
+    function myResizeToMethod() {
+        let windowOfMoveBy = open('', '', 'width=200px,height=200px');
+        // 创建一个小窗口，指定大小
+        windowOfMoveBy.document.write("<h1>ResizeTo测试</h1>");
+        // 在创建的窗口写入信息
+        windowOfMoveBy.resizeTo(window.screen.availWidth / 2, window.screen.availHeight / 2);
+        // 设置窗口为整个屏幕1/4的面积
+    }
+
+    // myResizeToMethod();
+
+
+    /*
+    window.alert("我是一个对话框");
+
+    let b = window.confirm("是这样还是那样");
+    console.log("对话框的值是 " + b);
+
+    let s = window.prompt("请输入信息", "默认值");
+    console.log("输入的值是 " + s);
+*/
+    console.log("1");
+    window.onload = function () {
+        // 通过匿名方法，指定事件触发时要执行的代码
+        /**
+         * 顺序
+         * 1
+         * 2
+         * 页面加载成功
+         */
+        console.log("页面加载成功");
+    }
+    console.log("2");
+    window.onunload = function () {
+        // 无法检测
+    }
+    for (let i = 0; i < 50; i++) {
+        // document.write("<h1>hello</h1>");
+    }
+    window.onscroll = function () {
+        console.log("页面滚动条在滚动");
+    }
+
+    window.onresize = function () {
+        console.log("页面大小改变");
+    }
+
+    /**
+     * 内置对象 location 属性 href 获取和设置地址栏
+     */
+    alert("当前地址栏是："+location.href);
+    // 获取地址栏
+    // window.setTimeout("location.href='http://wwww.baidu.com'",3000);
+    // 设置地址栏
+    // 3秒之后地址栏转为百度
+
+</script>
+
+</body>
+</html>

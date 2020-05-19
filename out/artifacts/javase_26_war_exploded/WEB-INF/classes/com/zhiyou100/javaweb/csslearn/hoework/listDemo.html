@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表练习</title>
+    <style type="text/css">
+        .allDiv {
+            border: 1px red solid;
+
+            width: 800px;
+            height: 600px;
+            margin: 50px auto;
+            /*    居中效果*/
+        }
+
+        .topDiv {
+            border: 1px blue solid;
+
+            width: 700px;
+            height: 200px;
+            margin: 30px auto;
+
+        }
+
+        .topDivLeft {
+            border: 1px blue solid;
+
+            width: 300px;
+            height: 195px;
+        }
+
+        .topDivRight {
+            border: 1px red solid;
+
+            width: 300px;
+            height: 195px;
+            position: absolute;
+            left: 53%;
+            top: 82px;
+        }
+
+        .bottomDiv {
+            border: 1px #d0ff00 solid;
+
+            height: 330px;
+            width: 700px;
+            margin: 10px auto;
+
+
+        }
+
+        .bottomLeftDiv {
+            border: 1px #214770 solid;
+
+            height: 320px;
+            width: 200px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .bottomMiddleDiv {
+            border: 1px #8f15c3 solid;
+
+            height: 320px;
+            width: 200px;
+            margin-left: 30px;
+            float: left;
+        }
+
+        .bottomRightDiv {
+            border: 1px #25cfa8 solid;
+
+            height: 320px;
+            width: 200px;
+            margin-left: 40px;
+            float: left;
+        }
+
+        .selectStyle {
+            border: #e0225e 2px solid;
+
+            width: 200px;
+            height: 320px;
+            font-size: 45px;
+        }
+
+
+        .bottomMiddleDiv input {
+            border: 1px seagreen solid;
+            width: 200px;
+            height: 75px;
+            background-image: url("https://gitee.com/Java1123yanglei/myPicture/raw/master/uPic/Yn0y4i.png");
+        }
+
+        #button1 {
+            background-position: 40% 14%;
+        }
+
+        #button2 {
+            background-position: 40% 38%;
+        }
+
+        #button3 {
+            background-position: 40% 60%;
+        }
+
+        #button4 {
+            background-position: 40% 84%;
+        }
+
+    </style>
+    <script>
+        let selLeft, selRight, div_1, div_2;
+        // 设置全局变量，记录左边的select、右边的select，左上角的div、右上角的div
+        window.onload = function () {
+            selLeft = document.getElementsByName("sel_left")[0];
+            // 获取左边的select
+            selRight = document.getElementsByName("sel_right")[0];
+            // 获取右边的select
+            div_1 = document.getElementById("div_top_1");
+            // 获取左上角的div
+            div_2 = document.getElementById("div_top_2");
+            // 获取右上角的div
+
+            document.getElementById("button1").onclick = function () {
+                changeOption(selLeft, selRight, false);
+            }
+            document.getElementById("button2").onclick = function () {
+                changeOption(selLeft, selRight, true);
+            }
+            document.getElementById("button3").onclick = function () {
+                changeOption(selRight, selLeft, false);
+            }
+            document.getElementById("button4").onclick = function () {
+                changeOption(selRight, selLeft, true);
+            }
+            setDiv();
+        }
+
+        function setDiv() {
+            // TODO 给左边的div设置内容
+            let collLeft = selLeft.options, collRight = selRight.options;
+            // 获取左右两边select的所有option子节点
+            let strLeft = "", strRight = "";
+            // 定义两个空字符串记录内容
+            for (let i = 0; i < collLeft.length; i++) {
+                strLeft += collLeft[i].innerText + " ";
+                // 获取左边所有option的内容
+            }
+            for (let i = 0; i < collRight.length; i++) {
+                strRight += collRight[i].innerText + " ";
+                // 获取右边所有option的内容
+            }
+            div_1.innerText = strLeft;
+            div_2.innerText = strRight;
+            // 赋值
+        }
+
+        function changeOption(node1, node2, isTag) {
+            // TODO 把node1的option，添加到node2中
+            let collOption = node1.options;
+            // 获取node1的所有option子节点
+            for (let i = 0; i < collOption.length; i++) {
+                // 循环遍历
+                if (isTag || collOption[i].selected) {
+                    // 判断该option是否被选中
+                    collOption[i].selected = false;
+                    // 取消选中
+                    node2.appendChild(collOption[i]);
+                    // 添加到右边的select中
+                    i--;
+                }
+            }
+            setDiv();
+            // 设置div的内容
+        }
+    </script>
+</head>
+<body>
+<div class="allDiv">
+    <div class="topDiv">
+        <div class="topDivLeft" id="div_top_1"></div>
+        <div class="topDivRight" id="div_top_2"></div>
+    </div>
+    <div class="bottomDiv">
+        <div class="bottomLeftDiv">
+            <label>
+                <select class="selectStyle" name="sel_left" size="8" multiple="multiple">
+                    // 允许多选 multiple
+                    <option>选项11</option>
+                    <option>选项12</option>
+                    <option>选项13</option>
+                    <option>选项14</option>
+                    <option>选项15</option>
+                    <option>选项16</option>
+                    <option>选项17</option>
+                    <option>选项18</option>
+                </select>
+            </label>
+
+        </div>
+        <div class="bottomMiddleDiv">
+            <input type="button" id="button1"><br>
+            <input type="button" id="button2"><br>
+            <input type="button" id="button3"><br>
+            <input type="button" id="button4"><br>
+
+        </div>
+        <div class="bottomRightDiv">
+
+            <label>
+                <select class="selectStyle" size="8" name="sel_right" multiple="multiple">
+
+                </select>
+            </label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5月30日作业</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+        // 引入 jQuery
+    </script>
+    <style type="text/css">
+        div,span,p{
+            width:140px;
+            height:140px;
+            margin:5px;
+            background:#aaa;
+            border:#000 1px solid;
+            float:left;
+            font-size:17px;
+        }
+        div.bgRed {
+            width:55px;
+            height:55px;
+            background-color: #aaa;
+            font-size:12px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#reset").click(function () {
+                // 设置手动重置
+                $("*").removeAttr("style");//删除所有的已有的样式  删除style属性的值
+            });
+            function animation(){
+                $("#mover").slideToggle(3000,animation);
+            }
+            animation();
+            $("#btn1").click(function () {
+                // 改变第一个div
+                $("div:first").css("background-color","red");
+            })
+            $("#btn2").click(function () {
+                // 改变class不为one的所有div元素
+                $("div:not(.one)").css("background-color","blue");
+            })
+            $("#btn3").click(function () {
+                // 改变索引值为偶数的div元素
+                $("div:even").css("background-color","#66ccff");
+            })
+            $("#btn4").click(function () {
+                // 改变索引值为大于 3 且为奇数的 div元素
+                $("div:gt(2):odd").css("background-color","red");
+            })
+            $("#btn5").click(function () {
+                // 改变当前正在执行动画的所有元素
+                $("*:animated").css("background-color","#66ccff");
+            })
+            $("#btn6").click(function () {
+                // 改变所有的标题标签
+                $("*:header").css("background-color","#66ccff");
+            })
+        });
+    </script>
+</head>
+<body>
+<input type="button" id="reset" value="手动重置" />
+<h3>过滤选择器--基本过滤.</h3>
+<h4>过滤选择器--基本过滤.</h4>
+<h6>过滤选择器--基本过滤.</h6>
+
+<!-- 控制按钮 -->
+<input type="button" value="改变第一个<div>元素" id="btn1"/>
+<input type="button" value="改变class不为one的所有div元素" id="btn2"/>
+<input type="button" value="改变索引值为偶数的div元素" id="btn3"/>
+<input type="button" value="改变索引值为大于 3 且为奇数的 div元素" id="btn4"/>
+<input type="button" value="改变当前正在执行动画的所有元素" id="btn5"/>
+<input type="button" value="改变所有的标题标签" id="btn6"/>
+<br><br>
+<!-- 测试的元素 -->
+<div class="one" id="one" >
+    id为one,class为one的div
+    <div class="bgRed">class为bgRed的div</div>
+</div>
+<div class="one">
+    class为one的div
+    <div class="bgRed">class为bgRed</div>
+    <div class="bgRed">class为bgRed</div>
+</div>
+<div class="one" id="two" >
+    id为two,class为one的div
+    <div class="bgRed">class为bgRed的div</div>
+</div>
+<span id="mover">正在执行动画的span元素.</span>
+</body>
+</html>

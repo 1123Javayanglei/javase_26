@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作多选按钮</title>
+    <style>
+        div {
+            border: 1px solid blue;
+            margin: 10px auto;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        #div_add {
+            width: 1000px;
+        }
+
+        table {
+            border: 1px solid blue;
+            width: 800px;
+            /* 边框合并 */
+            border-collapse: collapse;
+            margin: 10px auto;
+        }
+
+        table td, table th {
+            border: 1px solid blue;
+            text-align: center;
+        }
+
+        #div_11 {
+            border: none;
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 50px;
+        }
+
+        #div_12 {
+            border: none;
+        }
+
+        #div_12 > input {
+            height: 80px;
+            width: 80px;
+            margin: 30px;
+            font-size: 20px;
+        }
+
+        .class_1 {
+            display: none;
+        }
+
+        .class_2 {
+            display: block;
+        }
+    </style>
+</head>
+<script>
+    window.onload = function () {
+        // 文档一加载，设置div_add 隐藏
+        // document.getElementById("div_add").style.display = "none";
+        document.getElementById("div_add").className = "class_1";
+
+        document.getElementById("but_add").onclick = function () {
+            // TODO 给but_add 添加事件，一点击，div_add 显示
+            document.getElementById("div_add").className = "class_2";
+        }
+
+        document.getElementById("but_del").onclick = deleteSelected;
+        // 给删除按钮添加事件，删除选中的复选框
+
+        // 给goods添加计算总价事件
+        let goods = document.getElementsByName("goods");
+        for (let i = 0; i < goods.length; i++) {
+            goods[i].onclick = getMoney;
+        }
+
+        document.getElementById("but_all").onclick = selAll;
+        // 给全选按钮添加全选行为
+
+        document.getElementById("but_anti").onclick = selAnti;
+        // 给反向选择按钮添加行为
+    }
+
+    function selAnti() {
+        // TODO 反向选择
+        let goods = document.getElementsByName("goods");
+        // 获取所有的checkout
+        for (let i = 0; i < goods.length; i++) {
+            let good = goods[i];
+            if (good.checked) {
+                // 如果被选中了，改变为未选中
+                good.checked = false;
+            } else {
+                // 没有选中，改为选中
+                good.checked = true;
+            }
+        }
+
+        getMoney();
+    }
+
+    function selAll() {
+        // TODO 选择全部的checkout
+        let goods = document.getElementsByName("goods");
+        // 获取所有的checkout
+        for (let i = 0; i < goods.length; i++) {
+            let good = goods[i];
+            if (good.checked) {
+                // 如果被选中了，啥也不干
+            } else {
+                good.checked = true;
+            }
+        }
+        getMoney();
+    }
+
+    function getMoney() {
+        // TODO 点击就获得价格
+        let allMoney = 0;
+        // 记录总价
+        let goods = document.getElementsByName("goods");
+        // 获取所有name等于goods的checkbox
+
+        for (let i = 0; i < goods.length; i++) {
+            let good = goods[i];
+            if (good.checked) {
+                // 如果被选中
+                let tr = good.parentElement.parentElement;
+                // 获取tr
+                let unitPrice = parseFloat(tr.getElementsByTagName("td")[3].innerText);
+                // 获取单价
+                let numbers = parseInt(tr.getElementsByTagName("td")[4].innerText);
+                // 获取个数
+                if (isNaN(numbers) || unitPrice <= 0 || numbers <= 0) {
+                    alert("个数或单价不合理");
+                    return;
+                }
+                allMoney += unitPrice * numbers;
+                // 把价格放进总计里
+            }
+        }
+        let span_money = document.getElementById("span_money");
+        // 获取总价的节点
+        span_money.innerText = allMoney + "";
+        // 写入
+    }
+
+    function deleteSelected() {
+        // TODO 删除被选中的复选框
+        let goods = document.getElementsByName("goods");
+        // 获取所有名字为goods的复选框
+        for (let i = 0; i < goods.length; i++) {
+            if (goods[i].checked) {
+                // 判断是否被选中
+                let td = goods[i].parentElement;
+                // 获取td标签
+                let tr = td.parentElement;
+                // 获取tr标签
+                let table = tr.parentElement;
+                // 获取table标签
+                table.removeChild(tr);
+                // 删除
+                i--;
+                // i-1 集合变少了
+            }
+        }
+    }
+
+    function addGoods() {
+        // TODO 把表单中的信息添加到table中
+        // 第一步，获取表单中的信息
+        let name = document.getElementsByName("goodsName")[0].value;
+        let type = document.getElementsByName("goodsType")[0].value;
+        let unitPrice = document.getElementsByName("goodsUnitPrice")[0].value;
+        let numbers = document.getElementsByName("goodsNumbers")[0].value;
+        // 第二步 使用array封装信息
+        let array = new Array();
+        array.push("<input type=\"checkbox\" name=\"goods\"/>");
+        array.push(name);
+        array.push(type);
+        array.push(unitPrice);
+        array.push(numbers);
+        // 第三步 添加到目标表格中
+        let table = document.getElementById("table_1");
+        // 获取表格
+        let tr = document.createElement("tr");
+        // 创建一个tr
+
+        for (let i = 0; i < array.length; i++) {
+            let td = document.createElement("td");
+            // 创建一个td
+            td.innerHTML = array[i];
+            // 把数据从array中提出，放入td中
+            tr.appendChild(td);
+            // 把td放到tr中
+        }
+        table.appendChild(tr);
+        // 把tr放到table中
+
+        // 添加完成后次div隐藏
+        document.getElementById("div_add").className = "class_1";
+
+        document.getElementById("but_all").onclick = selAll;
+        // 给全选按钮添加全选行为
+
+        document.getElementById("but_anti").onclick = selAnti;
+        // 给反向选择按钮添加行为
+
+        // 添加完成后添加点击计算总计的行为
+        let goods = document.getElementsByName("goods");
+        for (let i = 0; i < goods.length; i++) {
+            goods[i].onclick = getMoney;
+        }
+
+
+        return false;
+        // 拒绝提交
+    }
+
+
+</script>
+<body>
+<div id="div_1">
+    <div id="div_11">购物车</div>
+    <div id="div_12">
+        <input type="button" value="添加" id="but_add">
+        <input type="button" value="删除" id="but_del">
+        <input type="button" value="反向选择" id="but_anti">
+        <input type="button" value="全选" id="but_all">
+        <table id="table_1">
+            <tr>
+                <th colspan="5" style="text-align: right;color: red">
+                    总价:<span id="span_money">0</span>元
+                </th>
+            </tr>
+            <tr style="background-color: #aaaaaa;">
+                <th>选择</th>
+                <th>名称</th>
+                <th>类型</th>
+                <th>单价(元)</th>
+                <th>个数</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="goods"/></td>
+                <td>一万个为什么</td>
+                <td>图书</td>
+                <td>18.5</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="goods"/></td>
+                <td>铅笔</td>
+                <td>文具</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="goods"/></td>
+                <td>裤子</td>
+                <td>服饰</td>
+                <td>100</td>
+                <td>2</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<hr size="3px" width="80%" align="center">
+<div id="div_add" style="border: none;">
+    <form id="form_1" onsubmit="return(addGoods());">
+        <table id="table_2">
+            <tr>
+                <th>请输入商品的名称</th>
+                <td><input type="text" name="goodsName"></td>
+            </tr>
+            <tr>
+                <th>请输入商品的类型</th>
+                <td><input type="text" name="goodsType"></td>
+            </tr>
+            <tr>
+                <th>请输入商品的单价</th>
+                <td><input type="text" name="goodsUnitPrice"></td>
+            </tr>
+            <tr>
+                <th>请输入商品的个数</th>
+                <td><input type="text" name="goodsNumbers"></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="reset" value="重新填写">
+                    <input type="submit" value="提交" id="submitAdd">
+                </th>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
