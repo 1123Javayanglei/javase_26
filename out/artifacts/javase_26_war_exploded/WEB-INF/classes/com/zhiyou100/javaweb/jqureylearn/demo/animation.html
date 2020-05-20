@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+        // 引入 jQuery
+    </script>
+    <style>
+        input {
+            height: 100px;
+            width: 100px;
+        }
+
+        .div_1 {
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            background-color: #66ccff;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="but_1" class="but_1">
+<br>
+<input type="button" value="stop" class="stop" >
+<div class="div_1">
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        $(".but_1").bind("click", but_1OnClick);
+        // 给but_1注册点击事件
+        $(".stop").bind("click",function () {
+            $(".div_1").stop();
+        });
+
+    });
+    let LeftAndRightFlag = true;
+    let TopAndBottomFLag = true;
+
+    // 定义一个变量 方向
+    function but_1OnClick() {
+        // TODO but_1 的点击事件,div 随机上下左右跑动
+        let $div1 = $(".div_1");
+        // 获取div_1
+        let height = $div1.css("height");
+        // 获取当前div的高
+        let width = $div1.css("width");
+        // 获取当前div的宽
+        let innerHeight = window.innerHeight;
+        // 获取屏幕的高
+        let innerWidth = window.innerWidth;
+        // 获取屏幕的宽
+        let left = $div1.css("left");
+        // 获取left
+        let top = $div1.css("top");
+        // 获取top
+        let message = `屏幕的高${innerHeight} 屏幕的宽${innerWidth} 当前的left${left} 当前的top${top}`;
+        let finalLeft = parseInt(delPX(left));
+        // div的实时left的值
+        let finalTop = parseInt(delPX(top));
+        // div的实时Top
+        let finalWindowWidth = (innerWidth - parseInt(delPX(width)));
+        // 屏幕最终可以使用的宽
+        let finalWindowHeight = (innerHeight - parseInt(delPX(height)));
+        // 屏幕最终可以使用的高
+        let myRandomValue = myRandom(0, 100) + "px";
+        let time=myRandom(0,3000);
+        console.log(message);
+        if (finalLeft >= finalWindowWidth) {
+            LeftAndRightFlag = false;
+        }
+        if (finalLeft < 0) {
+            LeftAndRightFlag = true;
+        }
+        if (finalTop >= finalWindowHeight) {
+            TopAndBottomFLag = false;
+        }
+        if (finalTop < 0) {
+            TopAndBottomFLag = true;
+        }
+        if (LeftAndRightFlag) {
+            $div1.animate(
+                {
+                    left: '+=' + myRandomValue
+                }, time, but_1OnClick
+            )
+        } else {
+            $div1.animate(
+                {
+                    left: '-=' + myRandomValue
+                }, time, but_1OnClick
+            )
+        }
+        if (TopAndBottomFLag) {
+            $div1.animate(
+                {
+                    top: '+=' + myRandomValue
+                }, time, but_1OnClick
+            )
+        } else {
+            $div1.animate(
+                {
+                    top: '-=' + myRandomValue
+                }, time, but_1OnClick
+            )
+        }
+    }
+
+    function delPX(s) {
+        // TODO 去掉px
+        let number = s.indexOf('px');
+        return s.substring(0, number);
+    }
+
+    function myRandom(min, max) {
+        // TODO 生成 [min,max]的随机数,包含min和max的值
+        return parseInt(min + (Math.random() * (max - min + 1)));
+    }
+</script>
