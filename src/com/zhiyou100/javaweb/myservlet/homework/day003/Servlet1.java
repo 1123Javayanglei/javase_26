@@ -34,6 +34,7 @@ public class Servlet1 extends HttpServlet {
     public boolean isLogin(){
         Connection connection = JavaDataBaseConnectivityUtil.getConnection();
         String sql="";
+        // select * from teacher where teacherName='王五' and teacherPwd='1024';
         return false;
     }
     
