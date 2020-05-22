@@ -1,5 +1,7 @@
 package com.zhiyou100.javaweb.myservlet.day003;
 
+import java.io.Serializable;
+
 /**
  * @packageName: javase_26
  * @className: Demo01User
@@ -7,7 +9,7 @@ package com.zhiyou100.javaweb.myservlet.day003;
  * @author: yang
  * @date: 2020/5/21
  */
-public class Demo01User {
+public class Demo01User implements Serializable {
     private Integer userId;
     private String userName;
     private String userPwd;

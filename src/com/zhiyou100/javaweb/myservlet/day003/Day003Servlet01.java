@@ -34,7 +34,7 @@ public class Day003Servlet01 extends javax.servlet.http.HttpServlet {
         // 获取连接
         String sql="select * from tab_user where userName=? and userPassword=?;";
         // select * from tab_user where userName='h' and userPassword='242';
-        //
+        // 准备sql
         Demo01User demo01User1 = null;
         ResultSet resultSet=null;
         PreparedStatement pre=null;
