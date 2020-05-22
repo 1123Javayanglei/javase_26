@@ -23,6 +23,7 @@ import java.util.ArrayList;
  */
 @WebServlet(name = "Servlet2", urlPatterns = "/day003/homework/s2")
 public class Servlet2 extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         // 设定编码

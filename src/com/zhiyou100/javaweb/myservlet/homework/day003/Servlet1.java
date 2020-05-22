@@ -37,8 +37,7 @@ public class Servlet1 extends HttpServlet {
         // 判断是否登陆成功
         response.sendRedirect(redirectTuUr1);
         // 转发
-
-
+        return;
     }
 
 
