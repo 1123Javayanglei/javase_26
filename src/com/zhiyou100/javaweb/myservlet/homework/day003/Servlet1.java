@@ -54,23 +54,19 @@ public class Servlet1 extends HttpServlet {
             Connection connection = JavaDataBaseConnectivityUtil.getConnection();
             String sql = "select * from teacher where teacherName=? and teacherPwd=?;";
             // select * from teacher where teacherName='王五' and teacherPwd='1024';
-            PreparedStatement Statement = connection.prepareStatement(sql);
+            PreparedStatement statement = connection.prepareStatement(sql);
             // 获取预编译对象
-            Statement.setString(1, intoName);
-            Statement.setString(2, intoPwd);
+            statement.setString(1, intoName);
+            statement.setString(2, intoPwd);
             // 设定参数
-            ResultSet resultSet = Statement.executeQuery();
+            ResultSet resultSet = statement.executeQuery();
             // 获取结果集
             boolean next = resultSet.next();
             // 获取状态
-            JavaDataBaseConnectivityUtil.close(resultSet, Statement, connection);
+            JavaDataBaseConnectivityUtil.close(resultSet, statement, connection);
             // 关闭连接
-            if (next) {
-                // 判断是否登陆成功
-                return true;
-            } else {
-                return false;
-            }
+            // 判断是否登陆成功
+            return next;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

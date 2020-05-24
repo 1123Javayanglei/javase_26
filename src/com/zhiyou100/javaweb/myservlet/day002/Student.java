@@ -1,23 +1,26 @@
-package com.zhiyou100.javaweb.myservlet.homework.day003;
+package com.zhiyou100.javaweb.myservlet.day002;
 
 import java.io.Serializable;
 
 /**
  * @packageName: javase_26
- * @className: Day003ForStudent
- * @Description: TODO 学生表的实现类
+ * @className: Student
+ * @Description: TODO 学生实体类
  * @author: yang
- * @date: 2020/5/22
+ * @date: 2020/5/24
  */
-public class Day003ForStudent implements Serializable {
+public class Student implements Serializable {
     private Integer studentId;
     private String studentName;
     private String studentGender;
     private Double studentScore;
 
+    public Student() {
+    }
+
     @Override
     public String toString() {
-        return "Day003ForStudent{" +
+        return "Student{" +
                 "studentId=" + studentId +
                 ", studentName='" + studentName + '\'' +
                 ", studentGender='" + studentGender + '\'' +
@@ -57,10 +60,7 @@ public class Day003ForStudent implements Serializable {
         this.studentScore = studentScore;
     }
 
-    public Day003ForStudent() {
-    }
-
-    public Day003ForStudent(Integer studentId, String studentName, String studentGender, Double studentScore) {
+    public Student(Integer studentId, String studentName, String studentGender, Double studentScore) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.studentGender = studentGender;

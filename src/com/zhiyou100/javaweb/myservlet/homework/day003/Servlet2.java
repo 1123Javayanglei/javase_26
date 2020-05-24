@@ -61,9 +61,9 @@ public class Servlet2 extends HttpServlet {
             Connection connection = JavaDataBaseConnectivityUtil.getConnection();
             String sql = "select * from student";
             // select * from student;
-            PreparedStatement Statement = connection.prepareStatement(sql);
+            PreparedStatement statement = connection.prepareStatement(sql);
             // 获取预编译对象
-            ResultSet resultSet = Statement.executeQuery();
+            ResultSet resultSet = statement.executeQuery();
             // 获取结果集
             while (resultSet.next()) {
                 // 处理结果集
@@ -75,7 +75,7 @@ public class Servlet2 extends HttpServlet {
                 day003ForStudents.add(day003ForStudent);
                 // 添加到集合
             }
-            JavaDataBaseConnectivityUtil.close(resultSet, Statement, connection);
+            JavaDataBaseConnectivityUtil.close(resultSet, statement, connection);
             // 关闭连接
             return day003ForStudents;
         } catch (Exception e) {
