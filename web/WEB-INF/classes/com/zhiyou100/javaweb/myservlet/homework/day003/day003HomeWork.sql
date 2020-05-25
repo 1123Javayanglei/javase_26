@@ -48,6 +48,5 @@ values (null, '张3', '男', 65),
        (null, '张15', '男', 65),
        (null, '张16', '女', 65);
 
-select *
-from student;
+select * from teacher where teacherName='123' and teacherPwd='23';
 
